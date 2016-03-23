@@ -1,0 +1,52 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="copy">plazart_single_sidebar</custom-field>
+        <custom-field action="copy">plazart_portfolio_type</custom-field>
+        <custom-field action="copy">plazart_portfolio_image</custom-field>
+        <custom-field action="copy">plazart_portfolio_slideshows</custom-field>
+        <custom-field action="copy">plazart_portfolio_video_type</custom-field>
+        <custom-field action="copy">plazart_portfolio_video</custom-field>
+        <custom-field action="copy">plazart_portfolio_soundCloud_id</custom-field>
+        <custom-field action="copy">plazart_portfolio_Quote_content</custom-field>
+        <custom-field action="copy">plazart_portfolio_Quote_ds</custom-field>
+        <custom-field action="copy">plazart_portfolio_video_mp4</custom-field>
+        <custom-field action="copy">plazart_portfolio_video_ogv</custom-field>
+        <custom-field action="copy">plazart_portfolio_video_webm</custom-field>
+        <custom-field action="copy">plazart_bk_video</custom-field>
+        <custom-field action="copy">plazart_portfolio_full</custom-field>
+        <custom-field action="copy">plazart_portfolio_sidebar</custom-field>
+        <custom-field action="copy">plazart_portfolio_column</custom-field>
+        <custom-field action="copy">plazart_desktop_column</custom-field>
+        <custom-field action="copy">plazart_tabletportrait_column</custom-field>
+        <custom-field action="copy">plazart_mobilelandscape_column</custom-field>
+        <custom-field action="copy">plazart_mobileportrait_column</custom-field>
+        <custom-field action="copy">plazart_portfolio_catid</custom-field>
+        <custom-field action="copy">plazart_portfolio_limit</custom-field>
+        <custom-field action="copy">plazart_porfolio_orderby</custom-field>
+        <custom-field action="copy">plazart_porfolio_order</custom-field>
+        <custom-field action="copy">plazart_paging</custom-field>
+        <custom-field action="copy">plazart_porfolio_loadding</custom-field>
+        <custom-field action="copy">plazart_ds_column</custom-field>
+        <custom-field action="copy">plazart_blog_column</custom-field>
+        <custom-field action="copy">plazart_tzpostSidebar</custom-field>
+        <custom-field action="copy">plazart_tzpostDate</custom-field>
+        <custom-field action="copy">plazart_tzpostCategory</custom-field>
+        <custom-field action="copy">plazart_tzpostComments</custom-field>
+        <custom-field action="copy">plazart_tzpostthumbnail</custom-field>
+        <custom-field action="copy">plazart_tzpostexcerpt</custom-field>
+        <custom-field action="copy">plazart_blog_catid</custom-field>
+        <custom-field action="copy">plazart_blog_limit</custom-field>
+        <custom-field action="copy">plazart_blog_orderby</custom-field>
+        <custom-field action="copy">plazart_blog_order</custom-field>
+        <custom-field action="copy">plazart_team_name</custom-field>
+        <custom-field action="copy">plazart_team_Position</custom-field>
+        <custom-field action="copy">plazart_team_link</custom-field>
+        <custom-field action="copy">plazart_playlist_mp3</custom-field>
+        <custom-field action="copy">plazart_playlist_ogg</custom-field>
+    </custom-fields>
+    <admin-texts>
+        <key name="option_tree">
+            <key name="plazart_404_content"/>
+        </key>
+    </admin-texts>
+</wpml-config>
