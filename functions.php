@@ -61,6 +61,10 @@ require SERVER_PATH . '/extension/widgets/social.php';
  */
 require SERVER_PATH . '/extension/megamenu/themeple_init.php';
 
+/**
+ * Customizer additions.
+ */
+require SERVER_PATH . '/extension/customizer.php';
 
 if ( class_exists('OT_Loader') ):
     /*
