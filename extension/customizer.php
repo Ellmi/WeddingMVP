@@ -31,7 +31,7 @@ function deeplove_customize_register( $wp_customize ) {
 	) );
 	// 1st slide
 	$wp_customize->add_setting( 'featured_image1', array (
-		'default'               => get_template_directory_uri() . '/inc/images/deeplove.jpg',
+		'default'               => get_template_directory_uri() . '/images/slides/slider1.jpg',
 		'transport'             => 'postMessage',
 		'sanitize_callback'     => 'esc_url_raw'
 	) );
@@ -113,7 +113,7 @@ function deeplove_customize_register( $wp_customize ) {
 
 	// 2nd slide
 	$wp_customize->add_setting( 'featured_image2', array (
-		'default'               => get_template_directory_uri() . '/inc/images/deeplove2.jpg',
+		'default'               => get_template_directory_uri() . '/images/slides/slider1.jpg',
 		'transport'             => 'postMessage',
 		'sanitize_callback'     => 'esc_url_raw'
 	) );
