@@ -16,6 +16,31 @@ jQuery(window).load(function(){
         });
     }
 
+    function get_height() {
+
+        if (jQuery(window).width() < 601) {
+
+            return jQuery(window).height();
+        } else {
+            return jQuery(window).height();
+        }
+    }
+
+    var height = get_height();
+
+    jQuery('#deeplove-slider').camera({
+        height: height + 'px',
+        loader: 'bar',
+        overlay: false,
+        fx: 'simpleFade',
+        pagination: false,
+        thumbnails: false,
+        transPeriod: 1000,
+        overlayer: false,
+        playPause: false,
+        hover: false
+    });
+
     // jQuery for flexslider------------------
     // The slider being synced must be initialized first
     jQuery('#carousel').flexslider({

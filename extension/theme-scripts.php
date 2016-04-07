@@ -41,7 +41,9 @@ function tzeverline_register_front_end_styles()
         wp_enqueue_style('Rouge','http://fonts.googleapis.com/css?family=Rouge+Script', false);
         wp_enqueue_style('owl.carousel', CSS_PATH . '/owl.carousel.css', false );
         wp_enqueue_style('owl.theme', CSS_PATH . '/owl.theme.css', false );
+        wp_enqueue_style('animate', THEME_PATH . '/css/animate.css', false );
         wp_enqueue_style('flexslider', THEME_PATH . '/css/flexslider.css', false );
+        wp_enqueue_style('camera', THEME_PATH . '/css/camera.css', false );
         wp_enqueue_style('style', THEME_PATH . '/style.css', false );
 
 
@@ -87,6 +89,14 @@ function tzeverline_register_front_end_scripts()
     wp_deregister_script('off-canvas');
     wp_register_script('off-canvas', THEME_PATH . '/js/off-canvas.js', false,false, $in_footer=true);
     wp_enqueue_script('off-canvas');
+
+    wp_deregister_script('easing');
+    wp_register_script('easing', THEME_PATH . '/js/easing.js', false, false, $in_footer=true);
+    wp_enqueue_script('easing');
+
+    wp_deregister_script('camera');
+    wp_register_script('camera', THEME_PATH . '/js/camera.js', false, false, $in_footer=true);
+    wp_enqueue_script('camera');
 
     wp_deregister_script('custom');
     wp_register_script('custom', THEME_PATH . '/js/custom.js', false, false, $in_footer=true);

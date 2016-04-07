@@ -7,11 +7,7 @@ if ( $sidebar != 0 ):
 endif;
 
 ?>
-
-<!-- header -->
-<?php if ( is_home() || is_front_page() ) {?>
-<?php } else { ?>
-<?php } ?>
+<?php do_action('deeplove_homepage'); ?>
 
 <div class="home-post">
     <div class="container">
