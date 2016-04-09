@@ -136,19 +136,6 @@ function tzeverline_register_front_end_scripts()
 
     endif;
 
-    if( class_exists('WooCommerce') ):
-        if ( ( is_woocommerce() || is_cart() ) ) :
-            wp_deregister_script('woo-js');
-            wp_register_script('woo-js',JS_PATH .'woo-js.js', false, false, $in_footer = true);
-            wp_enqueue_script('woo-js');
-
-
-            $admin_url = admin_url('admin-ajax.php');
-            $arg_woo   = array( 'url' => $admin_url );
-            wp_localize_script('woo-js', 'woo_var', $arg_woo);
-        endif;
-    endif;
-
     if( is_page_template('template-blog-timeline.php') ):
         wp_deregister_script('timeline');
         wp_register_script('timeline',JS_PATH .'timeline.js', false, false, $in_footer = true);

@@ -82,15 +82,6 @@ if ( class_exists('OT_Loader') ):
     require SERVER_PATH . '/extension/ot-support/add-meta-boxes.php';
 endif;
 
-if  ( class_exists('WooCommerce') ):
-
-    /*
-     * Required: woocommerce
-     */
-    require SERVER_PATH . '/extension/theme-woocommerce.php';
-
-endif;
-
 /*
  *  method add global javascript variable THEME_PREFIX to admin_head
  */
@@ -496,11 +487,6 @@ function tzeverline_register_required_plugins() {
             'name'      => 'OptionTree',
             'slug'      => 'option-tree',
             'required'  => true,
-        ),
-        array(
-            'name'      => 'WooCommerce',
-            'slug'      => 'woocommerce',
-            'required'  => false,
         ),
         array(
             'name'      => 'The Events Calendar',

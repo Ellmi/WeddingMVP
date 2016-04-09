@@ -766,11 +766,6 @@ msgstr ""
 msgid "Previous"
 msgstr ""
 
-#. Text in echo
-#: everline/woocommerce/loop/add-to-cart.php:26
-msgid "QUICK VIEW"
-msgstr ""
-
 #. Text in function
 #: everline/extension/ot-support/add-meta-boxes.php:1
 msgid "Quote"
@@ -796,11 +791,6 @@ msgstr ""
 msgid "READ MORE"
 msgstr ""
 
-#. Text in echo
-#: everline/extension/theme-woocommerce.php:80
-msgid "Read More"
-msgstr ""
-
 #. Text in function
 #: everline/extension/theme-functions.php:99
 msgid "Reply"
@@ -809,11 +799,6 @@ msgstr ""
 #. Text in function
 #: everline/extension/ot-support/theme-options.php:1
 msgid "Right to left"
-msgstr ""
-
-#. Text in echo
-#: everline/extension/theme-woocommerce.php:104
-msgid "SHARE ON:"
 msgstr ""
 
 #. Text in echo
@@ -1146,11 +1131,6 @@ msgstr ""
 #. Text in function
 #: everline/extension/ot-support/theme-options.php:1
 msgid "custom color"
-msgstr ""
-
-#. Text in function
-#: everline/woocommerce/single-product/review.php:45
-msgid "date_format"
 msgstr ""
 
 #. Text in function
