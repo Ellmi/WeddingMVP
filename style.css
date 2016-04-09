@@ -830,20 +830,20 @@ a:focus {
     }
 }
 body .tp-leftarrow.default{
-    background-image: url('images/pre-slider.png');
+    background-image: url('images/pre-slider-hover.png');
 }
 body .tp-leftarrow:hover{
-    background-image: url('images/pre-slider-hover.png');
+    background-image: url('images/pre-slider.png');
 }
 body .tp-leftarrow:hover,
 body .tp-rightarrow:hover {
     background-position: inherit;
 }
 body .tp-rightarrow.default{
-    background-image: url('images/next-slider.png');
+    background-image: url('images/next-slider-hover.png');
 }
 body .tp-rightarrow:hover{
-    background-image: url('images/next-slider-hover.png');
+    background-image: url('images/next-slider.png');
 }
 /*-----visual composer*/
 .vc_col-xs-1,
