@@ -16,6 +16,10 @@
 
     <div class="clear"></div>
 
+    <div id="office-intro">
+        <h4 class="title"><?php esc_attr_e('office introduction title','deeplove');?></h4>
+        <p class="detail"><?php esc_attr_e('office introduction detail','deeplove') ; ?></p>
+    </div>
 <?php
 }
 

@@ -9714,3 +9714,10 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
     color: #fff;
 
 }
+
+#office-intro{
+    background: #fff;
+    text-align: center;
+    border-top: 2px solid #ccc;
+    margin-top: 30px;
+}

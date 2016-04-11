@@ -12,6 +12,7 @@
  */
  
 function deeplove_customize_register( $wp_customize ) {
+	$wp_customize->get_setting( 'intro_title' )->transport         = 'postMessage';
 	$wp_customize->add_panel( 'slider', array (
 		'title'                 => __( 'Slider', 'deeplove' ),
 		'description'           => __( 'Customize the slider. Deeplove includes 3 slides', 'deeplove' ),
@@ -80,6 +81,24 @@ function deeplove_customize_register( $wp_customize ) {
 		'settings'              => 'featured_image3',
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
 	) ) );
+
+	//introduction
+	$wp_customize->add_section( 'intro', array (
+		'title'                 => __( '工作室介绍', 'deeplove' ),
+		'description'           => __( '设置标题', 'deeplove' ),
+		'priority'              => 11
+	) );
+
+	$wp_customize->add_setting( 'intro_title', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'intro_control', array (
+		'label' =>              __( '', 'deeplove' ),
+		'section'               => 'intro',
+		'settings'              => 'intro_title',
+	) );
 
 }
 add_action( 'customize_register', 'deeplove_customize_register' );

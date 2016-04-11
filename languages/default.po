@@ -1217,3 +1217,15 @@ msgstr ""
 #: everline/extension/ot-support/theme-options.php:1
 msgid "you can specify a selector for font used in the document body eg: div#menu"
 msgstr ""
+
+#: everline/deeplove/deep-love.php:20
+msgid "office introduction title"
+msgstr "我们是wedding mvp 工作室"
+
+#: everline/deeplove/deep-love.php:21
+msgid "office introduction detail"
+msgstr "这个工作室成立于今年五月这个工作室成立于今年五月这个工作室成立于今年五月这个工作室成立于今年五月这个工作室成立于今年五月"
+
+#: everline/extension/customizer.php:86
+msgid "intro"
+msgstr "工作室介绍"
