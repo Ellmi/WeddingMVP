@@ -85,7 +85,7 @@ function deeplove_customize_register( $wp_customize ) {
 	//introduction
 	$wp_customize->add_section( 'intro', array (
 		'title'                 => __( '工作室介绍', 'deeplove' ),
-		'description'           => __( '设置标题', 'deeplove' ),
+		'description'           => __( '', 'deeplove' ),
 		'priority'              => 11
 	) );
 
@@ -94,11 +94,30 @@ function deeplove_customize_register( $wp_customize ) {
 		'transport' => 'postMessage'
 	) );
 
-	$wp_customize->add_control( 'intro_control', array (
-		'label' =>              __( '', 'deeplove' ),
+	$wp_customize->add_control( 'intro_title', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
 		'section'               => 'intro',
 		'settings'              => 'intro_title',
 	) );
 
+	$wp_customize->add_setting( 'intro_detail', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'intro_detail', array (
+		'label' =>              __( '设置内容', 'deeplove' ),
+		'section'               => 'intro',
+		'settings'              => 'intro_detail',
+		'type'           => 'textarea'
+	) );
+
 }
 add_action( 'customize_register', 'deeplove_customize_register' );
+/**
+ * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
+ */
+function deeplove_customize_preview_js() {
+	wp_enqueue_script( 'deeplove_customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '', true );
+}
+add_action( 'customize_preview_init', 'deeplove_customize_preview_js' );

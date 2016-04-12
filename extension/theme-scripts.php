@@ -98,10 +98,6 @@ function tzeverline_register_front_end_scripts()
     wp_register_script('camera', THEME_PATH . '/js/camera.js', false, false, $in_footer=true);
     wp_enqueue_script('camera');
 
-    wp_deregister_script('customizer');
-    wp_register_script('customizer', THEME_PATH . '/js/customizer.js', false, false, $in_footer=true);
-    wp_enqueue_script('customizer');
-
     wp_deregister_script('custom');
     wp_register_script('custom', THEME_PATH . '/js/custom.js', false, false, $in_footer=true);
     wp_enqueue_script('custom');
