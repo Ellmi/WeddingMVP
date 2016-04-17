@@ -14,12 +14,15 @@
 
     </div>
 
-    <div class="clear"></div>
+        <div class="clear"></div>
 
-    <div id="office-intro ">
-        <h4 class="title"><?php echo esc_attr_e(get_theme_mod( 'office_intro_title', __( 'office introduction title', 'deeplove' )  ));?></h4>
-        <p class="detail"><?php echo esc_attr_e(get_theme_mod( 'office_intro_detail', __( 'office introduction detail','deeplove')   )); ?></p>
-    </div>
+        <div id="office-intro">
+            <div class="container">
+                <h4 class="title"><?php echo esc_attr_e(get_theme_mod('office_intro_title', __('office introduction title', 'deeplove')));?></h4>
+
+                <p class="detail"><?php echo esc_attr_e(get_theme_mod('office_intro_detail', __('office introduction detail', 'deeplove'))); ?></p>
+            </div>
+        </div>
 <?php
 }
 

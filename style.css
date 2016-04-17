@@ -9718,6 +9718,26 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
 #office-intro{
     background: #fff;
     text-align: center;
-    border-top: 2px solid #ccc;
-    margin-top: 30px;
+    padding: 69px 0;
+}
+
+#office-intro .title{
+    font-size: 17px;
+    color: #212121;
+    position: relative;
+    padding: 8px 0;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#office-intro .title:after{
+    width: 70px;
+    height: 2px;
+    background: #d65679;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -35px;
+    content: '';
 }
