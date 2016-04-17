@@ -83,32 +83,32 @@ function deeplove_customize_register( $wp_customize ) {
 	) ) );
 
 	//introduction
-	$wp_customize->add_section( 'intro', array (
+	$wp_customize->add_section( 'office_intro', array (
 		'title'                 => __( '工作室介绍', 'deeplove' ),
 		'description'           => __( '', 'deeplove' ),
 		'priority'              => 11
 	) );
 
-	$wp_customize->add_setting( 'intro_title', array (
+	$wp_customize->add_setting( 'office_intro_title', array (
 		'default'               => __( 'office introduction title', 'deeplove' ),
 		'transport' => 'postMessage'
 	) );
 
-	$wp_customize->add_control( 'intro_title', array (
+	$wp_customize->add_control( 'office_intro_title', array (
 		'label' =>              __( '设置标题', 'deeplove' ),
-		'section'               => 'intro',
-		'settings'              => 'intro_title',
+		'section'               => 'office_intro',
+		'settings'              => 'office_intro_title',
 	) );
 
-	$wp_customize->add_setting( 'intro_detail', array (
+	$wp_customize->add_setting( 'office_intro_detail', array (
 		'default'               => __( 'office introduction title', 'deeplove' ),
 		'transport' => 'postMessage'
 	) );
 
-	$wp_customize->add_control( 'intro_detail', array (
+	$wp_customize->add_control( 'office_intro_detail', array (
 		'label' =>              __( '设置内容', 'deeplove' ),
-		'section'               => 'intro',
-		'settings'              => 'intro_detail',
+		'section'               => 'office_intro',
+		'settings'              => 'office_intro_detail',
 		'type'           => 'textarea'
 	) );
 
