@@ -23,6 +23,55 @@
                 <p class="detail"><?php echo esc_attr_e(get_theme_mod('office_intro_detail', __('office introduction detail', 'deeplove'))); ?></p>
             </div>
         </div>
+
+        <div id="PostZone1">
+            <div class="container">
+                <div class="row">
+                    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-4">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="dlintroduct">
+                                    <h3> WEDDING DECOR</h3>
+                                    <div class="dlintroduct-img">
+                                        <a href="" target=""><img src="<?php echo esc_url(get_template_directory_uri().'/images/introduct1.jpg'); ?> " alt="deeplove"></a>
+                                    </div>
+                                    <p>
+                                        Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-4">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="dlintroduct">
+                                    <h3> BRIDE &amp; GROOM</h3>
+                                    <div class="dlintroduct-img">
+                                        <a href="" target=""><img src="<?php echo esc_url(get_template_directory_uri().'/images/introduct2.jpg'); ?> " alt="deeplove"></a>
+                                    </div>
+                                    <p>
+                                        Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!            </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-4">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="dlintroduct">
+                                    <h3> THE PROPOSE</h3>
+                                    <div class="dlintroduct-img">
+                                        <a href="" target=""><img src="<?php echo esc_url(get_template_directory_uri().'/images/introduct3.jpg'); ?> " alt="deeplove"></a>
+                                    </div>
+                                    <p>
+                                        Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!            </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 <?php
 }
 

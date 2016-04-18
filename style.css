@@ -1,16 +1,9 @@
 /*
-    Theme Name: Everline
-    Theme URI: http://templaza.com
-    Author: Templaza
-    Author URI: http://templaza.com
+    Theme Name: Deeplove
+    Origin Author: Templaza
+    Redesign Author: Yanmin
     Version: 1.0
-    Description: Coming with elegant and modest appearance, Everline will be a meaningful WordPress theme for Wedding, Engagement and other event purposes. Its stunning beauty, fashionable clean look and proper execution will help you to own an awesome wedding site for your happiest day.
-    License: GNU General Public License v2 or later
-    License URI: http://www.gnu.org/licenses/gpl-2.0.html
-    Tags: one-column, two-columns, three-columns, four-columns, right-sidebar,  theme-options
-    Text Domain: Everline
 */
-
 
 
 /**
@@ -2409,16 +2402,16 @@ nav .themeple_custom_menu_mega_menu.themeple_mega5 ul li ul li{
  * 4.5 - Introduct
  * -----------------------------------------------------------------------------
  */
-.tzintroduct{
+.dlintroduct{
     text-align: center;
     cursor: pointer;
     padding-bottom: 30px;
 }
-.tzintroduct-img{
+.dlintroduct-img{
     position: relative;
     overflow: hidden;
 }
-.tzintroduct .attachment-full{
+.dlintroduct .attachment-full{
     max-width: 100%;
     transition: all 10s ease 0s;
     -moz-transition: all 10s ease 0s;
@@ -2426,7 +2419,7 @@ nav .themeple_custom_menu_mega_menu.themeple_mega5 ul li ul li{
     -ms-transition: all 10s ease 0s;
     -o-transition: all 10s ease 0s;
 }
-.tzintroduct h3{
+.dlintroduct h3{
     display: block;
     font-size: 17px;
     letter-spacing: 3px;
@@ -2437,7 +2430,7 @@ nav .themeple_custom_menu_mega_menu.themeple_mega5 ul li ul li{
     text-align: center;
     color: #212121;
 }
-.tzintroduct h3:after{
+.dlintroduct h3:after{
     background: none repeat scroll 0 0 #d65679;
     bottom: 0;
     content: "";
@@ -2447,7 +2440,7 @@ nav .themeple_custom_menu_mega_menu.themeple_mega5 ul li ul li{
     position: absolute;
     width: 70px;
 }
-.tzintroduct p{
+.dlintroduct p{
     display: block;
     font-size: 12px;
     letter-spacing: 0.4px;
@@ -2459,7 +2452,7 @@ nav .themeple_custom_menu_mega_menu.themeple_mega5 ul li ul li{
     color: #666666;
     background: #fff;
 }
-.tzintroduct:hover .tzintroduct-img img{
+.dlintroduct:hover .dlintroduct-img img{
     transform: scale(3) rotate(45deg);
     -moz-transform: scale(3) rotate(45deg);
     -webkit-transform: scale(3) rotate(45deg);
@@ -7434,7 +7427,7 @@ div.wpcf7-response-output {
 .themecolor1 .tzcount-left,
 .themecolor1 .tzcountdown4 .countdown,
 .themecolor1 .title_ourstory:after,
-.themecolor1 .tzintroduct h3:after,
+.themecolor1 .dlintroduct h3:after,
 .themecolor1 .form7-wrap,
 .themecolor1 .form7-style2,
 .themecolor1 .form7-style3,
@@ -7575,7 +7568,7 @@ body.themecolor1.theme-box .everline_boxed header.headerAnimate .wrapbox{
 .themecolor2 .tzcount-left,
 .themecolor2 .tzcountdown4 .countdown,
 .themecolor2 .title_ourstory:after,
-.themecolor2 .tzintroduct h3:after,
+.themecolor2 .dlintroduct h3:after,
 .themecolor2 .form7-wrap,
 .themecolor2 .form7-style2,
 .themecolor2 .form7-style3,
@@ -7716,7 +7709,7 @@ body.themecolor2.theme-box .everline_boxed header.headerAnimate .wrapbox{
 .themecolor3 .tzcount-left,
 .themecolor3 .tzcountdown4 .countdown,
 .themecolor3 .title_ourstory:after,
-.themecolor3 .tzintroduct h3:after,
+.themecolor3 .dlintroduct h3:after,
 .themecolor3 .form7-wrap,
 .themecolor3 .form7-style2,
 .themecolor3 .form7-style3,
@@ -7856,7 +7849,7 @@ body.themecolor3.theme-box .everline_boxed header.headerAnimate .wrapbox{
 .themecolor4 .tzcount-left,
 .themecolor4 .tzcountdown4 .countdown,
 .themecolor4 .title_ourstory:after,
-.themecolor4 .tzintroduct h3:after,
+.themecolor4 .dlintroduct h3:after,
 .themecolor4 .form7-wrap,
 .themecolor4 .form7-style2,
 .themecolor4 .form7-style3,
@@ -7997,7 +7990,7 @@ body.themecolor4.theme-box .everline_boxed header.headerAnimate .wrapbox{
 .themecolor5 .tzcount-left,
 .themecolor5 .tzcountdown4 .countdown,
 .themecolor5 .title_ourstory:after,
-.themecolor5 .tzintroduct h3:after,
+.themecolor5 .dlintroduct h3:after,
 .themecolor5 .form7-wrap,
 .themecolor5 .form7-style2,
 .themecolor5 .form7-style3,
@@ -8132,7 +8125,7 @@ body.themecolor5.theme-box .everline_boxed header.headerAnimate .wrapbox{
 .themecolor6 .tzcount-left,
 .themecolor6 .tzcountdown4 .countdown,
 .themecolor6 .title_ourstory:after,
-.themecolor6 .tzintroduct h3:after,
+.themecolor6 .dlintroduct h3:after,
 .themecolor6 .form7-wrap,
 .themecolor6 .form7-style2,
 .themecolor6 .form7-style3,
@@ -8272,7 +8265,7 @@ body.themecolor6.theme-box .everline_boxed header.headerAnimate .wrapbox{
 .themecolor7 .tzcount-left,
 .themecolor7 .tzcountdown4 .countdown,
 .themecolor7 .title_ourstory:after,
-.themecolor7 .tzintroduct h3:after,
+.themecolor7 .dlintroduct h3:after,
 .themecolor7 .form7-wrap,
 .themecolor7 .form7-style2,
 .themecolor7 .form7-style3,
@@ -8408,7 +8401,7 @@ body.themecolor7.theme-box .everline_boxed header.headerAnimate .wrapbox{
 .themecolor8 .tzcount-left,
 .themecolor8 .tzcountdown4 .countdown,
 .themecolor8 .title_ourstory:after,
-.themecolor8 .tzintroduct h3:after,
+.themecolor8 .dlintroduct h3:after,
 .themecolor8 .form7-wrap,
 .themecolor8 .form7-style2,
 .themecolor8 .form7-style3,
@@ -8983,7 +8976,7 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
     .tzcountdown-left{
         text-align: center;
     }
-    .tzintroduct{
+    .dlintroduct{
         max-width: 370px;
         margin: auto;
         margin-bottom: 30px;
@@ -9740,4 +9733,9 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
     left: 50%;
     margin-left: -35px;
     content: '';
+}
+
+#PostZone1 {
+    background: #f6f6f6;
+    padding: 85px 0 65px 0;
 }

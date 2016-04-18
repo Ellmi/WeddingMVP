@@ -45,6 +45,7 @@ function tzeverline_register_front_end_styles()
         wp_enqueue_style('flexslider', THEME_PATH . '/css/flexslider.css', false );
         wp_enqueue_style('camera', THEME_PATH . '/css/camera.css', false );
         wp_enqueue_style('style', THEME_PATH . '/style.css', false );
+        wp_enqueue_style('js_composer', CSS_PATH . '/js_composer.min.css', false );
 
 
 }
