@@ -9739,3 +9739,41 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
     background: #f6f6f6;
     padding: 85px 0 65px 0;
 }
+
+.cameraSlide:nth-child(2n+1){
+    -webkit-animation:all 10s linear infinite;
+    animation:all 10s linear infinite;
+    animation-name: scale1;
+    -moz-animation:all 10s linear infinite;
+    animation-fill-mode: both;
+}
+
+.cameraSlide:nth-child(2n){
+    -webkit-animation:all 10s linear infinite;
+    animation:all 10s linear infinite;
+    animation-name: scale2;
+    -moz-animation:all 10s linear infinite;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes scale1
+{
+    0%{transform:scale(1,1);}
+    100%  {transform:scale(1.1,1.1);}
+}
+
+@keyframes scale1{
+    0%{transform:scale(1,1);}
+    100%  {transform:scale(1.1,1.1);}
+}
+
+@-webkit-keyframes scale2
+{
+    0%{transform:scale(1.1,1.1);}
+    100%  {transform:scale(1,1);}
+}
+
+@keyframes scale2{
+    0%{transform:scale(1.1,1.1);}
+    100%  {transform:scale(1,1);}
+}
