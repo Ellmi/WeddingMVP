@@ -33,7 +33,7 @@
                                 <div class="dlintroduct">
                                     <h3> WEDDING DECOR</h3>
                                     <div class="dlintroduct-img">
-                                        <a href="" target=""><img src="<?php echo esc_url(get_template_directory_uri().'/images/introduct1.jpg'); ?> " alt="deeplove"></a>
+                                        <a href="" target=""><img src="<?php echo esc_url(get_theme_mod('PostZone1_post1_image', get_template_directory_uri().'/images/introduct1.jpg')); ?> " alt="deeplove"></a>
                                     </div>
                                     <p>
                                         Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!</p>
@@ -47,7 +47,7 @@
                                 <div class="dlintroduct">
                                     <h3> BRIDE &amp; GROOM</h3>
                                     <div class="dlintroduct-img">
-                                        <a href="" target=""><img src="<?php echo esc_url(get_template_directory_uri().'/images/introduct2.jpg'); ?> " alt="deeplove"></a>
+                                        <a href="" target=""><img src="<?php echo esc_url(get_theme_mod('PostZone1_post2_image', get_template_directory_uri().'/images/introduct2.jpg')); ?> " alt="deeplove"></a>
                                     </div>
                                     <p>
                                         Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!            </p>
@@ -61,7 +61,7 @@
                                 <div class="dlintroduct">
                                     <h3> THE PROPOSE</h3>
                                     <div class="dlintroduct-img">
-                                        <a href="" target=""><img src="<?php echo esc_url(get_template_directory_uri().'/images/introduct3.jpg'); ?> " alt="deeplove"></a>
+                                        <a href="" target=""><img src="<?php echo esc_url(get_theme_mod('PostZone1_post3_image', get_template_directory_uri().'/images/introduct3.jpg')); ?> " alt="deeplove"></a>
                                     </div>
                                     <p>
                                         Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!            </p>
