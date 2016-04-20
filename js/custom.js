@@ -35,7 +35,7 @@ jQuery(window).load(function(){
         fx: 'simpleFade',
         pagination: false,
         thumbnails: false,
-        transPeriod: 1000,
+        transPeriod: 0,
         overlayer: false,
         playPause: false,
         hover: false

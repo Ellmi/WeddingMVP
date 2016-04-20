@@ -9740,20 +9740,17 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
     padding: 85px 0 65px 0;
 }
 
+.cameraSlide{
+    -webkit-animation:all 10s ease infinite;
+    animation:all 10s ease infinite;
+    -moz-animation:all 10s ease infinite;
+}
 .cameraSlide:nth-child(2n+1){
-    -webkit-animation:all 10s linear infinite;
-    animation:all 10s linear infinite;
     animation-name: scale1;
-    -moz-animation:all 10s linear infinite;
-    animation-fill-mode: both;
 }
 
 .cameraSlide:nth-child(2n){
-    -webkit-animation:all 10s linear infinite;
-    animation:all 10s linear infinite;
     animation-name: scale2;
-    -moz-animation:all 10s linear infinite;
-    animation-fill-mode: both;
 }
 
 @-webkit-keyframes scale1
