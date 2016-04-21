@@ -32,16 +32,24 @@ function TzTemplateResizeImage(obj){
     var heightStage ;
     var widthImage;
     var heightImage;
+
     obj.each(function (i,el){
         heightStage = jQuery(this).height();
         widthStage = jQuery (this).width();
         var img_url = jQuery(this).find('img').attr('src');
         var image = new Image();
         image.src = img_url;
-        widthImage = image.naturalWidth;
-        heightImage = image.naturalHeight;
-        var tzimg	=	new resizeImage(widthImage, heightImage, widthStage, heightStage);
-        jQuery(this).find('img').css ({ top: tzimg.top, left: tzimg.left, width: tzimg.width, height: tzimg.height });
+        // Add a reference to the original.
+        jQuery(image).data("original",this);
+        // Get accurate measurements from that.
+        jQuery(image).load(function(){
+            widthImage = this.width;
+            heightImage = this.height;
+
+            var tzimg	=	new resizeImage(widthImage, heightImage, widthStage, heightStage);
+
+            jQuery(jQuery(this).data("original")).find('img').css ({ top: tzimg.top, left: tzimg.left, width: tzimg.width, height: tzimg.height });
+        });
     });
 }
 
@@ -91,11 +99,12 @@ function tz_init(){
 
     });
     jQuery('.portfolio-padding').each(function(){
-       var $height_element = jQuery(this).height();
-       var $height_text   = jQuery(this).find('.tzitem-content').height();
-       var $top           = ( $height_element - $height_text ) / 2;
+        var $height_element = jQuery(this).height();
+        var $height_text   = jQuery(this).find('.tzitem-content').height();
+        var $top           = ( $height_element - $height_text ) / 2;
         jQuery(this).find('.tzitem-content').css('top', $top + 'px');
     });
+
     TzTemplateResizeImage(jQuery('.item-image'));
 
 }
@@ -108,4 +117,3 @@ jQuery(window).bind('load resize', function() {
     if (resizeTimer) clearTimeout(resizeTimer);
     resizeTimer = setTimeout("tz_init()", 100);
 });
-

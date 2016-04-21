@@ -64,10 +64,12 @@ function tzeverline_register_front_end_scripts()
     wp_register_script('countdown', JS_PATH . 'countdown.js', false, false, $in_footer=true);
 
     wp_deregister_script('jquery-isotope');
-    wp_register_script('jquery-isotope', JS_PATH . 'jquery.isotope.min.js', false, false, $in_footer=true);
+    wp_register_script('jquery-isotope', THEME_PATH . '/js/jquery.isotope.min.js', false, false, $in_footer=true);
+    wp_enqueue_script('jquery-isotope');
 
     wp_deregister_script('custom-portfolio');
-    wp_register_script('custom-portfolio', JS_PATH . 'custom-portfolio.js', false, false, $in_footer=true);
+    wp_register_script('custom-portfolio', THEME_PATH . '/js/custom-portfolio.js', false, false, $in_footer=true);
+    wp_enqueue_script('custom-portfolio');
 
     wp_deregister_script('jplayer');
     wp_register_script('jplayer', JS_PATH . 'jquery.jplayer.min.js', false, false, $in_footer=true);
