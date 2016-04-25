@@ -31,11 +31,11 @@
                         <div class="vc_column-inner">
                             <div class="wpb_wrapper">
                                 <div class="dlintroduct">
-                                    <h3> WEDDING DECOR</h3>
+                                    <h3 class="post1"><?php echo esc_attr_e(get_theme_mod('PostZone1_post1_title', __('PostZone1 post1 title', 'deeplove')));?></h3>
                                     <div class="dlintroduct-img">
                                         <a href="" target=""><img src="<?php echo esc_url(get_theme_mod('PostZone1_post1_image', get_template_directory_uri().'/images/introduct1.jpg')); ?> " alt="deeplove"></a>
                                     </div>
-                                    <p>
+                                    <p class="post1">
                                         Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!</p>
                                 </div>
                             </div>
@@ -45,11 +45,11 @@
                         <div class="vc_column-inner">
                             <div class="wpb_wrapper">
                                 <div class="dlintroduct">
-                                    <h3> BRIDE &amp; GROOM</h3>
+                                    <h3 class="post2"><?php echo esc_attr_e(get_theme_mod('PostZone1_post2_title', __('PostZone1 post2 title', 'deeplove')));?></h3>
                                     <div class="dlintroduct-img">
                                         <a href="" target=""><img src="<?php echo esc_url(get_theme_mod('PostZone1_post2_image', get_template_directory_uri().'/images/introduct2.jpg')); ?> " alt="deeplove"></a>
                                     </div>
-                                    <p>
+                                    <p class="post2">
                                         Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!            </p>
                                 </div>
                             </div>
@@ -59,11 +59,11 @@
                         <div class="vc_column-inner">
                             <div class="wpb_wrapper">
                                 <div class="dlintroduct">
-                                    <h3> THE PROPOSE</h3>
+                                    <h3 class="post3"><?php echo esc_attr_e(get_theme_mod('PostZone1_post3_title', __('PostZone1 post3 title', 'deeplove')));?></h3>
                                     <div class="dlintroduct-img">
                                         <a href="" target=""><img src="<?php echo esc_url(get_theme_mod('PostZone1_post3_image', get_template_directory_uri().'/images/introduct3.jpg')); ?> " alt="deeplove"></a>
                                     </div>
-                                    <p>
+                                    <p class="post3">
                                         Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!            </p>
                                 </div>
                             </div>

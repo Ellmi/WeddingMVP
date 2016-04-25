@@ -181,6 +181,41 @@ function deeplove_customize_register( $wp_customize ) {
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
 	) ) );
 
+	$wp_customize->add_setting( 'PostZone1_post1_title', array (
+		'default'               => __( 'PostZone1 post1 title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone1_post1_title_control', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
+		'section'               => 'Post1',
+		'settings'              => 'PostZone1_post1_title',
+	) );
+
+	$wp_customize->add_setting( 'PostZone1_post2_title', array (
+		'default'               => __( 'PostZone1 post2 title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone1_post2_title_control', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
+		'section'               => 'Post2',
+		'settings'              => 'PostZone1_post2_title',
+	) );
+
+
+	$wp_customize->add_setting( 'PostZone1_post3_title', array (
+		'default'               => __( 'PostZone1 post3 title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone1_post3_title_control', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
+		'section'               => 'Post3',
+		'settings'              => 'PostZone1_post3_title',
+	) );
+
+
 }
 add_action( 'customize_register', 'deeplove_customize_register' );
 /**

@@ -1229,3 +1229,15 @@ msgstr "这个工作室成立于今年五月这个工作室成立于今年五月
 #: everline/extension/customizer.php:86
 msgid "intro"
 msgstr "工作室介绍"
+
+#: everline/deeplove/deep-love.php:34
+msgid "PostZone1 post1 title"
+msgstr "WEDDING DECOR"
+
+#: everline/deeplove/deep-love.php:48
+msgid "PostZone1 post2 title"
+msgstr "BRIDE &amp; GROOM"
+
+#: everline/deeplove/deep-love.php:62
+msgid "PostZone1 post3 title"
+msgstr "THE PROPOSE"
