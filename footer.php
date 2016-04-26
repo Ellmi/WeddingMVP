@@ -1,46 +1,30 @@
-<?php
-$footer_col = ot_get_option(THEME_PREFIX. '_footer_columns',3);
-$footer_widthl = ot_get_option(THEME_PREFIX. 'footerwidth1',4);
-$footer_width2 = ot_get_option(THEME_PREFIX. 'footerwidth2',4);
-$footer_width3 = ot_get_option(THEME_PREFIX. 'footerwidth3',4);
-$url_widget    = site_url().'/wp-admin/widgets.php';
-?>
-<footer class="tz-footer">
+<footer class="dl-footer">
     <div class="container">
-            <div class="row">
-                <?php
-                if(isset($footer_col) && $footer_col!=""):
-                    for($i=0;$i<$footer_col;$i++):
-                        $j = $i +1;
-                        if($i==0){
-                            $col = $footer_widthl;
-                        }elseif($i==1){
-                            $col = $footer_width2;
-                        }elseif($i==2){
-                            $col = $footer_width3;
-                        }
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12 footerattr">
+                <p>电话:XXXXXXXXXXX</p>
 
-                        ?>
-                        <div class="col-md-<?php echo esc_attr($col); ?> footerattr">
-                            <?php
-                            if(function_exists('dynamic_sidebar') && dynamic_sidebar('Footer '.esc_attr($j).'')):
-                            else:
-                            ?>
-                                <aside>
-                                    <h3 class="module-title title-widget"><a href="<?php echo esc_url($url_widget); ?> ">Click Add footer <?php echo esc_html($j); ?></a></h3>
-                                    <div class="widget_notemp">
+                <p>QQ:XXXXXXXXXX</p>
 
-                                    </div>
-                                </aside>
-                            <?php endif; ?>
-                        </div>
-                        <?php
-                    endfor;
-                endif;
-                ?>
+                <p>微信:XXXXXXXXXX</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 footerattr">
+                <a href="#">
+                    <img src="<?php echo esc_url( get_template_directory_uri().'/images/EverlineTheme.png'); ?> " >
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 footerattr">
+                <p>地址:XXXXXXXXXXX</p>
 
-            </div><!--end class row-->
-    </div><!--end class container-->
+                <p>淘宝店铺:XXXXXXXXXX</p>
+
+                <p>其他:XXXXXXXXXX</p>
+            </div>
+
+        </div>
+        <!--end class row-->
+    </div>
+    <!--end class container-->
 </footer>
 </div>
 <?php wp_footer(); ?>

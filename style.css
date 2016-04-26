@@ -7306,11 +7306,11 @@ div.wpcf7-response-output {
     height: 200px;
     width: 100%;
 }
-.tz-footer{
+.dl-footer{
     background: #d65679;
     padding: 50px 0;
 }
-.tz-footer .module-title{
+.dl-footer .module-title{
     display: block;
     font-size: 16px;
     line-height: 51.2px;
@@ -7320,7 +7320,7 @@ div.wpcf7-response-output {
     text-align: center;
 
 }
-.tz-footer .module-title:after{
+.dl-footer .module-title:after{
     background: none repeat scroll 0 0 #fff;
     bottom: 0;
     content: "";
@@ -7330,7 +7330,7 @@ div.wpcf7-response-output {
     position: absolute;
     width: 70px;
 }
-.tz-footer .module-title span{
+.dl-footer .module-title span{
     letter-spacing: 2px;
     color: #fff;
     text-transform: uppercase;
@@ -7475,7 +7475,7 @@ div.wpcf7-response-output {
 .themecolor1 .tzaddress i,
 .themecolor1 .tzemail i,
 .themecolor1 .wpcf7-submit,
-.themecolor1 .tz-footer,
+.themecolor1 .dl-footer,
 .themecolor1 .tz-header1 .tzlogo a,
 .themecolor1 .tz-header2 .tzlogo a,
 .themecolor1 .blog-post.sticky .everline_sticky,
@@ -7616,7 +7616,7 @@ body.themecolor1.theme-box .everline_boxed header.headerAnimate .wrapbox{
 .themecolor2 .tzaddress i,
 .themecolor2 .tzemail i,
 .themecolor2 .wpcf7-submit,
-.themecolor2 .tz-footer,
+.themecolor2 .dl-footer,
 .themecolor2 .tz-header1 .tzlogo a,
 .themecolor2 .tz-header2 .tzlogo a,
 .themecolor2 .blog-post.sticky .everline_sticky,
@@ -7757,7 +7757,7 @@ body.themecolor2.theme-box .everline_boxed header.headerAnimate .wrapbox{
 .themecolor3 .tzaddress i,
 .themecolor3 .tzemail i,
 .themecolor3 .wpcf7-submit,
-.themecolor3 .tz-footer,
+.themecolor3 .dl-footer,
 .themecolor3 .tz-header1 .tzlogo a,
 .themecolor3 .tz-header2 .tzlogo a,
 .themecolor3 .blog-post.sticky .everline_sticky,
@@ -7897,7 +7897,7 @@ body.themecolor3.theme-box .everline_boxed header.headerAnimate .wrapbox{
 .themecolor4 .tzaddress i,
 .themecolor4 .tzemail i,
 .themecolor4 .wpcf7-submit,
-.themecolor4 .tz-footer,
+.themecolor4 .dl-footer,
 .themecolor4 .tz-header1 .tzlogo a,
 .themecolor4 .tz-header2 .tzlogo a,
 .themecolor4 .blog-post.sticky .everline_sticky,
@@ -8034,7 +8034,7 @@ body.themecolor4.theme-box .everline_boxed header.headerAnimate .wrapbox{
 .themecolor5 .tzaddress i,
 .themecolor5 .tzemail i,
 .themecolor5 .wpcf7-submit,
-.themecolor5 .tz-footer,
+.themecolor5 .dl-footer,
 .themecolor5 .tz-header1 .tzlogo a,
 .themecolor5 .tz-header2 .tzlogo a,
 .themecolor5 .blog-post.sticky .everline_sticky,
@@ -8173,7 +8173,7 @@ body.themecolor5.theme-box .everline_boxed header.headerAnimate .wrapbox{
 .themecolor6 .tzaddress i,
 .themecolor6 .tzemail i,
 .themecolor6 .wpcf7-submit,
-.themecolor6 .tz-footer,
+.themecolor6 .dl-footer,
 .themecolor6 .tz-header1 .tzlogo a,
 .themecolor6 .tz-header2 .tzlogo a,
 .themecolor6 .blog-post.sticky .everline_sticky,
@@ -8310,7 +8310,7 @@ body.themecolor6.theme-box .everline_boxed header.headerAnimate .wrapbox{
 .themecolor7 .tzaddress i,
 .themecolor7 .tzemail i,
 .themecolor7 .wpcf7-submit,
-.themecolor7 .tz-footer,
+.themecolor7 .dl-footer,
 .themecolor7 .tz-header1 .tzlogo a,
 .themecolor7 .tz-header2 .tzlogo a,
 .themecolor7 .blog-post.sticky .everline_sticky,
@@ -8445,7 +8445,7 @@ body.themecolor7.theme-box .everline_boxed header.headerAnimate .wrapbox{
 .themecolor8 .tzaddress i,
 .themecolor8 .tzemail i,
 .themecolor8 .wpcf7-submit,
-.themecolor8 .tz-footer,
+.themecolor8 .dl-footer,
 .themecolor8 .tz-header1 .tzlogo a,
 .themecolor8 .tz-header2 .tzlogo a,
 .themecolor8 .blog-post.sticky .everline_sticky,
@@ -9783,4 +9783,11 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
 
 body#bd{
     overflow-x: hidden;
+}
+
+.dl-footer p{
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
