@@ -35,8 +35,7 @@
                                     <div class="dlintroduct-img">
                                         <a href="" target=""><img src="<?php echo esc_url(get_theme_mod('PostZone1_post1_image', get_template_directory_uri().'/images/introduct1.jpg')); ?> " alt="deeplove"></a>
                                     </div>
-                                    <p class="post1">
-                                        Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!</p>
+                                    <p class="post1"><?php echo esc_attr_e(get_theme_mod('PostZone1_post1_detail', __('PostZone1 post1 detail', 'deeplove'))); ?></p>
                                 </div>
                             </div>
                         </div>
@@ -49,8 +48,7 @@
                                     <div class="dlintroduct-img">
                                         <a href="" target=""><img src="<?php echo esc_url(get_theme_mod('PostZone1_post2_image', get_template_directory_uri().'/images/introduct2.jpg')); ?> " alt="deeplove"></a>
                                     </div>
-                                    <p class="post2">
-                                        Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!            </p>
+                                    <p class="post2"><?php echo esc_attr_e(get_theme_mod('PostZone1_post2_detail', __('PostZone1 post2 detail', 'deeplove'))); ?></p>
                                 </div>
                             </div>
                         </div>
@@ -63,8 +61,7 @@
                                     <div class="dlintroduct-img">
                                         <a href="" target=""><img src="<?php echo esc_url(get_theme_mod('PostZone1_post3_image', get_template_directory_uri().'/images/introduct3.jpg')); ?> " alt="deeplove"></a>
                                     </div>
-                                    <p class="post3">
-                                        Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!            </p>
+                                    <p class="post3"><?php echo esc_attr_e(get_theme_mod('PostZone1_post3_detail', __('PostZone1 post3 detail', 'deeplove'))); ?></p>
                                 </div>
                             </div>
                         </div>

@@ -1241,3 +1241,16 @@ msgstr "BRIDE &amp; GROOM"
 #: everline/deeplove/deep-love.php:62
 msgid "PostZone1 post3 title"
 msgstr "THE PROPOSE"
+
+
+#: everline/deeplove/deep-love.php:38
+msgid "PostZone1 post1 detail"
+msgstr "Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!"
+
+#: everline/deeplove/deep-love.php:51
+msgid "PostZone1 post2 detail"
+msgstr "Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!"
+
+#: everline/deeplove/deep-love.php:64
+msgid "PostZone1 post3 detail"
+msgstr "Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!"

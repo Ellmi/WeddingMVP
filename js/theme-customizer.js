@@ -34,4 +34,25 @@
 			$('#PostZone1 h3.post2').text( to );
 		} );
 	} );
+
+
+	api( 'PostZone1_post1_detail', function( value ) {
+		value.bind( function( to ) {
+			$('#PostZone1 p.post1').text( to );
+		} );
+	} );
+
+
+	api( 'PostZone1_post2_detail', function( value ) {
+		value.bind( function( to ) {
+			$('#PostZone1 p.post2').text( to );
+		} );
+	} );
+
+
+	api( 'PostZone1_post3_detail', function( value ) {
+		value.bind( function( to ) {
+			$('#PostZone1 p.post3').text( to );
+		} );
+	} );
 } )( jQuery );

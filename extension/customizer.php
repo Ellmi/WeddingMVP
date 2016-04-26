@@ -215,6 +215,42 @@ function deeplove_customize_register( $wp_customize ) {
 		'settings'              => 'PostZone1_post3_title',
 	) );
 
+	$wp_customize->add_setting( 'PostZone1_post1_detail', array (
+		'default'               => __( 'PostZone1 post1 detail', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone1_post1_detail', array (
+		'label' =>              __( '设置内容', 'deeplove' ),
+		'section'               => 'Post1',
+		'settings'              => 'PostZone1_post1_detail',
+		'type'           => 'textarea'
+	) );
+
+	$wp_customize->add_setting( 'PostZone1_post2_detail', array (
+		'default'               => __( 'PostZone1 post2 detail', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone1_post2_detail', array (
+		'label' =>              __( '设置内容', 'deeplove' ),
+		'section'               => 'Post2',
+		'settings'              => 'PostZone1_post2_detail',
+		'type'           => 'textarea'
+	) );
+
+	$wp_customize->add_setting( 'PostZone1_post3_detail', array (
+		'default'               => __( 'PostZone1 post3 detail', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone1_post3_detail', array (
+		'label' =>              __( '设置内容', 'deeplove' ),
+		'section'               => 'Post3',
+		'settings'              => 'PostZone1_post3_detail',
+		'type'           => 'textarea'
+	) );
+
 
 }
 add_action( 'customize_register', 'deeplove_customize_register' );
