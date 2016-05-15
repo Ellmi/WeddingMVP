@@ -251,6 +251,134 @@ function deeplove_customize_register( $wp_customize ) {
 		'type'           => 'textarea'
 	) );
 
+	$wp_customize->add_panel( 'PostZone2', array (
+		'title'                 => __( 'PostZone2', 'deeplove' ),
+		'description'           => __( 'Customize the Posts. Deeplove includes 3 posts', 'deeplove' ),
+		'priority'              => 10
+	) );
+
+
+	$wp_customize->add_section( 'Zone2Post1', array (
+		'title'                 => __( 'Post #1', 'deeplove' ),
+		'description'           => __( 'Use the settings below to upload your images, set main callout text and button text & URLs', 'deeplove' ),
+		'panel'                 => 'PostZone2',
+	) );
+
+	$wp_customize->add_section( 'Zone2Post2', array (
+		'title'                 => __( 'Post #2', 'deeplove' ),
+		'description'           => __( 'Use the settings below to upload your images, set main callout text and button text & URLs', 'deeplove' ),
+		'panel'                 => 'PostZone2',
+	) );
+
+	$wp_customize->add_section( 'Zone2Post3', array (
+		'title'                 => __( 'Post #3', 'deeplove' ),
+		'description'           => __( 'Use the settings below to upload your images, set main callout text and button text & URLs', 'deeplove' ),
+		'panel'                 => 'PostZone2',
+	) );
+
+	$wp_customize->add_section( 'Zone2Post4', array (
+		'title'                 => __( 'Post #4', 'deeplove' ),
+		'description'           => __( 'Use the settings below to upload your images, set main callout text and button text & URLs', 'deeplove' ),
+		'panel'                 => 'PostZone2',
+	) );
+
+	$wp_customize->add_section( 'Zone2Post5', array (
+		'title'                 => __( 'Post #5', 'deeplove' ),
+		'description'           => __( 'Use the settings below to upload your images, set main callout text and button text & URLs', 'deeplove' ),
+		'panel'                 => 'PostZone2',
+	) );
+
+	$wp_customize->add_section( 'Zone2Post6', array (
+		'title'                 => __( 'Post #6', 'deeplove' ),
+		'description'           => __( 'Use the settings below to upload your images, set main callout text and button text & URLs', 'deeplove' ),
+		'panel'                 => 'PostZone2',
+	) );
+
+	$wp_customize->add_setting( 'PostZone2_post1_image', array (
+		'default'               => get_template_directory_uri() . '/images/portfolio6.jpg',
+		'transport'             => 'postMessage',
+		'sanitize_callback'     => 'esc_url_raw'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'PostZone2_post1_image_control', array (
+		'label' =>              __( 'Post Image', 'deeplove' ),
+		'section'               => 'Zone2Post1',
+		'mime_type'             => 'image',
+		'settings'              => 'PostZone2_post1_image',
+		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
+	) ) );
+
+	$wp_customize->add_setting( 'PostZone2_post2_image', array (
+		'default'               => get_template_directory_uri() . '/images/portfolio5.jpg',
+		'transport'             => 'postMessage',
+		'sanitize_callback'     => 'esc_url_raw'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'PostZone2_post2_image_control', array (
+		'label' =>              __( 'Post Image', 'deeplove' ),
+		'section'               => 'Zone2Post2',
+		'mime_type'             => 'image',
+		'settings'              => 'PostZone2_post2_image',
+		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
+	) ) );
+
+	$wp_customize->add_setting( 'PostZone2_post3_image', array (
+		'default'               => get_template_directory_uri() . '/images/portfolio4.jpg',
+		'transport'             => 'postMessage',
+		'sanitize_callback'     => 'esc_url_raw'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'PostZone2_post3_image_control', array (
+		'label' =>              __( 'Post Image', 'deeplove' ),
+		'section'               => 'Zone2Post3',
+		'mime_type'             => 'image',
+		'settings'              => 'PostZone2_post3_image',
+		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
+	) ) );
+
+	$wp_customize->add_setting( 'PostZone2_post4_image', array (
+		'default'               => get_template_directory_uri() . '/images/portfolio3.jpg',
+		'transport'             => 'postMessage',
+		'sanitize_callback'     => 'esc_url_raw'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'PostZone2_post4_image_control', array (
+		'label' =>              __( 'Post Image', 'deeplove' ),
+		'section'               => 'Zone2Post4',
+		'mime_type'             => 'image',
+		'settings'              => 'PostZone2_post4_image',
+		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
+	) ) );
+
+	$wp_customize->add_setting( 'PostZone2_post5_image', array (
+		'default'               => get_template_directory_uri() . '/images/portfolio2.jpg',
+		'transport'             => 'postMessage',
+		'sanitize_callback'     => 'esc_url_raw'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'PostZone2_post5_image_control', array (
+		'label' =>              __( 'Post Image', 'deeplove' ),
+		'section'               => 'Zone2Post5',
+		'mime_type'             => 'image',
+		'settings'              => 'PostZone2_post5_image',
+		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
+	) ) );
+
+	$wp_customize->add_setting( 'PostZone2_post6_image', array (
+		'default'               => get_template_directory_uri() . '/images/portfolio1.jpg',
+		'transport'             => 'postMessage',
+		'sanitize_callback'     => 'esc_url_raw'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'PostZone2_post6_image_control', array (
+		'label' =>              __( 'Post Image', 'deeplove' ),
+		'section'               => 'Zone2Post6',
+		'mime_type'             => 'image',
+		'settings'              => 'PostZone2_post6_image',
+		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
+	) ) );
+
+
 
 }
 add_action( 'customize_register', 'deeplove_customize_register' );
