@@ -55,4 +55,10 @@
 			$('#PostZone1 p.post3').text( to );
 		} );
 	} );
+
+	api( 'PostZone3_title', function( value ) {
+		value.bind( function( to ) {
+			$('#PostZone3 .title').text( to );
+		} );
+	} );
 } )( jQuery );

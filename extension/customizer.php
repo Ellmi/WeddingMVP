@@ -378,7 +378,21 @@ function deeplove_customize_register( $wp_customize ) {
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
 	) ) );
 
+	$wp_customize->add_section( 'PostZone3', array (
+		'title'                 => __( 'PostZone3', 'deeplove' ),
+		'description'           => __( 'Customize the Posts. Deeplove includes 3 posts', 'deeplove' ),
+		'priority'              => 10
+	) );
+	$wp_customize->add_setting( 'PostZone3_title', array (
+		'default'               => __( 'PostZone3 title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
 
+	$wp_customize->add_control( 'PostZone1_post2_detail', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
+		'section'               => 'PostZone3',
+		'settings'              => 'PostZone3_title',
+	) );
 
 }
 add_action( 'customize_register', 'deeplove_customize_register' );

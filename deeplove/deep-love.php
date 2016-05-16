@@ -242,7 +242,7 @@ function deeplove_render_homepage()
                     <div class="vc_column-inner ">
                         <div class="wpb_wrapper">
                             <div class="container-custom">
-                                <h2 class="title">FROM OUR BLOG</h2>
+                                <h2 class="title"><?php echo esc_attr_e(get_theme_mod('PostZone3_title', __('PostZone3 title', 'deeplove'))); ?></h2>
 
                                 <div class="row">
                                     <div class="col-md-3 col-sm-6">

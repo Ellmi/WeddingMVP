@@ -9791,3 +9791,8 @@ body#bd{
     font-weight: bold;
     font-size: 1.5rem;
 }
+
+
+#PostZone3 .title {
+    text-align: center;
+}

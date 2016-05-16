@@ -1254,3 +1254,7 @@ msgstr "Thank you for choosing Cosmo Theme and purchasing one of our Premium Wor
 #: everline/deeplove/deep-love.php:64
 msgid "PostZone1 post3 detail"
 msgstr "Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!"
+
+#: everline/deeplove/deep-love.php:64
+msgid "FROM OUR BLOG"
+msgstr "Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!"
