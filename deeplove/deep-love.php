@@ -248,18 +248,12 @@ function deeplove_render_homepage()
                                     <div class="col-md-3 col-sm-6">
                                         <div class="blog-item ">
                                             <div class="blog-image">
-                                                <a href="http://wordpress.templaza.net/everline/nulla-facilisis-vitae/"><img
-                                                        width="270" height="170"
-                                                        src="http://wordpress.templaza.net/everline/wp-content/uploads/2015/02/bloghome4.jpg"
-                                                        class="attachment-medium size-medium wp-post-image"
-                                                        alt="bloghome4"></a>
+                                                <a href="#"><img width="270" height="170" src="<?php echo esc_url(get_theme_mod('PostZone3_post1_image', get_template_directory_uri() . '/images/bloghome4.jpg')); ?> "></a>
                                             </div>
                                             <div class="blog-description">
-                                                <h3>
-                                                    <a href="http://wordpress.templaza.net/everline/nulla-facilisis-vitae/">Nulla
-                                                        facilisis vitae</a></h3>
+                                                <h3 class="post1"><?php echo esc_attr_e(get_theme_mod('PostZone3_post1_title', __('PostZone3 post1 title', 'deeplove')));?>facilisis vitae</h3>
 
-                                                <p>Thank you for choosing CosmoThemes and purchasing one of our Premium
+                                                <p class="post1"><?php echo esc_attr_e(get_theme_mod('PostZone3_post1_detail', __('PostZone3 post1 detail', 'deeplove')));?>Thank you for choosing CosmoThemes and purchasing one of our Premium
                                                     WordPress Themes your choice is greatly.</p>
                                             </div>
                                         </div>
@@ -267,16 +261,11 @@ function deeplove_render_homepage()
                                     <div class="col-md-3 col-sm-6">
                                         <div class="blog-item ">
                                             <div class="blog-image">
-                                                <a href="http://wordpress.templaza.net/everline/plan-your-trip-2/"><img
-                                                        width="270" height="170"
-                                                        src="http://wordpress.templaza.net/everline/wp-content/uploads/2015/02/bloghome3.jpg"
-                                                        class="attachment-medium size-medium wp-post-image"
-                                                        alt="bloghome3"></a>
+                                                <a href="#"><img width="270" height="170" src="<?php echo esc_url(get_theme_mod('PostZone3_post2_image', get_template_directory_uri() . '/images/bloghome3.jpg')); ?>"></a>
                                             </div>
                                             <div class="blog-description">
-                                                <h3><a href="http://wordpress.templaza.net/everline/plan-your-trip-2/">Mauris
-                                                        viverra ipsum</a></h3>
-                                                <p>Thank you for choosing CosmoThemes and purchasing one of our Premium
+                                                <h3 class="post2"><?php echo esc_attr_e(get_theme_mod('PostZone3_post2_title', __('PostZone3 post2 title', 'deeplove')));?>viverra ipsum</h3>
+                                                <p class="post2"><?php echo esc_attr_e(get_theme_mod('PostZone3_post2_detail', __('PostZone3 post2 detail', 'deeplove')));?>Thank you for choosing CosmoThemes and purchasing one of our Premium
                                                     WordPress Themes your choice is greatly.</p>
                                             </div>
                                         </div>
@@ -284,16 +273,11 @@ function deeplove_render_homepage()
                                     <div class="col-md-3 col-sm-6">
                                         <div class="blog-item ">
                                             <div class="blog-image">
-                                                <a href="http://wordpress.templaza.net/everline/your-honeymoon/"><img
-                                                        width="270" height="170"
-                                                        src="http://wordpress.templaza.net/everline/wp-content/uploads/2015/02/bloghome2.jpg"
-                                                        class="attachment-medium size-medium wp-post-image"
-                                                        alt="bloghome2"></a>
+                                                <a href="#"><img width="270" height="170" src="<?php echo esc_url(get_theme_mod('PostZone3_post3_image', get_template_directory_uri() . '/images/bloghome2.jpg')); ?>"></a>
                                             </div>
                                             <div class="blog-description">
-                                                <h3><a href="http://wordpress.templaza.net/everline/your-honeymoon/">YOUR
-                                                        HONEYMOON</a></h3>
-                                                <p>Thank you for choosing CosmoThemes and purchasing one of our Premium
+                                                <h3 class="post3"><?php echo esc_attr_e(get_theme_mod('PostZone3_post3_title', __('PostZone3 post3 title', 'deeplove')));?>YOUR HONEYMOON</h3>
+                                                <p class="post3"><?php echo esc_attr_e(get_theme_mod('PostZone3_post3_detail', __('PostZone3 post3 detail', 'deeplove')));?>Thank you for choosing CosmoThemes and purchasing one of our Premium
                                                     WordPress Themes your choice is greatly.</p>
                                            </div>
                                         </div>
@@ -301,23 +285,17 @@ function deeplove_render_homepage()
                                     <div class="col-md-3 col-sm-6">
                                         <div class="blog-item ">
                                             <div class="blog-image">
-                                                <a href="http://wordpress.templaza.net/everline/plan-your-trip/"><img
-                                                        width="270" height="170"
-                                                        src="http://wordpress.templaza.net/everline/wp-content/uploads/2015/02/bloghome1.jpg"
-                                                        class="attachment-medium size-medium wp-post-image"
-                                                        alt="bloghome1"></a>
+                                                <a href="#"><img width="270" height="170" src="<?php echo esc_url(get_theme_mod('PostZone3_post4_image', get_template_directory_uri() . '/images/bloghome1.jpg')); ?>" class="post4" </a>
                                             </div>
                                             <div class="blog-description">
-                                                <h3><a href="http://wordpress.templaza.net/everline/plan-your-trip/">PLAN
-                                                        YOUR TRIP</a></h3>
-                                                <p>Thank you for choosing CosmoThemes and purchasing one of our Premium
+                                                <h3 class="post4"><?php echo esc_attr_e(get_theme_mod('PostZone3_post4_title', __('PostZone3 post4 title', 'deeplove')));?>PLAN YOUR TRIP</h3>
+                                                <p class="post4"><?php echo esc_attr_e(get_theme_mod('PostZone3_post4_detail', __('PostZone3 post4 detail', 'deeplove')));?>Thank you for choosing CosmoThemes and purchasing one of our Premium
                                                     WordPress Themes your choice is greatly.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>

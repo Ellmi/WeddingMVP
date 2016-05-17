@@ -378,10 +378,16 @@ function deeplove_customize_register( $wp_customize ) {
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
 	) ) );
 
-	$wp_customize->add_section( 'PostZone3', array (
+	$wp_customize->add_panel( 'PostZone3', array (
 		'title'                 => __( 'PostZone3', 'deeplove' ),
 		'description'           => __( 'Customize the Posts. Deeplove includes 3 posts', 'deeplove' ),
 		'priority'              => 10
+	) );
+
+	$wp_customize->add_section( 'PostZone3Title', array (
+		'title'                 => __( 'Title', 'deeplove' ),
+		'description'           => __( 'Customize the Posts. Deeplove includes 3 posts', 'deeplove' ),
+		'panel'              => 'PostZone3'
 	) );
 	$wp_customize->add_setting( 'PostZone3_title', array (
 		'default'               => __( 'PostZone3 title', 'deeplove' ),
@@ -390,9 +396,129 @@ function deeplove_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( 'PostZone1_post2_detail', array (
 		'label' =>              __( '设置标题', 'deeplove' ),
-		'section'               => 'PostZone3',
-		'settings'              => 'PostZone3_title',
+		'section'               => 'PostZone3Title',
+		'settings'              => 'PostZone3_title'
 	) );
+
+	$wp_customize->add_section( 'PostZone3Post1', array (
+		'title'                 => __( 'Post1', 'deeplove' ),
+		'description'           => __( 'Customize the Posts. Deeplove includes 3 posts', 'deeplove' ),
+		'panel'                 => 'PostZone3'
+	) );
+
+	$wp_customize->add_setting( 'PostZone3_post1_title', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone3_post1_title', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
+		'section'               => 'PostZone3Post1',
+		'settings'              => 'PostZone3_post1_title',
+	) );
+
+	$wp_customize->add_setting( 'PostZone3_post1_detail', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone3_post1_detail', array (
+		'label' =>              __( '设置内容', 'deeplove' ),
+		'section'               => 'PostZone3Post1',
+		'settings'              => 'PostZone3_post1_detail',
+		'type'           => 'textarea'
+	) );
+
+	$wp_customize->add_section( 'PostZone3Post2', array (
+		'title'                 => __( 'Post2', 'deeplove' ),
+		'description'           => __( 'Customize the Posts. Deeplove includes 3 posts', 'deeplove' ),
+		'panel'                 => 'PostZone3'
+	) );
+
+	$wp_customize->add_setting( 'PostZone3_post2_title', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone3_post2_title', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
+		'section'               => 'PostZone3Post2',
+		'settings'              => 'PostZone3_post2_title',
+	) );
+
+	$wp_customize->add_setting( 'PostZone3_post2_detail', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone3_post2_detail', array (
+		'label' =>              __( '设置内容', 'deeplove' ),
+		'section'               => 'PostZone3Post2',
+		'settings'              => 'PostZone3_post2_detail',
+		'type'           => 'textarea'
+	) );
+
+	$wp_customize->add_section( 'PostZone3Post3', array (
+		'title'                 => __( 'Post3', 'deeplove' ),
+		'description'           => __( 'Customize the Posts. Deeplove includes 3 posts', 'deeplove' ),
+		'panel'                 => 'PostZone3'
+	) );
+
+	$wp_customize->add_setting( 'PostZone3_post3_title', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone3_post3_title', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
+		'section'               => 'PostZone3Post3',
+		'settings'              => 'PostZone3_post3_title',
+	) );
+
+	$wp_customize->add_setting( 'PostZone3_post3_detail', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone3_post3_detail', array (
+		'label' =>              __( '设置内容', 'deeplove' ),
+		'section'               => 'PostZone3Post3',
+		'settings'              => 'PostZone3_post3_detail',
+		'type'           => 'textarea'
+	) );
+
+
+
+	$wp_customize->add_section( 'PostZone3Post4', array (
+		'title'                 => __( 'Post4', 'deeplove' ),
+		'description'           => __( 'Customize the Posts. Deeplove includes 3 posts', 'deeplove' ),
+		'panel'                 => 'PostZone3'
+	) );
+
+	$wp_customize->add_setting( 'PostZone3_post4_title', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone3_post4_title', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
+		'section'               => 'PostZone3Post4',
+		'settings'              => 'PostZone3_post4_title',
+	) );
+
+	$wp_customize->add_setting( 'PostZone3_post4_detail', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone3_post4_detail', array (
+		'label' =>              __( '设置内容', 'deeplove' ),
+		'section'               => 'PostZone3Post4',
+		'settings'              => 'PostZone3_post4_detail',
+		'type'           => 'textarea'
+	) );
+
+
 
 }
 add_action( 'customize_register', 'deeplove_customize_register' );
