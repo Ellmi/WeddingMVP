@@ -406,6 +406,21 @@ function deeplove_customize_register( $wp_customize ) {
 		'panel'                 => 'PostZone3'
 	) );
 
+	$wp_customize->add_setting( 'PostZone3_post1_image', array (
+		'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+		'transport'             => 'postMessage',
+		'sanitize_callback'     => 'esc_url_raw'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'PostZone3_post1_image_control', array (
+		'label' =>              __( 'Background Image', 'deeplove' ),
+		'section'               => 'PostZone3Post1',
+		'mime_type'             => 'image',
+		'settings'              => 'PostZone3_post1_image',
+		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
+	) ) );
+
+
 	$wp_customize->add_setting( 'PostZone3_post1_title', array (
 		'default'               => __( 'office introduction title', 'deeplove' ),
 		'transport' => 'postMessage'
@@ -435,6 +450,21 @@ function deeplove_customize_register( $wp_customize ) {
 		'panel'                 => 'PostZone3'
 	) );
 
+
+	$wp_customize->add_setting( 'PostZone3_post2_image', array (
+		'default'               => get_template_directory_uri() . '/images/bloghome3.jpg',
+		'transport'             => 'postMessage',
+		'sanitize_callback'     => 'esc_url_raw'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'PostZone3_post2_image_control', array (
+		'label' =>              __( 'Background Image', 'deeplove' ),
+		'section'               => 'PostZone3Post2',
+		'mime_type'             => 'image',
+		'settings'              => 'PostZone3_post2_image',
+		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
+	) ) );
+
 	$wp_customize->add_setting( 'PostZone3_post2_title', array (
 		'default'               => __( 'office introduction title', 'deeplove' ),
 		'transport' => 'postMessage'
@@ -463,6 +493,20 @@ function deeplove_customize_register( $wp_customize ) {
 		'description'           => __( 'Customize the Posts. Deeplove includes 3 posts', 'deeplove' ),
 		'panel'                 => 'PostZone3'
 	) );
+
+	$wp_customize->add_setting( 'PostZone3_post3_image', array (
+		'default'               => get_template_directory_uri() . '/images/bloghome2.jpg',
+		'transport'             => 'postMessage',
+		'sanitize_callback'     => 'esc_url_raw'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'PostZone3_post3_image_control', array (
+		'label' =>              __( 'Background Image', 'deeplove' ),
+		'section'               => 'PostZone3Post3',
+		'mime_type'             => 'image',
+		'settings'              => 'PostZone3_post3_image',
+		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
+	) ) );
 
 	$wp_customize->add_setting( 'PostZone3_post3_title', array (
 		'default'               => __( 'office introduction title', 'deeplove' ),
@@ -495,6 +539,20 @@ function deeplove_customize_register( $wp_customize ) {
 		'panel'                 => 'PostZone3'
 	) );
 
+	$wp_customize->add_setting( 'PostZone3_post4_image', array (
+		'default'               => get_template_directory_uri() . '/images/bloghome1.jpg',
+		'transport'             => 'postMessage',
+		'sanitize_callback'     => 'esc_url_raw'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'PostZone3_post4_image_control', array (
+		'label' =>              __( 'Background Image', 'deeplove' ),
+		'section'               => 'PostZone3Post4',
+		'mime_type'             => 'image',
+		'settings'              => 'PostZone3_post4_image',
+		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
+	) ) );
+	
 	$wp_customize->add_setting( 'PostZone3_post4_title', array (
 		'default'               => __( 'office introduction title', 'deeplove' ),
 		'transport' => 'postMessage'
