@@ -308,6 +308,30 @@ function deeplove_customize_register( $wp_customize ) {
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
 	) ) );
 
+
+	$wp_customize->add_setting( 'PostZone2_post1_title', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone2_post1_title', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
+		'section'               => 'Zone2Post1',
+		'settings'              => 'PostZone2_post1_title',
+	) );
+
+
+	$wp_customize->add_setting( 'PostZone2_post1_date', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone2_post1_date', array (
+		'label' =>              __( '设置日期', 'deeplove' ),
+		'section'               => 'Zone2Post1',
+		'settings'              => 'PostZone2_post1_date',
+	) );
+
 	$wp_customize->add_setting( 'PostZone2_post2_image', array (
 		'default'               => get_template_directory_uri() . '/images/portfolio5.jpg',
 		'transport'             => 'postMessage',
@@ -321,6 +345,30 @@ function deeplove_customize_register( $wp_customize ) {
 		'settings'              => 'PostZone2_post2_image',
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
 	) ) );
+
+
+	$wp_customize->add_setting( 'PostZone2_post2_title', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone2_post2_title', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
+		'section'               => 'Zone2Post2',
+		'settings'              => 'PostZone2_post2_title',
+	) );
+
+
+	$wp_customize->add_setting( 'PostZone2_post2_date', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone2_post2_date', array (
+		'label' =>              __( '设置日期', 'deeplove' ),
+		'section'               => 'Zone2Post2',
+		'settings'              => 'PostZone2_post2_date',
+	) );
 
 	$wp_customize->add_setting( 'PostZone2_post3_image', array (
 		'default'               => get_template_directory_uri() . '/images/portfolio4.jpg',
@@ -336,6 +384,30 @@ function deeplove_customize_register( $wp_customize ) {
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
 	) ) );
 
+
+	$wp_customize->add_setting( 'PostZone2_post3_title', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone2_post3_title', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
+		'section'               => 'Zone2Post3',
+		'settings'              => 'PostZone2_post3_title',
+	) );
+
+
+	$wp_customize->add_setting( 'PostZone2_post3_date', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone2_post3_date', array (
+		'label' =>              __( '设置日期', 'deeplove' ),
+		'section'               => 'Zone2Post3',
+		'settings'              => 'PostZone2_post3_date',
+	) );
+
 	$wp_customize->add_setting( 'PostZone2_post4_image', array (
 		'default'               => get_template_directory_uri() . '/images/portfolio3.jpg',
 		'transport'             => 'postMessage',
@@ -349,6 +421,29 @@ function deeplove_customize_register( $wp_customize ) {
 		'settings'              => 'PostZone2_post4_image',
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
 	) ) );
+
+	$wp_customize->add_setting( 'PostZone2_post4_title', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone2_post4_title', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
+		'section'               => 'Zone2Post4',
+		'settings'              => 'PostZone2_post4_title',
+	) );
+
+
+	$wp_customize->add_setting( 'PostZone2_post4_date', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone2_post4_date', array (
+		'label' =>              __( '设置日期', 'deeplove' ),
+		'section'               => 'Zone2Post4',
+		'settings'              => 'PostZone2_post4_date',
+	) );
 
 	$wp_customize->add_setting( 'PostZone2_post5_image', array (
 		'default'               => get_template_directory_uri() . '/images/portfolio2.jpg',
@@ -364,6 +459,30 @@ function deeplove_customize_register( $wp_customize ) {
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
 	) ) );
 
+
+	$wp_customize->add_setting( 'PostZone2_post5_title', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone2_post5_title', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
+		'section'               => 'Zone2Post5',
+		'settings'              => 'PostZone2_post5_title',
+	) );
+
+
+	$wp_customize->add_setting( 'PostZone2_post5_date', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone2_post5_date', array (
+		'label' =>              __( '设置日期', 'deeplove' ),
+		'section'               => 'Zone2Post5',
+		'settings'              => 'PostZone2_post5_date',
+	) );
+
 	$wp_customize->add_setting( 'PostZone2_post6_image', array (
 		'default'               => get_template_directory_uri() . '/images/portfolio1.jpg',
 		'transport'             => 'postMessage',
@@ -377,6 +496,30 @@ function deeplove_customize_register( $wp_customize ) {
 		'settings'              => 'PostZone2_post6_image',
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
 	) ) );
+
+
+	$wp_customize->add_setting( 'PostZone2_post6_title', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone2_post6_title', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
+		'section'               => 'Zone2Post6',
+		'settings'              => 'PostZone2_post6_title',
+	) );
+
+
+	$wp_customize->add_setting( 'PostZone2_post6_date', array (
+		'default'               => __( 'office introduction title', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone2_post6_date', array (
+		'label' =>              __( '设置日期', 'deeplove' ),
+		'section'               => 'Zone2Post6',
+		'settings'              => 'PostZone2_post6_date',
+	) );
 
 	$wp_customize->add_panel( 'PostZone3', array (
 		'title'                 => __( 'PostZone3', 'deeplove' ),
@@ -552,7 +695,7 @@ function deeplove_customize_register( $wp_customize ) {
 		'settings'              => 'PostZone3_post4_image',
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
 	) ) );
-	
+
 	$wp_customize->add_setting( 'PostZone3_post4_title', array (
 		'default'               => __( 'office introduction title', 'deeplove' ),
 		'transport' => 'postMessage'

@@ -104,12 +104,10 @@ function deeplove_render_homepage()
                         <div class="tzitem-content" style="top: 137px;">
                             <i class="fa fa-heart-o tzicon"></i>
 
-                            <h3><a href="#">Praesent&amp; orci</a></h3>
+                            <h3 class="post1"><?php echo esc_attr_e(get_theme_mod('PostZone2_post1_title', __('PostZone2 post1 title', 'deeplove')));?>Praesent&amp; orci</h3>
 
                             <div class="tzmeta">
-                                <span>February 5, 2015 /</span>
-                                <span class="tztag"><a href="#" rel="tag">NewYork</a>,<a href="#"
-                                                                                         rel="tag">USA</a></span>
+                                <span class="post1"><?php echo esc_attr_e(get_theme_mod('PostZone2_post1_date', __('PostZone2 post1 date', 'deeplove')));?>February 5, 2015 </span>
                             </div>
                         </div>
                     </div>
@@ -128,10 +126,9 @@ function deeplove_render_homepage()
                         <div class="tzitem-content" style="top: 137px;">
                             <i class="fa fa-heart-o tzicon"></i>
 
-                            <h3><a href="#">Efficitur &amp; lacus</a></h3>
+                            <h3 class="post2"><?php echo esc_attr_e(get_theme_mod('PostZone2_post2_title', __('PostZone2 post2 title', 'deeplove')));?>Efficitur &amp; lacus</h3>
 
-                            <div class="tzmeta"><span>February 5, 2015 /</span><span class="tztag">
-                                    <a href="#" rel="tag">NewYork</a>,<a href="#" rel="tag">USA</a>                            </span>
+                            <div class="tzmeta"><span class="post2"><?php echo esc_attr_e(get_theme_mod('PostZone2_post1_date', __('PostZone2 post2 date', 'deeplove')));?>February 5, 2015</span>
                             </div>
                         </div>
                     </div>
@@ -150,13 +147,10 @@ function deeplove_render_homepage()
                         <div class="tzitem-content" style="top: 137px;">
                             <i class="fa fa-heart-o tzicon"></i>
 
-                            <h3><a href="#">Donec&amp; lacus</a></h3>
+                            <h3 class="post3"><?php echo esc_attr_e(get_theme_mod('PostZone2_post2_title', __('PostZone2 post3 title', 'deeplove')));?>Donec&amp; lacus</h3>
 
                             <div class="tzmeta">
-                                <span>February 5, 2015 /</span>
-                    <span class="tztag">
-                        <a href="#" rel="tag">NewYork</a>,<a href="#"
-                                                             rel="tag">USA</a>                            </span>
+                                <span class="post3"><?php echo esc_attr_e(get_theme_mod('PostZone2_post2_date class="post3" ', __('PostZone2 post3 date', 'deeplove')));?>February 5, 2015</span>
                             </div>
                         </div>
                     </div>
@@ -175,11 +169,10 @@ function deeplove_render_homepage()
                         <div class="tzitem-content" style="top: 137px;">
                             <i class="fa fa-heart-o tzicon"></i>
 
-                            <h3><a href="#">Reader&amp; Mauris</a></h3>
+                            <h3 class="post4"><?php echo esc_attr_e(get_theme_mod('PostZone2_post4_title', __('PostZone2 post4 title', 'deeplove')));?>Reader&amp; Mauris</h3>
 
                             <div class="tzmeta">
-                                <span>February 5, 2015 /</span>
-                                <span class="tztag"><a href="#" rel="tag">NewYork</a>,<a href="#" rel="tag">USA</a>                            </span>
+                                <span class="post4"><?php echo esc_attr_e(get_theme_mod('PostZone2_post4_date', __('PostZone2 post4 date', 'deeplove')));?>February 5, 2015 </span>
                             </div>
                         </div>
                     </div>
@@ -198,11 +191,10 @@ function deeplove_render_homepage()
                         <div class="tzitem-content" style="top: 137px;">
                             <i class="fa fa-heart-o tzicon"></i>
 
-                            <h3><a href="#">Aliquam&amp; Miley</a></h3>
+                            <h3 class="post5"><?php echo esc_attr_e(get_theme_mod('PostZone2_post5_title', __('PostZone2 post5 title', 'deeplove')));?>Aliquam&amp; Miley</h3>
 
                             <div class="tzmeta">
-                                <span>February 5, 2015 /</span>
-                                    <span class="tztag"><a href="#" rel="tag">NewYork</a>,<a href="#" rel="tag">USA</a>
+                                <span class="post5"><?php echo esc_attr_e(get_theme_mod('PostZone2_post5_date', __('PostZone2 post5 date', 'deeplove')));?>February 5, 2015 /</span>
                             </div>
                         </div>
                     </div>
@@ -221,12 +213,10 @@ function deeplove_render_homepage()
                         <div class="tzitem-content" style="top: 137px;">
                             <i class="fa fa-heart-o tzicon"></i>
 
-                            <h3><a href="#">James&amp; Miley</a></h3>
+                            <h3 class="post6"><?php echo esc_attr_e(get_theme_mod('PostZone2_post6_title', __('PostZone2 post6 title', 'deeplove')));?>James&amp; Miley</h3>
 
                             <div class="tzmeta">
-                                <span>February 5, 2015 /</span>
-                                <span class="tztag"><a href="#" rel="tag">NewYork</a>,<a href="#"
-                                                                                         rel="tag">USA</a></span>
+                                <span class="post6"><?php echo esc_attr_e(get_theme_mod('PostZone2_post6_date', __('PostZone2 post6 date', 'deeplove')));?>February 5, 2015</span>
                             </div>
                         </div>
                     </div>
@@ -264,9 +254,9 @@ function deeplove_render_homepage()
                                                 <a href="#"><img width="270" height="170" src="<?php echo esc_url(get_theme_mod('PostZone3_post2_image', get_template_directory_uri() . '/images/bloghome3.jpg')); ?>"></a>
                                             </div>
                                             <div class="blog-description">
+                                                    WordPress Themes your choice is greatly.</p>
                                                 <h3 class="post2"><?php echo esc_attr_e(get_theme_mod('PostZone3_post2_title', __('PostZone3 post2 title', 'deeplove')));?>viverra ipsum</h3>
                                                 <p class="post2"><?php echo esc_attr_e(get_theme_mod('PostZone3_post2_detail', __('PostZone3 post2 detail', 'deeplove')));?>Thank you for choosing CosmoThemes and purchasing one of our Premium
-                                                    WordPress Themes your choice is greatly.</p>
                                             </div>
                                         </div>
                                     </div>
