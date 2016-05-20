@@ -5,15 +5,15 @@
 ( function( $ ) {
 	api = wp.customize;
 
-	api( 'office_intro_title', function( value ) {
+	api( 'office_title', function( value ) {
 		value.bind( function( to ) {
-			$('#office-intro .title').text( to );
+			$('#office .title').text( to );
 		} );
 	} );
 
-	api( 'office_intro_detail', function( value ) {
+	api( 'office_detail', function( value ) {
 		value.bind( function( to ) {
-			$('#office-intro .detail').text( to );
+			$('#office .detail').text( to );
 		} );
 	} );
 

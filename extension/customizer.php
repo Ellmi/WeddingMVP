@@ -12,102 +12,105 @@
  */
  
 function deeplove_customize_register( $wp_customize ) {
+
+	//Sliders
 	$wp_customize->add_panel( 'slider', array (
-		'title'                 => __( 'Slider', 'deeplove' ),
+		'title'                 => __( '幻灯片', 'deeplove' ),
 		'description'           => __( 'Customize the slider. Deeplove includes 3 slides', 'deeplove' ),
 		'priority'              => 10
 	) );
 
+	// 1st slide
 	$wp_customize->add_section( 'slide1', array (
 		'title'                 => __( 'Slide #1', 'deeplove' ),
 		'description'           => __( 'Use the settings below to upload your images, set main callout text and button text & URLs', 'deeplove' ),
 		'panel'                 => 'slider',
 	) );
 
+	$wp_customize->add_setting( 'slide1_image', array (
+		'default'               => get_template_directory_uri() . '/images/slides/slider1.jpg',
+		'transport'             => 'postMessage',
+		'sanitize_callback'     => 'esc_url_raw'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'slide1_image', array (
+		'label' =>              __( 'Background Image', 'deeplove' ),
+		'section'               => 'slide1',
+		'mime_type'             => 'image',
+		'settings'              => 'slide1_image',
+		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
+	) ) );
+
+	// 2nd slide
 	$wp_customize->add_section( 'slide2', array (
 		'title'                 => __( 'Slide #2', 'deeplove' ),
 		'description'           => __( 'Use the settings below to upload your images, set main callout text and button text & URLs', 'deeplove' ),
 		'panel'                 => 'slider',
 	) );
 
+	$wp_customize->add_setting( 'slide2_image', array (
+		'default'               => get_template_directory_uri() . '/images/slides/slider2.jpg',
+		'transport'             => 'postMessage',
+		'sanitize_callback'     => 'esc_url_raw'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'slide2_image', array (
+		'label' =>              __( 'Background Image', 'deeplove' ),
+		'section'               => 'slide2',
+		'mime_type'             => 'image',
+		'settings'              => 'slide2_image',
+		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
+	) ) );
+
+	// 3rd slide
 	$wp_customize->add_section( 'slide3', array (
 		'title'                 => __( 'Slide #3', 'deeplove' ),
 		'description'           => __( 'Use the settings below to upload your images, set main callout text and button text & URLs', 'deeplove' ),
 		'panel'                 => 'slider',
 	) );
 
-	// 1st slide
-	$wp_customize->add_setting( 'slide_image1', array (
-		'default'               => get_template_directory_uri() . '/images/slides/slider1.jpg',
-		'transport'             => 'postMessage',
-		'sanitize_callback'     => 'esc_url_raw'
-	) );
-
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'image_control1', array (
-		'label' =>              __( 'Background Image', 'deeplove' ),
-		'section'               => 'slide1',
-		'mime_type'             => 'image',
-		'settings'              => 'slide_image1',
-		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
-	) ) );
-
-	// 2nd slide
-	$wp_customize->add_setting( 'slide_image2', array (
-		'default'               => get_template_directory_uri() . '/images/slides/slider2.jpg',
-		'transport'             => 'postMessage',
-		'sanitize_callback'     => 'esc_url_raw'
-	) );
-
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'image_control2', array (
-		'label' =>              __( 'Background Image', 'deeplove' ),
-		'section'               => 'slide2',
-		'mime_type'             => 'image',
-		'settings'              => 'slide_image2',
-		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
-	) ) );
-
-	// 3rd slide
-	$wp_customize->add_setting( 'slide_image3', array (
+	$wp_customize->add_setting( 'slide3_image', array (
 		'default'               => get_template_directory_uri() . '/images/slides/slider3.jpg',
 		'transport'             => 'postMessage',
 		'sanitize_callback'     => 'esc_url_raw'
 	) );
 
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'image_control3', array (
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'slide3_image', array (
 		'label' =>              __( 'Background Image', 'deeplove' ),
 		'section'               => 'slide3',
 		'mime_type'             => 'image',
-		'settings'              => 'slide_image3',
+		'settings'              => 'slide3_image',
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
 	) ) );
 
-	//introduction
-	$wp_customize->add_section( 'office_intro', array (
+
+	//office introduction
+	$wp_customize->add_section( 'office', array (
 		'title'                 => __( '工作室介绍', 'deeplove' ),
 		'description'           => __( '', 'deeplove' ),
 		'priority'              => 11
 	) );
 
-	$wp_customize->add_setting( 'office_intro_title', array (
+	$wp_customize->add_setting( 'office_title', array (
 		'default'               => __( 'office introduction title', 'deeplove' ),
 		'transport' => 'postMessage'
 	) );
 
-	$wp_customize->add_control( 'office_intro_title', array (
+	$wp_customize->add_control( 'office_title', array (
 		'label' =>              __( '设置标题', 'deeplove' ),
-		'section'               => 'office_intro',
-		'settings'              => 'office_intro_title',
+		'section'               => 'office',
+		'settings'              => 'office_title',
 	) );
 
-	$wp_customize->add_setting( 'office_intro_detail', array (
+	$wp_customize->add_setting( 'office_detail', array (
 		'default'               => __( 'office introduction title', 'deeplove' ),
 		'transport' => 'postMessage'
 	) );
 
-	$wp_customize->add_control( 'office_intro_detail', array (
+	$wp_customize->add_control( 'office_detail', array (
 		'label' =>              __( '设置内容', 'deeplove' ),
-		'section'               => 'office_intro',
-		'settings'              => 'office_intro_detail',
+		'section'               => 'office',
+		'settings'              => 'office_detail',
 		'type'           => 'textarea'
 	) );
 

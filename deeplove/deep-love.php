@@ -2,32 +2,24 @@
 function deeplove_render_homepage()
 { ?>
 
-    <div id="deeplove-jumbotron">
+    <div id="deeplove-slider">
 
-        <div id="deeplove-slider" class="hero">
+        <div data-thumb="<?php echo esc_url(get_theme_mod('slide1_image', get_template_directory_uri() . '/images/slides/slider1.jpg')); ?>"
+             data-src="<?php echo esc_url(get_theme_mod('slide1_image', get_template_directory_uri() . '/images/slides/slider1.jpg')); ?>"></div>
 
-            <div id="slide1"
-                 data-thumb="<?php echo esc_url(get_theme_mod('slide_image1', get_template_directory_uri() . '/images/slides/slider1.jpg')); ?>"
-                 data-src="<?php echo esc_url(get_theme_mod('slide_image1', get_template_directory_uri() . '/images/slides/slider1.jpg')); ?>"></div>
+        <div data-thumb="<?php echo esc_url(get_theme_mod('slide2_image', get_template_directory_uri() . '/images/slides/slider2.jpg')); ?>"
+             data-src="<?php echo esc_url(get_theme_mod('slide2_image', get_template_directory_uri() . '/images/slides/slider2.jpg')); ?>"></div>
 
-            <div id="slide2"
-                 data-thumb="<?php echo esc_url(get_theme_mod('slide_image2', get_template_directory_uri() . '/images/slides/slider2.jpg')); ?>"
-                 data-src="<?php echo esc_url(get_theme_mod('slide_image2', get_template_directory_uri() . '/images/slides/slider2.jpg')); ?>"></div>
-
-            <div id="slide3"
-                 data-thumb="<?php echo esc_url(get_theme_mod('slide_image3', get_template_directory_uri() . '/images/slides/slider3.jpg')); ?>"
-                 data-src="<?php echo esc_url(get_theme_mod('slide_image3', get_template_directory_uri() . '/images/slides/slider3.jpg')); ?>"></div>
-        </div>
-
+        <div data-thumb="<?php echo esc_url(get_theme_mod('slide3_image', get_template_directory_uri() . '/images/slides/slider3.jpg')); ?>"
+             data-src="<?php echo esc_url(get_theme_mod('slide3_image', get_template_directory_uri() . '/images/slides/slider3.jpg')); ?>"></div>
     </div>
 
     <div class="clear"></div>
 
-    <div id="office-intro">
+    <div id="office">
         <div class="container">
-            <h4 class="title"><?php echo esc_attr_e(get_theme_mod('office_intro_title', __('office introduction title', 'deeplove')));?></h4>
-
-            <p class="detail"><?php echo esc_attr_e(get_theme_mod('office_intro_detail', __('office introduction detail', 'deeplove'))); ?></p>
+            <h4 class="title"><?php echo esc_attr_e(get_theme_mod('office_title', __('office introduction title', 'deeplove')));?></h4>
+            <p class="detail"><?php echo esc_attr_e(get_theme_mod('office_detail', __('office introduction detail', 'deeplove'))); ?></p>
         </div>
     </div>
 
