@@ -544,9 +544,16 @@ function deeplove_customize_register( $wp_customize ) {
 		'description'           => __( 'Customize the Posts. Deeplove includes 3 posts', 'deeplove' ),
 		'panel'              => 'PostZone3'
 	) );
+
 	$wp_customize->add_setting( 'PostZone3_Title', array (
 		'default'               => __( 'PostZone3 title', 'deeplove' ),
 		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'PostZone3_Title', array (
+		'label' =>              __( '设置标题', 'deeplove' ),
+		'section'               => 'PostZone3_Title',
+		'settings'              => 'PostZone3_Title',
 	) );
 
 	//PostZone3 Post1

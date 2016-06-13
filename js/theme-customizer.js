@@ -128,7 +128,7 @@
 	} );
 
 	//PostZone3
-	api( 'PostZone3_title', function( value ) {
+	api( 'PostZone3_Title', function( value ) {
 		value.bind( function( to ) {
 			$('#PostZone3 .title').text( to );
 		} );
