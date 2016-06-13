@@ -773,7 +773,6 @@ blockquote.right {
 .post {}
 .page {}
 .attachment {}
-.hentry {}
 .category-misc {}
 .category-example {}
 .tag-news {}
@@ -5939,6 +5938,12 @@ blockquote:before{
  */
 
 /**Portfolio module for home page===========================*/
+.portfolio{
+    width: 450px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 .tztitle{
     font-size: 17px;
     line-height: 54.4px;

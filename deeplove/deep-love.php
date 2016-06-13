@@ -70,156 +70,136 @@ function deeplove_render_homepage()
         </div>
     </div>
 
-    <div id="PostZone2" class="vc_row wpb_row vc_row-fluid">
-        <div class="nocontainer">
-            <div class="tz-portfolio-content isotope" data-option-column="3"
-                 style="position: relative; overflow: hidden; height: 1134px;">
-                <div
-                    class="element portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio-category-everline portfolio-tags-newyork portfolio-tags-usa isotope-item"
-                    style="width: 450px; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
-                    <div class="portfolio-item portfolio-padding">
-                        <div class="item-image">
-                            <img width="640" height="378"
-                                 src="<?php echo esc_url(get_theme_mod('PostZone2_post1_image', get_template_directory_uri() . '/images/portfolio6.jpg')); ?>"
-                                 class="attachment-full size-full wp-post-image" alt="portfolio6"
-                                 srcset="<?php echo esc_url(get_theme_mod('PostZone2_post1_image', get_template_directory_uri() . '/images/portfolio6-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post1_image', get_template_directory_uri() . '/images/portfolio6.jpg')); ?> 640w"
-                                 sizes="(max-width: 640px) 100vw, 640px"
-                                 style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
-                        <div class="tzitem-content" style="top: 137px;">
-                            <i class="fa fa-heart-o tzicon"></i>
+    <div id="PostZone2">
+        <div class="tz-portfolio-content" data-option-column="3">
+            <div
+                class="element portfolio post1"
+                style="transform: translate3d(0px, 0px, 0px);">
+                <div class="portfolio-item portfolio-padding">
+                    <div class="item-image">
+                        <img width="640" height="378"
+                             src="<?php echo esc_url(get_theme_mod('PostZone2_post1_image', get_template_directory_uri() . '/images/portfolio6.jpg')); ?>"
+                             class="attachment-full size-full"
+                             srcset="<?php echo esc_url(get_theme_mod('PostZone2_post1_image', get_template_directory_uri() . '/images/portfolio6-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post1_image', get_template_directory_uri() . '/images/portfolio6.jpg')); ?> 640w"
+                             sizes="(max-width: 640px) 100vw, 640px"
+                             style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
+                    <div class="tzitem-content" style="top: 137px;">
+                        <i class="fa fa-heart-o tzicon"></i>
 
-                            <h3 class="post1"><?php echo esc_attr_e(get_theme_mod('PostZone2_post1_title', __('PostZone2 post1 title', 'deeplove')));?>
-                                Praesent&amp; orci</h3>
+                        <h3><?php echo esc_attr_e(get_theme_mod('PostZone2_post1_title', __('PostZone2 post1 title', 'deeplove')));?></h3>
 
-                            <div class="tzmeta">
-                                <span
-                                    class="post1"><?php echo esc_attr_e(get_theme_mod('PostZone2_post1_date', __('PostZone2 post1 date', 'deeplove')));?>
-                                    February 5, 2015 </span>
-                            </div>
+                        <div class="tzmeta">
+                                <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post1_date', __('PostZone2 post1 date', 'deeplove')));?></span>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="element portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio-category-everline portfolio-tags-newyork portfolio-tags-usa isotope-item"
-                    style="width: 450px; position: absolute; left: 0px; top: 0px; transform: translate3d(450px, 0px, 0px);">
-                    <div class="portfolio-item portfolio-padding">
-                        <div class="item-image">
-                            <img width="640" height="378"
-                                 src="<?php echo esc_url(get_theme_mod('PostZone2_post2_image', get_template_directory_uri() . '/images/portfolio5.jpg')); ?>"
-                                 class="attachment-full size-full wp-post-image" alt="portfolio5"
-                                 srcset="<?php echo esc_url(get_theme_mod('PostZone2_post2_image', get_template_directory_uri() . '/images/portfolio5-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post2_image', get_template_directory_uri() . '/images/portfolio5.jpg')); ?> 640w"
-                                 sizes="(max-width: 640px) 100vw, 640px"
-                                 style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
-                        <div class="tzitem-content" style="top: 137px;">
-                            <i class="fa fa-heart-o tzicon"></i>
+            </div>
+            <div
+                class="element portfolio post2"
+                style="transform: translate3d(450px, 0px, 0px);">
+                <div class="portfolio-item portfolio-padding">
+                    <div class="item-image">
+                        <img width="640" height="378"
+                             src="<?php echo esc_url(get_theme_mod('PostZone2_post2_image', get_template_directory_uri() . '/images/portfolio5.jpg')); ?>"
+                             class="attachment-full size-full"
+                             srcset="<?php echo esc_url(get_theme_mod('PostZone2_post2_image', get_template_directory_uri() . '/images/portfolio5-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post2_image', get_template_directory_uri() . '/images/portfolio5.jpg')); ?> 640w"
+                             sizes="(max-width: 640px) 100vw, 640px"
+                             style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
+                    <div class="tzitem-content" style="top: 137px;">
+                        <i class="fa fa-heart-o tzicon"></i>
 
-                            <h3 class="post2"><?php echo esc_attr_e(get_theme_mod('PostZone2_post2_title', __('PostZone2 post2 title', 'deeplove')));?>
-                                Efficitur &amp; lacus</h3>
+                        <h3><?php echo esc_attr_e(get_theme_mod('PostZone2_post2_title', __('PostZone2 post2 title', 'deeplove')));?></h3>
 
-                            <div class="tzmeta"><span
-                                    class="post2"><?php echo esc_attr_e(get_theme_mod('PostZone2_post1_date', __('PostZone2 post2 date', 'deeplove')));?>
-                                    February 5, 2015</span>
-                            </div>
+                        <div
+                            class="tzmeta"><span><?php echo esc_attr_e(get_theme_mod('PostZone2_post2_date', __('PostZone2 post2 date', 'deeplove')));?></span>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="element portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio-category-everline portfolio-tags-newyork portfolio-tags-usa isotope-item"
-                    style="width: 450px; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 378px, 0px);">
-                    <div class="portfolio-item portfolio-padding">
-                        <div class="item-image">
-                            <img width="640" height="378"
-                                 src="<?php echo esc_url(get_theme_mod('PostZone2_post3_image', get_template_directory_uri() . '/images/portfolio4.jpg')); ?>"
-                                 class="attachment-full size-full wp-post-image" alt="portfolio4"
-                                 srcset="<?php echo esc_url(get_theme_mod('PostZone2_post3_image', get_template_directory_uri() . '/images/portfolio4-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post3_image', get_template_directory_uri() . '/images/portfolio4.jpg')); ?> 640w"
-                                 sizes="(max-width: 640px) 100vw, 640px"
-                                 style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
-                        <div class="tzitem-content" style="top: 137px;">
-                            <i class="fa fa-heart-o tzicon"></i>
+            </div>
+            <div
+                class="element portfolio post3"
+                style="transform: translate3d(0px, 378px, 0px);">
+                <div class="portfolio-item portfolio-padding">
+                    <div class="item-image">
+                        <img width="640" height="378"
+                             src="<?php echo esc_url(get_theme_mod('PostZone2_post3_image', get_template_directory_uri() . '/images/portfolio4.jpg')); ?>"
+                             class="attachment-full size-full"
+                             srcset="<?php echo esc_url(get_theme_mod('PostZone2_post3_image', get_template_directory_uri() . '/images/portfolio4-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post3_image', get_template_directory_uri() . '/images/portfolio4.jpg')); ?> 640w"
+                             sizes="(max-width: 640px) 100vw, 640px"
+                             style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
+                    <div class="tzitem-content" style="top: 137px;">
+                        <i class="fa fa-heart-o tzicon"></i>
 
-                            <h3 class="post3"><?php echo esc_attr_e(get_theme_mod('PostZone2_post2_title', __('PostZone2 post3 title', 'deeplove')));?>
-                                Donec&amp; lacus</h3>
+                        <h3><?php echo esc_attr_e(get_theme_mod('PostZone2_post3_title', __('PostZone2 post3 title', 'deeplove')));?></h3>
 
-                            <div class="tzmeta">
-                                <span
-                                    class="post3"><?php echo esc_attr_e(get_theme_mod('PostZone2_post2_date class="post3" ', __('PostZone2 post3 date', 'deeplove')));?>
-                                    February 5, 2015</span>
-                            </div>
+                        <div class="tzmeta">
+                                <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post3_date class="post3" ', __('PostZone2 post3 date', 'deeplove')));?></span>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="element portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio-category-everline portfolio-tags-newyork portfolio-tags-usa isotope-item"
-                    style="width: 450px; position: absolute; left: 0px; top: 0px; transform: translate3d(450px, 378px, 0px);">
-                    <div class="portfolio-item portfolio-padding">
-                        <div class="item-image">
-                            <img width="640" height="378"
-                                 src="<?php echo esc_url(get_theme_mod('PostZone2_post4_image', get_template_directory_uri() . '/images/portfolio3.jpg')); ?>"
-                                 class="attachment-full size-full wp-post-image" alt="portfolio3"
-                                 srcset="<?php echo esc_url(get_theme_mod('PostZone2_post4_image', get_template_directory_uri() . '/images/portfolio3-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post4_image', get_template_directory_uri() . '/images/portfolio3.jpg')); ?> 640w"
-                                 sizes="(max-width: 640px) 100vw, 640px"
-                                 style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
-                        <div class="tzitem-content" style="top: 137px;">
-                            <i class="fa fa-heart-o tzicon"></i>
+            </div>
+            <div
+                class="element portfolio post4"
+                style="transform: translate3d(450px, 378px, 0px);">
+                <div class="portfolio-item portfolio-padding">
+                    <div class="item-image">
+                        <img width="640" height="378"
+                             src="<?php echo esc_url(get_theme_mod('PostZone2_post4_image', get_template_directory_uri() . '/images/portfolio3.jpg')); ?>"
+                             class="attachment-full size-full"
+                             srcset="<?php echo esc_url(get_theme_mod('PostZone2_post4_image', get_template_directory_uri() . '/images/portfolio3-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post4_image', get_template_directory_uri() . '/images/portfolio3.jpg')); ?> 640w"
+                             sizes="(max-width: 640px) 100vw, 640px"
+                             style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
+                    <div class="tzitem-content" style="top: 137px;">
+                        <i class="fa fa-heart-o tzicon"></i>
 
-                            <h3 class="post4"><?php echo esc_attr_e(get_theme_mod('PostZone2_post4_title', __('PostZone2 post4 title', 'deeplove')));?>
-                                Reader&amp; Mauris</h3>
+                        <h3><?php echo esc_attr_e(get_theme_mod('PostZone2_post4_title', __('PostZone2 post4 title', 'deeplove')));?></h3>
 
-                            <div class="tzmeta">
-                                <span
-                                    class="post4"><?php echo esc_attr_e(get_theme_mod('PostZone2_post4_date', __('PostZone2 post4 date', 'deeplove')));?>
-                                    February 5, 2015 </span>
-                            </div>
+                        <div class="tzmeta">
+                                <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post4_date', __('PostZone2 post4 date', 'deeplove')));?></span>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="element portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio-category-everline portfolio-tags-newyork portfolio-tags-usa isotope-item"
-                    style="width: 450px; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 756px, 0px);">
-                    <div class="portfolio-item portfolio-padding">
-                        <div class="item-image">
-                            <img width="640" height="378"
-                                 src="<?php echo esc_url(get_theme_mod('PostZone2_post5_image', get_template_directory_uri() . '/images/portfolio2.jpg')); ?>"
-                                 class="attachment-full size-full wp-post-image" alt="portfolio2"
-                                 srcset="<?php echo esc_url(get_theme_mod('PostZone2_post5_image', get_template_directory_uri() . '/images/portfolio2-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post5_image', get_template_directory_uri() . '/images/portfolio2.jpg')); ?> 640w"
-                                 sizes="(max-width: 640px) 100vw, 640px"
-                                 style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
-                        <div class="tzitem-content" style="top: 137px;">
-                            <i class="fa fa-heart-o tzicon"></i>
+            </div>
+            <div
+                class="element portfolio post5"
+                style="transform: translate3d(0px, 756px, 0px);">
+                <div class="portfolio-item portfolio-padding">
+                    <div class="item-image">
+                        <img width="640" height="378"
+                             src="<?php echo esc_url(get_theme_mod('PostZone2_post5_image', get_template_directory_uri() . '/images/portfolio2.jpg')); ?>"
+                             class="attachment-full size-full"
+                             srcset="<?php echo esc_url(get_theme_mod('PostZone2_post5_image', get_template_directory_uri() . '/images/portfolio2-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post5_image', get_template_directory_uri() . '/images/portfolio2.jpg')); ?> 640w"
+                             sizes="(max-width: 640px) 100vw, 640px"
+                             style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
+                    <div class="tzitem-content" style="top: 137px;">
+                        <i class="fa fa-heart-o tzicon"></i>
 
-                            <h3 class="post5"><?php echo esc_attr_e(get_theme_mod('PostZone2_post5_title', __('PostZone2 post5 title', 'deeplove')));?>
-                                Aliquam&amp; Miley</h3>
+                        <h3><?php echo esc_attr_e(get_theme_mod('PostZone2_post5_title', __('PostZone2 post5 title', 'deeplove')));?></h3>
 
-                            <div class="tzmeta">
-                                <span
-                                    class="post5"><?php echo esc_attr_e(get_theme_mod('PostZone2_post5_date', __('PostZone2 post5 date', 'deeplove')));?>
-                                    February 5, 2015 /</span>
-                            </div>
+                        <div class="tzmeta">
+                                <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post5_date', __('PostZone2 post5 date', 'deeplove')));?></span>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="element portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio-category-everline portfolio-tags-newyork portfolio-tags-usa isotope-item"
-                    style="width: 450px; position: absolute; left: 0px; top: 0px; transform: translate3d(450px, 756px, 0px);">
-                    <div class="portfolio-item portfolio-padding">
-                        <div class="item-image">
-                            <img width="640" height="378"
-                                 src="<?php echo esc_url(get_theme_mod('PostZone2_post6_image', get_template_directory_uri() . '/images/portfolio1.jpg')); ?>"
-                                 class="attachment-full size-full wp-post-image" alt="portfolio1"
-                                 srcset="<?php echo esc_url(get_theme_mod('PostZone2_post6_image', get_template_directory_uri() . '/images/portfolio1-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post6_image', get_template_directory_uri() . '/images/portfolio1.jpg')); ?> 640w"
-                                 sizes="(max-width: 640px) 100vw, 640px"
-                                 style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
-                        <div class="tzitem-content" style="top: 137px;">
-                            <i class="fa fa-heart-o tzicon"></i>
+            </div>
+            <div
+                class="element portfolio post6"
+                style="transform: translate3d(450px, 756px, 0px);">
+                <div class="portfolio-item portfolio-padding">
+                    <div class="item-image">
+                        <img width="640" height="378"
+                             src="<?php echo esc_url(get_theme_mod('PostZone2_post6_image', get_template_directory_uri() . '/images/portfolio1.jpg')); ?>"
+                             class="attachment-full size-full"
+                             srcset="<?php echo esc_url(get_theme_mod('PostZone2_post6_image', get_template_directory_uri() . '/images/portfolio1-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post6_image', get_template_directory_uri() . '/images/portfolio1.jpg')); ?> 640w"
+                             sizes="(max-width: 640px) 100vw, 640px"
+                             style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
+                    <div class="tzitem-content" style="top: 137px;">
+                        <i class="fa fa-heart-o tzicon"></i>
 
-                            <h3 class="post6"><?php echo esc_attr_e(get_theme_mod('PostZone2_post6_title', __('PostZone2 post6 title', 'deeplove')));?>
-                                James&amp; Miley</h3>
+                        <h3><?php echo esc_attr_e(get_theme_mod('PostZone2_post6_title', __('PostZone2 post6 title', 'deeplove')));?></h3>
 
-                            <div class="tzmeta">
-                                <span
-                                    class="post6"><?php echo esc_attr_e(get_theme_mod('PostZone2_post6_date', __('PostZone2 post6 date', 'deeplove')));?>
-                                    February 5, 2015</span>
-                            </div>
+                        <div class="tzmeta">
+                                <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post6_date', __('PostZone2 post6 date', 'deeplove')));?></span>
                         </div>
                     </div>
                 </div>
