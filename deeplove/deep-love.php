@@ -89,7 +89,7 @@ function deeplove_render_homepage()
                         <h3><?php echo esc_attr_e(get_theme_mod('PostZone2_post1_title', __('PostZone2 post1 title', 'deeplove')));?></h3>
 
                         <div class="tzmeta">
-                                <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post1_date', __('PostZone2 post1 date', 'deeplove')));?></span>
+                            <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post1_date', __('PostZone2 post1 date', 'deeplove')));?></span>
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,8 @@ function deeplove_render_homepage()
                         <h3><?php echo esc_attr_e(get_theme_mod('PostZone2_post2_title', __('PostZone2 post2 title', 'deeplove')));?></h3>
 
                         <div
-                            class="tzmeta"><span><?php echo esc_attr_e(get_theme_mod('PostZone2_post2_date', __('PostZone2 post2 date', 'deeplove')));?></span>
+                            class="tzmeta">
+                            <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post2_date', __('PostZone2 post2 date', 'deeplove')));?></span>
                         </div>
                     </div>
                 </div>
@@ -133,7 +134,7 @@ function deeplove_render_homepage()
                         <h3><?php echo esc_attr_e(get_theme_mod('PostZone2_post3_title', __('PostZone2 post3 title', 'deeplove')));?></h3>
 
                         <div class="tzmeta">
-                                <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post3_date class="post3" ', __('PostZone2 post3 date', 'deeplove')));?></span>
+                            <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post3_date class="post3" ', __('PostZone2 post3 date', 'deeplove')));?></span>
                         </div>
                     </div>
                 </div>
@@ -155,7 +156,7 @@ function deeplove_render_homepage()
                         <h3><?php echo esc_attr_e(get_theme_mod('PostZone2_post4_title', __('PostZone2 post4 title', 'deeplove')));?></h3>
 
                         <div class="tzmeta">
-                                <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post4_date', __('PostZone2 post4 date', 'deeplove')));?></span>
+                            <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post4_date', __('PostZone2 post4 date', 'deeplove')));?></span>
                         </div>
                     </div>
                 </div>
@@ -177,7 +178,7 @@ function deeplove_render_homepage()
                         <h3><?php echo esc_attr_e(get_theme_mod('PostZone2_post5_title', __('PostZone2 post5 title', 'deeplove')));?></h3>
 
                         <div class="tzmeta">
-                                <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post5_date', __('PostZone2 post5 date', 'deeplove')));?></span>
+                            <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post5_date', __('PostZone2 post5 date', 'deeplove')));?></span>
                         </div>
                     </div>
                 </div>
@@ -199,7 +200,7 @@ function deeplove_render_homepage()
                         <h3><?php echo esc_attr_e(get_theme_mod('PostZone2_post6_title', __('PostZone2 post6 title', 'deeplove')));?></h3>
 
                         <div class="tzmeta">
-                                <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post6_date', __('PostZone2 post6 date', 'deeplove')));?></span>
+                            <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post6_date', __('PostZone2 post6 date', 'deeplove')));?></span>
                         </div>
                     </div>
                 </div>
@@ -209,81 +210,58 @@ function deeplove_render_homepage()
 
     <div id="PostZone3">
         <div class="container">
+            <h2 class="title"><?php echo esc_attr_e(get_theme_mod('PostZone3_Title', __('PostZone3 title', 'deeplove'))); ?></h2>
+
             <div class="row">
-                <div class="wpb_column vc_column_container vc_col-sm-12">
-                    <div class="vc_column-inner ">
-                        <div class="wpb_wrapper">
-                            <div class="container-custom">
-                                <h2 class="title"><?php echo esc_attr_e(get_theme_mod('PostZone3_title', __('PostZone3 title', 'deeplove'))); ?></h2>
+                <div class="col-md-3 col-sm-6">
+                    <div class="blog-item post1">
+                        <div class="blog-image">
+                            <a href="#"><img width="270" height="170"
+                                             src="<?php echo esc_url(get_theme_mod('PostZone3_post1_image', get_template_directory_uri() . '/images/bloghome4.jpg')); ?> "></a>
+                        </div>
+                        <div class="blog-description">
+                            <h3><?php echo esc_attr_e(get_theme_mod('PostZone3_post1_title', __('PostZone3 post1 title', 'deeplove')));?></h3>
 
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="blog-item ">
-                                            <div class="blog-image">
-                                                <a href="#"><img width="270" height="170"
-                                                                 src="<?php echo esc_url(get_theme_mod('PostZone3_post1_image', get_template_directory_uri() . '/images/bloghome4.jpg')); ?> "></a>
-                                            </div>
-                                            <div class="blog-description">
-                                                <h3 class="post1"><?php echo esc_attr_e(get_theme_mod('PostZone3_post1_title', __('PostZone3 post1 title', 'deeplove')));?>
-                                                    facilisis vitae</h3>
+                            <p><?php echo esc_attr_e(get_theme_mod('PostZone3_post1_detail', __('PostZone3 post1 detail', 'deeplove')));?></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="blog-item post2">
+                        <div class="blog-image">
+                            <a href="#"><img width="270" height="170"
+                                             src="<?php echo esc_url(get_theme_mod('PostZone3_post2_image', get_template_directory_uri() . '/images/bloghome3.jpg')); ?>"></a>
+                        </div>
+                        <div class="blog-description">
+                            <h3><?php echo esc_attr_e(get_theme_mod('PostZone3_post2_title', __('PostZone3 post2 title', 'deeplove')));?></h3>
 
-                                                <p class="post1"><?php echo esc_attr_e(get_theme_mod('PostZone3_post1_detail', __('PostZone3 post1 detail', 'deeplove')));?>
-                                                    Thank you for choosing CosmoThemes and purchasing one of our Premium
-                                                    WordPress Themes your choice is greatly.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="blog-item ">
-                                            <div class="blog-image">
-                                                <a href="#"><img width="270" height="170"
-                                                                 src="<?php echo esc_url(get_theme_mod('PostZone3_post2_image', get_template_directory_uri() . '/images/bloghome3.jpg')); ?>"></a>
-                                            </div>
-                                            <div class="blog-description">
-                                                WordPress Themes your choice is greatly.</p>
-                                                <h3 class="post2"><?php echo esc_attr_e(get_theme_mod('PostZone3_post2_title', __('PostZone3 post2 title', 'deeplove')));?>
-                                                    viverra ipsum</h3>
+                            <p><?php echo esc_attr_e(get_theme_mod('PostZone3_post2_detail', __('PostZone3 post2 detail', 'deeplove')));?></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="blog-item post3">
+                        <div class="blog-image">
+                            <a href="#"><img width="270" height="170"
+                                             src="<?php echo esc_url(get_theme_mod('PostZone3_post3_image', get_template_directory_uri() . '/images/bloghome2.jpg')); ?>"></a>
+                        </div>
+                        <div class="blog-description">
+                            <h3><?php echo esc_attr_e(get_theme_mod('PostZone3_post3_title', __('PostZone3 post3 title', 'deeplove')));?></h3>
 
-                                                <p class="post2"><?php echo esc_attr_e(get_theme_mod('PostZone3_post2_detail', __('PostZone3 post2 detail', 'deeplove')));?>
-                                                    Thank you for choosing CosmoThemes and purchasing one of our Premium
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="blog-item ">
-                                            <div class="blog-image">
-                                                <a href="#"><img width="270" height="170"
-                                                                 src="<?php echo esc_url(get_theme_mod('PostZone3_post3_image', get_template_directory_uri() . '/images/bloghome2.jpg')); ?>"></a>
-                                            </div>
-                                            <div class="blog-description">
-                                                <h3 class="post3"><?php echo esc_attr_e(get_theme_mod('PostZone3_post3_title', __('PostZone3 post3 title', 'deeplove')));?>
-                                                    YOUR HONEYMOON</h3>
+                            <p><?php echo esc_attr_e(get_theme_mod('PostZone3_post3_detail', __('PostZone3 post3 detail', 'deeplove')));?></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="blog-item post4">
+                        <div class="blog-image">
+                            <a href="#"><img width="270" height="170"
+                                             src="<?php echo esc_url(get_theme_mod('PostZone3_post4_image', get_template_directory_uri() . '/images/bloghome1.jpg')); ?>"></a>
+                        </div>
+                        <div class="blog-description">
+                            <h3><?php echo esc_attr_e(get_theme_mod('PostZone3_post4_title', __('PostZone3 post4 title', 'deeplove')));?></h3>
 
-                                                <p class="post3"><?php echo esc_attr_e(get_theme_mod('PostZone3_post3_detail', __('PostZone3 post3 detail', 'deeplove')));?>
-                                                    Thank you for choosing CosmoThemes and purchasing one of our Premium
-                                                    WordPress Themes your choice is greatly.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="blog-item ">
-                                            <div class="blog-image">
-                                                <a href="#"><img width="270" height="170"
-                                                                 src="<?php echo esc_url(get_theme_mod('PostZone3_post4_image', get_template_directory_uri() . '/images/bloghome1.jpg')); ?>"
-                                                                 class="post4" </a>
-                                            </div>
-                                            <div class="blog-description">
-                                                <h3 class="post4"><?php echo esc_attr_e(get_theme_mod('PostZone3_post4_title', __('PostZone3 post4 title', 'deeplove')));?>
-                                                    PLAN YOUR TRIP</h3>
-
-                                                <p class="post4"><?php echo esc_attr_e(get_theme_mod('PostZone3_post4_detail', __('PostZone3 post4 detail', 'deeplove')));?>
-                                                    Thank you for choosing CosmoThemes and purchasing one of our Premium
-                                                    WordPress Themes your choice is greatly.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <p><?php echo esc_attr_e(get_theme_mod('PostZone3_post4_detail', __('PostZone3 post4 detail', 'deeplove')));?></p>
                         </div>
                     </div>
                 </div>

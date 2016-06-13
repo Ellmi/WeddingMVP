@@ -538,23 +538,19 @@ function deeplove_customize_register( $wp_customize ) {
 		'priority'              => 10
 	) );
 
-	$wp_customize->add_section( 'PostZone3Title', array (
+	//title
+	$wp_customize->add_section( 'PostZone3_Title', array (
 		'title'                 => __( 'Title', 'deeplove' ),
 		'description'           => __( 'Customize the Posts. Deeplove includes 3 posts', 'deeplove' ),
 		'panel'              => 'PostZone3'
 	) );
-	$wp_customize->add_setting( 'PostZone3_title', array (
+	$wp_customize->add_setting( 'PostZone3_Title', array (
 		'default'               => __( 'PostZone3 title', 'deeplove' ),
 		'transport' => 'postMessage'
 	) );
 
-	$wp_customize->add_control( 'PostZone3_post2_detail', array (
-		'label' =>              __( '设置标题', 'deeplove' ),
-		'section'               => 'PostZone3Title',
-		'settings'              => 'PostZone3_title'
-	) );
-
-	$wp_customize->add_section( 'PostZone3Post1', array (
+	//PostZone3 Post1
+	$wp_customize->add_section( 'PostZone3_Post1', array (
 		'title'                 => __( 'Post1', 'deeplove' ),
 		'description'           => __( 'Customize the Posts. Deeplove includes 3 posts', 'deeplove' ),
 		'panel'                 => 'PostZone3'
@@ -568,12 +564,11 @@ function deeplove_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'PostZone3_post1_image_control', array (
 		'label' =>              __( 'Background Image', 'deeplove' ),
-		'section'               => 'PostZone3Post1',
+		'section'               => 'PostZone3_Post1',
 		'mime_type'             => 'image',
 		'settings'              => 'PostZone3_post1_image',
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
 	) ) );
-
 
 	$wp_customize->add_setting( 'PostZone3_post1_title', array (
 		'default'               => __( 'office introduction title', 'deeplove' ),
@@ -582,7 +577,7 @@ function deeplove_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( 'PostZone3_post1_title', array (
 		'label' =>              __( '设置标题', 'deeplove' ),
-		'section'               => 'PostZone3Post1',
+		'section'               => 'PostZone3_Post1',
 		'settings'              => 'PostZone3_post1_title',
 	) );
 
@@ -593,17 +588,17 @@ function deeplove_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( 'PostZone3_post1_detail', array (
 		'label' =>              __( '设置内容', 'deeplove' ),
-		'section'               => 'PostZone3Post1',
+		'section'               => 'PostZone3_Post1',
 		'settings'              => 'PostZone3_post1_detail',
 		'type'           => 'textarea'
 	) );
 
-	$wp_customize->add_section( 'PostZone3Post2', array (
+	//PostZone3 Post2
+	$wp_customize->add_section( 'PostZone3_Post2', array (
 		'title'                 => __( 'Post2', 'deeplove' ),
 		'description'           => __( 'Customize the Posts. Deeplove includes 3 posts', 'deeplove' ),
 		'panel'                 => 'PostZone3'
 	) );
-
 
 	$wp_customize->add_setting( 'PostZone3_post2_image', array (
 		'default'               => get_template_directory_uri() . '/images/bloghome3.jpg',
@@ -613,7 +608,7 @@ function deeplove_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'PostZone3_post2_image_control', array (
 		'label' =>              __( 'Background Image', 'deeplove' ),
-		'section'               => 'PostZone3Post2',
+		'section'               => 'PostZone3_Post2',
 		'mime_type'             => 'image',
 		'settings'              => 'PostZone3_post2_image',
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
@@ -626,7 +621,7 @@ function deeplove_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( 'PostZone3_post2_title', array (
 		'label' =>              __( '设置标题', 'deeplove' ),
-		'section'               => 'PostZone3Post2',
+		'section'               => 'PostZone3_Post2',
 		'settings'              => 'PostZone3_post2_title',
 	) );
 
@@ -637,12 +632,13 @@ function deeplove_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( 'PostZone3_post2_detail', array (
 		'label' =>              __( '设置内容', 'deeplove' ),
-		'section'               => 'PostZone3Post2',
+		'section'               => 'PostZone3_Post2',
 		'settings'              => 'PostZone3_post2_detail',
 		'type'           => 'textarea'
 	) );
 
-	$wp_customize->add_section( 'PostZone3Post3', array (
+	//PostZone3 Post3
+	$wp_customize->add_section( 'PostZone3_Post3', array (
 		'title'                 => __( 'Post3', 'deeplove' ),
 		'description'           => __( 'Customize the Posts. Deeplove includes 3 posts', 'deeplove' ),
 		'panel'                 => 'PostZone3'
@@ -656,7 +652,7 @@ function deeplove_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'PostZone3_post3_image_control', array (
 		'label' =>              __( 'Background Image', 'deeplove' ),
-		'section'               => 'PostZone3Post3',
+		'section'               => 'PostZone3_Post3',
 		'mime_type'             => 'image',
 		'settings'              => 'PostZone3_post3_image',
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
@@ -669,7 +665,7 @@ function deeplove_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( 'PostZone3_post3_title', array (
 		'label' =>              __( '设置标题', 'deeplove' ),
-		'section'               => 'PostZone3Post3',
+		'section'               => 'PostZone3_Post3',
 		'settings'              => 'PostZone3_post3_title',
 	) );
 
@@ -680,14 +676,13 @@ function deeplove_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( 'PostZone3_post3_detail', array (
 		'label' =>              __( '设置内容', 'deeplove' ),
-		'section'               => 'PostZone3Post3',
+		'section'               => 'PostZone3_Post3',
 		'settings'              => 'PostZone3_post3_detail',
 		'type'           => 'textarea'
 	) );
 
-
-
-	$wp_customize->add_section( 'PostZone3Post4', array (
+	//PostZone3 Post4
+	$wp_customize->add_section( 'PostZone3_Post4', array (
 		'title'                 => __( 'Post4', 'deeplove' ),
 		'description'           => __( 'Customize the Posts. Deeplove includes 3 posts', 'deeplove' ),
 		'panel'                 => 'PostZone3'
@@ -701,7 +696,7 @@ function deeplove_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'PostZone3_post4_image_control', array (
 		'label' =>              __( 'Background Image', 'deeplove' ),
-		'section'               => 'PostZone3Post4',
+		'section'               => 'PostZone3_Post4',
 		'mime_type'             => 'image',
 		'settings'              => 'PostZone3_post4_image',
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
@@ -714,7 +709,7 @@ function deeplove_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( 'PostZone3_post4_title', array (
 		'label' =>              __( '设置标题', 'deeplove' ),
-		'section'               => 'PostZone3Post4',
+		'section'               => 'PostZone3_Post4',
 		'settings'              => 'PostZone3_post4_title',
 	) );
 
@@ -725,7 +720,7 @@ function deeplove_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( 'PostZone3_post4_detail', array (
 		'label' =>              __( '设置内容', 'deeplove' ),
-		'section'               => 'PostZone3Post4',
+		'section'               => 'PostZone3_Post4',
 		'settings'              => 'PostZone3_post4_detail',
 		'type'           => 'textarea'
 	) );
