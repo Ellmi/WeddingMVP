@@ -18,7 +18,7 @@
                         <ul id="menu-primary" class="tz-menu nav-collapse themeple_megemenu">
                             <li id="menu-item-102"
                                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children">
-                                <a href="#">婚礼策划</a>
+                                <a href="wedding">婚礼策划</a>
 
 <!--                                <ul class="sub-menu non_mega_menu">-->
 <!--                                    <li id="menu-item-103"-->
@@ -44,7 +44,7 @@
                             </li>
                             <li id="menu-item-397"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                                <a href="#">婚礼案例</a>
+                                <a href="demo">婚礼案例</a>
 
                                 <div class="themeple_custom_menu_mega_menu themeple_mega2">
 
@@ -111,7 +111,7 @@
                             </li>
                             <li id="menu-item-183"
                                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children">
-                                <a href="#">视频案例</a>
+                                <a href="video">视频案例</a>
 
 
 <!--                                <ul class="sub-menu non_mega_menu">-->
@@ -151,7 +151,7 @@
                             </li>
                             <li id="menu-item-279"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                                <a href="#">酒店</a>
+                                <a href="hotel">酒店</a>
 
 
 <!--                                <ul class="sub-menu non_mega_menu">-->
@@ -189,7 +189,7 @@
                             </li>
                             <li id="menu-item-373"
                                 class="menu-item menu-item-type-taxonomy menu-item-object-tribe_events_cat menu-item-has-children">
-                                <a href="#">活动</a>
+                                <a href="activity">活动</a>
 
 
 <!--                                <ul class="sub-menu non_mega_menu">-->
@@ -205,7 +205,7 @@
                             </li>
                             <li id="menu-item-20"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                                <a href="#">淘宝</a>
+                                <a href="taobao">淘宝</a>
 <!--                                <ul class="sub-menu non_mega_menu">-->
 <!--                                    <li id="menu-item-583"-->
 <!--                                        class="menu-item menu-item-type-custom menu-item-object-custom"><a-->
