@@ -80,8 +80,6 @@ function deeplove_render_homepage()
                         <img width="640" height="378"
                              src="<?php echo esc_url(get_theme_mod('PostZone2_post1_image', get_template_directory_uri() . '/images/portfolio6.jpg')); ?>"
                              class="attachment-full size-full"
-                             srcset="<?php echo esc_url(get_theme_mod('PostZone2_post1_image', get_template_directory_uri() . '/images/portfolio6-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post1_image', get_template_directory_uri() . '/images/portfolio6.jpg')); ?> 640w"
-                             sizes="(max-width: 640px) 100vw, 640px"
                              style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
                     <div class="tzitem-content" style="top: 137px;">
                         <i class="fa fa-heart-o tzicon"></i>
@@ -102,8 +100,6 @@ function deeplove_render_homepage()
                         <img width="640" height="378"
                              src="<?php echo esc_url(get_theme_mod('PostZone2_post2_image', get_template_directory_uri() . '/images/portfolio5.jpg')); ?>"
                              class="attachment-full size-full"
-                             srcset="<?php echo esc_url(get_theme_mod('PostZone2_post2_image', get_template_directory_uri() . '/images/portfolio5-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post2_image', get_template_directory_uri() . '/images/portfolio5.jpg')); ?> 640w"
-                             sizes="(max-width: 640px) 100vw, 640px"
                              style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
                     <div class="tzitem-content" style="top: 137px;">
                         <i class="fa fa-heart-o tzicon"></i>
@@ -125,8 +121,6 @@ function deeplove_render_homepage()
                         <img width="640" height="378"
                              src="<?php echo esc_url(get_theme_mod('PostZone2_post3_image', get_template_directory_uri() . '/images/portfolio4.jpg')); ?>"
                              class="attachment-full size-full"
-                             srcset="<?php echo esc_url(get_theme_mod('PostZone2_post3_image', get_template_directory_uri() . '/images/portfolio4-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post3_image', get_template_directory_uri() . '/images/portfolio4.jpg')); ?> 640w"
-                             sizes="(max-width: 640px) 100vw, 640px"
                              style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
                     <div class="tzitem-content" style="top: 137px;">
                         <i class="fa fa-heart-o tzicon"></i>
@@ -147,8 +141,6 @@ function deeplove_render_homepage()
                         <img width="640" height="378"
                              src="<?php echo esc_url(get_theme_mod('PostZone2_post4_image', get_template_directory_uri() . '/images/portfolio3.jpg')); ?>"
                              class="attachment-full size-full"
-                             srcset="<?php echo esc_url(get_theme_mod('PostZone2_post4_image', get_template_directory_uri() . '/images/portfolio3-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post4_image', get_template_directory_uri() . '/images/portfolio3.jpg')); ?> 640w"
-                             sizes="(max-width: 640px) 100vw, 640px"
                              style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
                     <div class="tzitem-content" style="top: 137px;">
                         <i class="fa fa-heart-o tzicon"></i>
@@ -169,8 +161,6 @@ function deeplove_render_homepage()
                         <img width="640" height="378"
                              src="<?php echo esc_url(get_theme_mod('PostZone2_post5_image', get_template_directory_uri() . '/images/portfolio2.jpg')); ?>"
                              class="attachment-full size-full"
-                             srcset="<?php echo esc_url(get_theme_mod('PostZone2_post5_image', get_template_directory_uri() . '/images/portfolio2-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post5_image', get_template_directory_uri() . '/images/portfolio2.jpg')); ?> 640w"
-                             sizes="(max-width: 640px) 100vw, 640px"
                              style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
                     <div class="tzitem-content" style="top: 137px;">
                         <i class="fa fa-heart-o tzicon"></i>
@@ -191,8 +181,6 @@ function deeplove_render_homepage()
                         <img width="640" height="378"
                              src="<?php echo esc_url(get_theme_mod('PostZone2_post6_image', get_template_directory_uri() . '/images/portfolio1.jpg')); ?>"
                              class="attachment-full size-full"
-                             srcset="<?php echo esc_url(get_theme_mod('PostZone2_post6_image', get_template_directory_uri() . '/images/portfolio1-300x177.jpg')); ?> 300w, <?php echo esc_url(get_theme_mod('PostZone2_post6_image', get_template_directory_uri() . '/images/portfolio1.jpg')); ?> 640w"
-                             sizes="(max-width: 640px) 100vw, 640px"
                              style="top: 0px; left: -95px; width: 640px; height: 378px;"></div>
                     <div class="tzitem-content" style="top: 137px;">
                         <i class="fa fa-heart-o tzicon"></i>
