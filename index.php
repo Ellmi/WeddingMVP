@@ -10,7 +10,7 @@
                     <h3 class="tzlogo pull-left">
                         <a href="#" title="Everline">
                             <img
-                                src="<?php echo esc_url(get_template_directory_uri() . '/images/EverlineTheme.png'); ?> "
+                                src="<?php echo esc_url(get_template_directory_uri() . '/images/logo.png'); ?> "
                                 alt="Everline">
                         </a>
                     </h3>

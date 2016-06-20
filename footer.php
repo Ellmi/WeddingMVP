@@ -10,7 +10,7 @@
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12 footerattr">
                 <a href="#">
-                    <img src="<?php echo esc_url( get_template_directory_uri().'/images/EverlineTheme.png'); ?> " >
+                    <img src="<?php echo esc_url( get_template_directory_uri().'/images/logo.png'); ?> " >
                 </a>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12 footerattr">
