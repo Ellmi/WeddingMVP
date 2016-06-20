@@ -732,6 +732,84 @@ function deeplove_customize_register( $wp_customize ) {
 		'type'           => 'textarea'
 	) );
 
+	//Footer Social
+
+	$wp_customize->add_section( 'Footer_social', array (
+		'title'                 => __( '尾部', 'deeplove' ),
+		'description'           => __( '配置尾部社交信息', 'deeplove' )
+	) );
+
+	//social one
+	$wp_customize->add_setting( 'Footer_social_one', array (
+		'default'               => __( '电话: XXXXXXXXXX', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'Footer_social_one', array (
+		'label' =>              __( '左一', 'deeplove' ),
+		'section'               => 'Footer_social',
+		'settings'              => 'Footer_social_one',
+	) );
+
+	//social two
+	$wp_customize->add_setting( 'Footer_social_two', array (
+		'default'               => __( 'QQ: XXXXXXXXXX', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'Footer_social_two', array (
+		'label' =>              __( '左二', 'deeplove' ),
+		'section'               => 'Footer_social',
+		'settings'              => 'Footer_social_two',
+	) );
+
+	//social three
+	$wp_customize->add_setting( 'Footer_social_three', array (
+		'default'               => __( '微信: XXXXXXXXXX', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'Footer_social_three', array (
+		'label' =>              __( '左三', 'deeplove' ),
+		'section'               => 'Footer_social',
+		'settings'              => 'Footer_social_three',
+	) );
+
+	//social four
+	$wp_customize->add_setting( 'Footer_social_four', array (
+		'default'               => __( '地址: XXXXXXXXXXX', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'Footer_social_four', array (
+		'label' =>              __( '右一', 'deeplove' ),
+		'section'               => 'Footer_social',
+		'settings'              => 'Footer_social_four',
+	) );
+
+	//social five
+	$wp_customize->add_setting( 'Footer_social_five', array (
+		'default'               => __( '淘宝店铺: XXXXXXXXXX', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'Footer_social_five', array (
+		'label' =>              __( '右二', 'deeplove' ),
+		'section'               => 'Footer_social',
+		'settings'              => 'Footer_social_five',
+	) );
+
+	//social six
+	$wp_customize->add_setting( 'Footer_social_six', array (
+		'default'               => __( '其他: XXXXXXXXXX', 'deeplove' ),
+		'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control( 'Footer_social_six', array (
+		'label' =>              __( '右三', 'deeplove' ),
+		'section'               => 'Footer_social',
+		'settings'              => 'Footer_social_six',
+	) );
 
 
 }

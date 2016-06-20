@@ -181,4 +181,41 @@
 			$('#PostZone3 .post4 p').text( to );
 		} );
 	} );
+
+	//Footer Social
+	api( 'Footer_social_one', function( value ) {
+		value.bind( function( to ) {
+			$('.dl-footer p.one').text( to );
+		} );
+	} );
+
+	api( 'Footer_social_two', function( value ) {
+		value.bind( function( to ) {
+			$('.dl-footer p.two').text( to );
+		} );
+	} );
+
+	api( 'Footer_social_three', function( value ) {
+		value.bind( function( to ) {
+			$('.dl-footer p.three').text( to );
+		} );
+	} );
+
+	api( 'Footer_social_four', function( value ) {
+		value.bind( function( to ) {
+			$('.dl-footer p.four').text( to );
+		} );
+	} );
+
+	api( 'Footer_social_five', function( value ) {
+		value.bind( function( to ) {
+			$('.dl-footer p.five').text( to );
+		} );
+	} );
+
+	api( 'Footer_social_six', function( value ) {
+		value.bind( function( to ) {
+			$('.dl-footer p.six').text( to );
+		} );
+	} );
 } )( jQuery );

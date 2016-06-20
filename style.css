@@ -7315,6 +7315,7 @@ div.wpcf7-response-output {
 .dl-footer{
     background: #d65679;
     padding: 50px 0;
+    text-align: center;
 }
 .dl-footer .module-title{
     display: block;
@@ -9796,6 +9797,10 @@ body#bd{
     color: black;
     font-weight: bold;
     font-size: 1.5rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    overflow-wrap: break-word;
 }
 
 
