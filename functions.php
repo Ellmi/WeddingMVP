@@ -14,6 +14,25 @@ define( 'CSS_PATH', get_template_directory_uri().'/css/' );
 define( 'JS_PATH', get_template_directory_uri().'/js/ ');
 define( 'IMG_PATH', get_template_directory_uri().'/images/');
 
+/**
+ * Sets up theme defaults and registers support for various WordPress features.
+ *
+ * Note that this function is hooked into the after_setup_theme hook, which
+ * runs before the init hook. The init hook is too late for some features, such
+ * as indicating support for post thumbnails.
+ */
+function deeplove_setup()
+{
+    /*
+     * Enable support for Post Formats.
+     * See http://codex.wordpress.org/Post_Formats
+     */
+    add_theme_support('post-formats', array(
+        'image', 'video',
+    ));
+}
+
+add_action('after_setup_theme', 'deeplove_setup');
 
 load_theme_textdomain( TEXT_DOMAIN, get_template_directory() . '/languages' );
 
@@ -431,8 +450,6 @@ function tzeverline_body_classes( $classes ) {
     return $classes;
 }
 add_filter( 'body_class', 'tzeverline_body_classes' );
-
-
 
 /*method activie plugin*/
 require_once dirname( __FILE__ ) . '/plugins/class-tgm-plugin-activation.php';
