@@ -20,7 +20,7 @@ function tzeverline_register_back_end_scripts(){
 
 
     wp_enqueue_style('admin-styles', THEME_PATH . '/extension/assets/css/admin-styles.css');
-    wp_enqueue_style('tz-theme-option', THEME_PATH . '/extension/assets/css/tz-theme-options.css');
+    wp_enqueue_style('theme-option', THEME_PATH . '/extension/assets/css/theme-options.css');
 
     wp_enqueue_media();
     wp_register_script('portfolio_meta_boxes', THEME_PATH . '/extension/assets/js/portfolio_meta_boxes.js', false, false, $in_footer=true);

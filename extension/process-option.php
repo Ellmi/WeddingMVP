@@ -144,9 +144,9 @@
 
                         body#bd .everline_title:after,
                         body#bd .content-top,
-                        body#bd .tz-header-page,
+                        body#bd .header-page,
                         body#bd .tzform-search #searchsubmit,
-                        body#bd .tz-header ul li .non_mega_menu li:after,
+                        body#bd .header ul li .non_mega_menu li:after,
                         body#bd .tzcountdown,
                         body#bd .tzcountdown2,
                         body#bd .tzcountdown3,
@@ -201,12 +201,12 @@
                         body#bd .tzaddress i,
                         body#bd .tzemail i,
                         body#bd .wpcf7-submit,
-                        body#bd .tz-footer,
-                        body#bd .tz-header1 .tzlogo a,
+                        body#bd .footer,
+                        body#bd .header1 .tzlogo a,
                         body#bd .blog-post.sticky .everline_sticky,
-                        body#bd .tz-header2 .tzlogo a,
+                        body#bd .header2 .tzlogo a,
                         body#bd .live_title,
-                        body#bd .tz-header ul li .non_mega_menu  li a:hover,
+                        body#bd .header ul li .non_mega_menu  li a:hover,
                         body#bd .tzcountdown-ds2 span,
                         body#bd .ourstory_infomation p,
                         body#bd .jp-controls button:hover i,
@@ -215,7 +215,7 @@
                         body#bd .testimonials2 .icon_testimonials,
                         body#bd .testimonials2 .author_testimonials,
                         body#bd .tzimg-content strong,
-                        body#bd .tz-entry-summary  .in-stock,
+                        body#bd .entry-summary  .in-stock,
                         body#bd .order-total strong span,
                         body#bd .tribe-events-nav-next a:hover,
                         body#bd .tribe-events-nav-previous a:hover,
@@ -249,13 +249,13 @@
                         body#bd .tzform-search #searchsubmit,
                         body#bd .jp-playlist ul li.jp-playlist-current:before,
                         body#bd .jp-playlist ul li:hover:before,
-                        body#bd .tz-header2,
+                        body#bd .header2,
                         body#bd .livebox li
                         {
                             border-color: <?php echo esc_attr($colortheme); ?> !important;
                         }
                         body#bd header.headerAnimate,
-                        body#bd.theme-box .everline_boxed header.headerAnimate .wrapbox{
+                        body#bd.theme-box .deeplove_boxed header.headerAnimate .wrapbox{
                             background: <?php echo esc_attr($colortheme); ?> ;
                         }
                         body#bd .tz_social a,

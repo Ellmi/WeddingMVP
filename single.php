@@ -28,7 +28,7 @@
                                     case'video':
                                         ?>
                                             <div class="blog-video">
-                                                <div class="tz-video">
+                                                <div class="video">
                                                     <button class="tzautoplay"><i class="fa fa-video-camera"></i></button>
                                                     <button class="tzpause"><i class="fa fa-pause"></i></button>
                                                     <?php if ( isset( $video_bk ) && !empty( $video_bk ) ) : ?>

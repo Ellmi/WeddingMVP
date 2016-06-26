@@ -1,4 +1,4 @@
-<header class="tz-header tz-header-page">
+<header class="header header-page">
 
     <div class="container">
         <h3 class="tzlogo pull-left">
@@ -22,18 +22,18 @@
         <button data-target=".nav-collapse" class="btn-navbar tz_icon_menu" type="button">
             <i class="fa fa-bars"></i>
         </button>
-        <button class="tz-search pull-right"> <i class="fa fa-search"></i></button>
+        <button class="search pull-right"> <i class="fa fa-search"></i></button>
         <nav class="pull-right">
             <?php
             if ( has_nav_menu('primary') ):
                 wp_nav_menu(array(
                     'theme_location' =>  'primary',
                     'container'     =>  false,
-                    'menu_class'    =>  'tz-menu nav-collapse'
+                    'menu_class'    =>  'menu nav-collapse'
                 ));
             else:
                 ?>
-                <ul class="tz-menu">
+                <ul class="menu">
                     <li>
                         <a href="<?php echo get_admin_url().'/nav-menus.php'; ?>">
                             ADD TO MENU

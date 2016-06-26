@@ -8,7 +8,6 @@
     if( have_posts() ):
         // Start the Loop.
         while( have_posts() ): the_post();
-
             the_content();
             wp_link_pages( array(
                 'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', TEXT_DOMAIN ) . '</span>',

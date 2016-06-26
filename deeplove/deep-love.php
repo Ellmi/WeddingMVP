@@ -2,7 +2,7 @@
 function deeplove_render_homepage()
 { ?>
 
-    <div id="deeplove-slider">
+    <div id="homepage-slider" class="deeplove-slider">
         <div
             data-thumb="<?php echo esc_url(get_theme_mod('slide1_image', get_template_directory_uri() . '/images/slides/slider1.jpg')); ?>"
             data-src="<?php echo esc_url(get_theme_mod('slide1_image', get_template_directory_uri() . '/images/slides/slider1.jpg')); ?>"></div>
@@ -71,7 +71,7 @@ function deeplove_render_homepage()
     </div>
 
     <div id="PostZone2">
-        <div class="tz-portfolio-content" data-option-column="3">
+        <div class="portfolio-content" data-option-column="3">
             <div
                 class="element portfolio post1"
                 style="transform: translate3d(0px, 0px, 0px);">
@@ -260,3 +260,4 @@ function deeplove_render_homepage()
 }
 
 add_action('deeplove_homepage', 'deeplove_render_homepage');
+

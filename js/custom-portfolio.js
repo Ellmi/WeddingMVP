@@ -60,8 +60,8 @@ function TzTemplateResizeImage(obj){
  * @variables mobilelandscape
  * @variables mobileportrait
  */
-function tz_init(){
-    var contentWidth    = jQuery('.tz-portfolio-content').width();
+function dl_init(){
+    var contentWidth    = jQuery('.portfolio-content').width();
     var numberItem      = 2;
     var newColWidth     = 0;
     var heightElement   = 280;
@@ -69,7 +69,7 @@ function tz_init(){
     var portrait        = 0;
     var featureColWidth = 0;
     var widthWindwow    = jQuery(window).width();
-    var $column         = jQuery('.tz-portfolio-content').attr('data-option-column');
+    var $column         = jQuery('.portfolio-content').attr('data-option-column');
     if (widthWindwow >= 992) {
         numberItem =  $column;
     } else if (  widthWindwow >= 768) {
@@ -87,9 +87,9 @@ function tz_init(){
     jQuery('.element').css({
         width: newColWidth + 'px'
     });
-    jQuery('.tz_feature_item, .tz-landscape').width(landscape);
-    jQuery('.tz-portrait').css('height',portrait+'px');
-    var $container  = jQuery('.tz-portfolio-content') ;
+    jQuery('.dl_feature_item, .landscape').width(landscape);
+    jQuery('.portrait').css('height',portrait+'px');
+    var $container  = jQuery('.portfolio-content') ;
     $container.imagesLoaded(function(){
         $container.isotope({
             masonry:{
@@ -115,5 +115,5 @@ function tz_init(){
 var resizeTimer       =   null;
 jQuery(window).bind('load resize', function() {
     if (resizeTimer) clearTimeout(resizeTimer);
-    resizeTimer = setTimeout("tz_init()", 100);
+    resizeTimer = setTimeout("dl_init()", 100);
 });

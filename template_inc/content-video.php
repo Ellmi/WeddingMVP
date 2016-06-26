@@ -2,7 +2,7 @@
 $video_bk  = get_post_meta( $post -> ID, THEME_PREFIX . '_bk_video', true );
 ?>
 <div class="blog-video tzblog-format">
-    <div class="tz-video">
+    <div class="video">
         <button class="tzautoplay"><i class="fa fa-video-camera"></i></button>
         <button class="tzpause"><i class="fa fa-pause"></i></button>
         <?php if ( isset( $video_bk ) && !empty( $video_bk ) ) : ?>

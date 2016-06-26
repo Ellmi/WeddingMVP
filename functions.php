@@ -55,7 +55,7 @@ require SERVER_PATH . '/extension/theme-functions.php';
 /*
  * Required: include plugin theme scripts
  */
-require SERVER_PATH . '/extension/tz-process-option.php';
+require SERVER_PATH . '/extension/process-option.php';
 
 
 /*
@@ -465,8 +465,8 @@ function tzeverline_register_required_plugins() {
         // This is an example of how to include a plugin pre-packaged with a theme
         array(
             'name'     				=> 'Plazart', // The plugin name
-            'slug'     				=> 'tz-plazart', // The plugin slug (typically the folder name)
-            'source'   				=> get_stylesheet_directory() . '/plugins/tz-plazart.zip', // The plugin source
+            'slug'     				=> 'plazart', // The plugin slug (typically the folder name)
+            'source'   				=> get_stylesheet_directory() . '/plugins/plazart.zip', // The plugin source
             'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
             'version' 				=> '1.0.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
             'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch

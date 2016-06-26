@@ -91,7 +91,7 @@
 
                             ?>
                         </div>
-                        <div class="tz-portfolio-title">
+                        <div class="portfolio-title">
                             <i class="fa fa-heart-o tzicon-single"></i>
                             <h3><?php the_title(); ?></h3>
                         </div>

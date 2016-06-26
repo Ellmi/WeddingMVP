@@ -1,7 +1,7 @@
 
 
 var $heightWindow  = jQuery(window).height();
-var $height_header = jQuery('.tz-header').height();
+var $height_header = jQuery('.header').height();
 var $height_header3 = jQuery('.header3-fix').height();
 var $nav3_height     = jQuery('.tznav-3').height();
 
@@ -28,7 +28,7 @@ jQuery(window).load(function(){
 
     var height = get_height();
 
-    jQuery('#deeplove-slider').camera({
+    jQuery('.deeplove-slider').camera({
         height: height + 'px',
         loader: 'bar',
         overlay: false,
@@ -94,7 +94,7 @@ jQuery(document).ready(function(){
     /* Method for Header */
     var $check_admin =  jQuery('#wpadminbar');
     if ( $check_admin.length > 0 ){
-        jQuery('.tz-header').addClass('tzadminbar');
+        jQuery('.header').addClass('tzadminbar');
     }
 
 
@@ -103,7 +103,7 @@ jQuery(document).ready(function(){
     jQuery('#searchform').css({
         top: ( ($heightWindow / 2 )- 30 ) + 'px'
     });
-    jQuery('.tz-search').click(function(){
+    jQuery('.search').click(function(){
         jQuery('.tzform-search').fadeIn(1);
         jQuery('#searchform').addClass('searchform_aff');
     });
@@ -116,12 +116,12 @@ jQuery(document).ready(function(){
     /* Method for video */
     jQuery('.tzautoplay').click(function(){
         var $_this = jQuery(this);
-        var myVideo = $_this.parents('.tz-video').find('.videoID')[0];
+        var myVideo = $_this.parents('.video').find('.videoID')[0];
         jQuery(this).hide();
-        $_this.parents('.tz-video').find('.tz-video-content h3').css('opacity',0);
-        $_this.parents('.tz-video').find('.tz-video-content p').css('opacity',0);
-        $_this.parents('.tz-video').find('.bg-video').hide();
-        $_this.parents('.tz-video').find('.tzpause').show().css('opacity',0);
+        $_this.parents('.video').find('.video-content h3').css('opacity',0);
+        $_this.parents('.video').find('.video-content p').css('opacity',0);
+        $_this.parents('.video').find('.bg-video').hide();
+        $_this.parents('.video').find('.tzpause').show().css('opacity',0);
         if (myVideo.paused)
             myVideo.play();
 
@@ -129,18 +129,18 @@ jQuery(document).ready(function(){
     jQuery('.tzpause').click(function(){
         jQuery(this).hide();
         var $_this = jQuery(this);
-        var myVideo = $_this.parents('.tz-video').find('.videoID')[0];
-        $_this.parents('.tz-video').find('.tz-video-content h3').css('opacity',1);
-        $_this.parents('.tz-video').find('.tz-video-content p').css('opacity',1);
-        $_this.parents('.tz-video').find('.bg-video').show();
-        $_this.parents('.tz-video').find('.tzautoplay').show();
+        var myVideo = $_this.parents('.video').find('.videoID')[0];
+        $_this.parents('.video').find('.video-content h3').css('opacity',1);
+        $_this.parents('.video').find('.video-content p').css('opacity',1);
+        $_this.parents('.video').find('.bg-video').show();
+        $_this.parents('.video').find('.tzautoplay').show();
         if (myVideo.play)
             myVideo.pause();
 
     });
 
     /* Method for Quote */
-    jQuery(".tz-quote").owlCarousel({
+    jQuery(".quote").owlCarousel({
         items : 1,
         itemsDesktop : [1199,1],
         itemsDesktopSmall : [979,1],
@@ -213,11 +213,11 @@ jQuery(window).scroll(function(){
     // method header
     var $_top = jQuery(window).scrollTop();
     if ( $_top > 0 ){
-        jQuery('.tz-header1').addClass('headerAnimate');
-        jQuery('.tz-header5').addClass('headerAnimate2');
+        jQuery('.header1').addClass('headerAnimate');
+        jQuery('.header5').addClass('headerAnimate2');
     }else{
-        jQuery('.tz-header1').removeClass('headerAnimate');
-        jQuery('.tz-header5').removeClass('headerAnimate2');
+        jQuery('.header1').removeClass('headerAnimate');
+        jQuery('.header5').removeClass('headerAnimate2');
 
     }
     // method for header 3
@@ -247,11 +247,11 @@ jQuery(window).scroll(function(){
 // method header
 var $_top = jQuery(window).scrollTop();
 if ( $_top > 0 ){
-    jQuery('.tz-header1').addClass('headerAnimate');
-    jQuery('.tz-header5').addClass('headerAnimate2');
+    jQuery('.header1').addClass('headerAnimate');
+    jQuery('.header5').addClass('headerAnimate2');
 }else{
-    jQuery('.tz-header1').removeClass('headerAnimate');
-    jQuery('.tz-header5').removeClass('headerAnimate2');
+    jQuery('.header1').removeClass('headerAnimate');
+    jQuery('.header5').removeClass('headerAnimate2');
 
 }
 
