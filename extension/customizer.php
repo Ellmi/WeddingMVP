@@ -14,7 +14,7 @@
 function deeplove_customize_register( $wp_customize ) {
 
 	//Sliders
-	$wp_customize->add_panel( 'slider', array (
+	$wp_customize->add_panel( 'home_sliders', array (
 		'title'                 => __( '幻灯片', 'deeplove' ),
 		'description'           => __( 'Customize the slider. Deeplove includes 3 slides', 'deeplove' ),
 		'priority'              => 10
@@ -24,7 +24,7 @@ function deeplove_customize_register( $wp_customize ) {
 	$wp_customize->add_section( 'slide1', array (
 		'title'                 => __( 'Slide #1', 'deeplove' ),
 		'description'           => __( 'Use the settings below to upload your images, set main callout text and button text & URLs', 'deeplove' ),
-		'panel'                 => 'slider',
+		'panel'                 => 'home_sliders',
 	) );
 
 	$wp_customize->add_setting( 'slide1_image', array (
@@ -45,7 +45,7 @@ function deeplove_customize_register( $wp_customize ) {
 	$wp_customize->add_section( 'slide2', array (
 		'title'                 => __( 'Slide #2', 'deeplove' ),
 		'description'           => __( 'Use the settings below to upload your images, set main callout text and button text & URLs', 'deeplove' ),
-		'panel'                 => 'slider',
+		'panel'                 => 'home_sliders',
 	) );
 
 	$wp_customize->add_setting( 'slide2_image', array (
@@ -66,7 +66,7 @@ function deeplove_customize_register( $wp_customize ) {
 	$wp_customize->add_section( 'slide3', array (
 		'title'                 => __( 'Slide #3', 'deeplove' ),
 		'description'           => __( 'Use the settings below to upload your images, set main callout text and button text & URLs', 'deeplove' ),
-		'panel'                 => 'slider',
+		'panel'                 => 'home_sliders',
 	) );
 
 	$wp_customize->add_setting( 'slide3_image', array (
@@ -811,6 +811,75 @@ function deeplove_customize_register( $wp_customize ) {
 		'settings'              => 'Footer_social_six',
 	) );
 
+	//Video Slides
+	$wp_customize->add_panel( 'video_sliders', array (
+		'title'                 => __( '图片轮播(视频页)', 'deeplove' ),
+		'description'           => __( 'Customize the slider. Deeplove includes 3 slides', 'deeplove' ),
+		'priority'              => 10
+	) );
+
+	// 1st slide
+	$wp_customize->add_section( 'video_slide1', array (
+		'title'                 => __( 'Slide #1', 'deeplove' ),
+		'description'           => __( 'Use the settings below to upload your images, set main callout text and button text & URLs', 'deeplove' ),
+		'panel'                 => 'video_sliders',
+	) );
+
+	$wp_customize->add_setting( 'video_slide1_image', array (
+		'default'               => get_template_directory_uri() . '/images/slides/slider1.jpg',
+		'transport'             => 'postMessage',
+		'sanitize_callback'     => 'esc_url_raw'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'video_slide1_image', array (
+		'label' =>              __( 'Background Image', 'deeplove' ),
+		'section'               => 'video_slide1',
+		'mime_type'             => 'image',
+		'settings'              => 'video_slide1_image',
+		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
+	) ) );
+
+	// 2nd slide
+	$wp_customize->add_section( 'video_slide2', array (
+		'title'                 => __( 'Slide #2', 'deeplove' ),
+		'description'           => __( 'Use the settings below to upload your images, set main callout text and button text & URLs', 'deeplove' ),
+		'panel'                 => 'video_sliders',
+	) );
+
+	$wp_customize->add_setting( 'video_slide2_image', array (
+		'default'               => get_template_directory_uri() . '/images/slides/slider2.jpg',
+		'transport'             => 'postMessage',
+		'sanitize_callback'     => 'esc_url_raw'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'video_slide2_image', array (
+		'label' =>              __( 'Background Image', 'deeplove' ),
+		'section'               => 'video_slide2',
+		'mime_type'             => 'image',
+		'settings'              => 'video_slide2_image',
+		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
+	) ) );
+
+	// 3rd slide
+	$wp_customize->add_section( 'video_slide3', array (
+		'title'                 => __( 'Slide #3', 'deeplove' ),
+		'description'           => __( 'Use the settings below to upload your images, set main callout text and button text & URLs', 'deeplove' ),
+		'panel'                 => 'video_sliders',
+	) );
+
+	$wp_customize->add_setting( 'video_slide3_image', array (
+		'default'               => get_template_directory_uri() . '/images/slides/slider3.jpg',
+		'transport'             => 'postMessage',
+		'sanitize_callback'     => 'esc_url_raw'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'video_slide3_image', array (
+		'label' =>              __( 'Background Image', 'deeplove' ),
+		'section'               => 'video_slide3',
+		'mime_type'             => 'image',
+		'settings'              => 'video_slide3_image',
+		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
+	) ) );
 
 }
 add_action( 'customize_register', 'deeplove_customize_register' );

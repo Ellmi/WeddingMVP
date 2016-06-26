@@ -19,7 +19,7 @@
                 ?>
             </a>
         </h3>
-        <button data-target=".nav-collapse" class="btn-navbar tz_icon_menu" type="button">
+        <button data-target=".nav-collapse" class="btn-navbar icon_menu" type="button">
             <i class="fa fa-bars"></i>
         </button>
         <button class="search pull-right"> <i class="fa fa-search"></i></button>

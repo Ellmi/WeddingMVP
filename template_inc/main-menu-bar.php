@@ -8,14 +8,14 @@
                 <header class="header header1">
                     <div class="wrapbox">
                         <div class="container">
-                            <button data-target=".nav-collapse" class="btn-navbar tz_icon_menu" type="button">
+                            <button data-target=".nav-collapse" class="btn-navbar icon_menu" type="button">
                                 <i class="fa fa-bars"></i>
                             </button>
                             <h3 class="tzlogo pull-left">
-                                <a href="#" title="Everline">
+                                <a href="/" title="Deeplove">
                                     <img
                                         src="<?php echo esc_url(get_template_directory_uri() . '/images/logo.png'); ?> "
-                                        alt="Everline">
+                                        alt="Deeplove">
                                 </a>
                             </h3>
                             <nav class="pull-right tznav-menu">

@@ -70,7 +70,7 @@ summary {
     display: block;
 }
 
-.tz_icon_menu{
+.icon_menu {
     display: none;
 }
 textarea {
@@ -997,14 +997,14 @@ body .vc_row{
     .off-canvas-enabled #plazart-mainnav {
         display: block;
     }
-    body .tz_icon_menu{
+    body .icon_menu {
         background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
         border: 0 none;
         color: #fff;
         display: block;
         padding: 20px;
     }
-    .tz_icon_menu i {
+    .icon_menu i {
         color: #fff;
         font-size: 14px;
         line-height: 50px;
@@ -8943,7 +8943,7 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
     body#bd .header1 .container{
         position: relative;
     }
-    body#bd .tz_icon_menu{
+    body#bd .icon_menu {
         position: absolute;
         left: 15px;
         top: 0;
@@ -8965,10 +8965,10 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
         padding: 15px 0 20px;
         background: #d65679 !important;
     }
-    body#bd .header1 .tz_icon_menu i{
+    body#bd .header1 .icon_menu i{
         line-height: 14px;
     }
-    body#bd .header1 .tz_icon_menu{
+    body#bd .header1 .icon_menu {
         padding: 15px 20px;
     }
     .tzcountdownitem{
@@ -9031,7 +9031,7 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
     .header2{
         height: 93px;
     }
-    .header2 .tz_icon_menu i{
+    .header2 .icon_menu i{
         color: #333333;
         font-size: 14px;
         line-height: 50px;
@@ -9073,14 +9073,14 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
     .header3 .tzlogo{
         padding: 33px 0;
     }
-    body#bd .header3 .tz_icon_menu {
+    body#bd .header3 .icon_menu {
         left: 0;
         position: absolute;
         top: 25px;
         background: #fff;
         z-index: 99;
     }
-    body#bd .header3 .tz_icon_menu i{
+    body#bd .header3 .icon_menu i{
         color: #333;
     }
     body#bd .header3 .search {
@@ -9163,12 +9163,12 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
         padding: 35px 0;
         width: 150px;
     }
-    body#bd .header4 .tz_icon_menu {
+    body#bd .header4 .icon_menu {
         left: 0;
         position: absolute;
         top: 30px;
     }
-    .header4 .tz_icon_menu i{
+    .header4 .icon_menu i{
         color: #333;
     }
     body#bd .header4 .search {
@@ -9193,13 +9193,13 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
         padding: 0;
         position: relative;
     }
-    body#bd .header5 .tz_icon_menu {
+    body#bd .header5 .icon_menu {
         position: absolute;
         right: 63px;
         top: 0;
         left: auto;
     }
-    .header5 .tz_icon_menu i {
+    .header5 .icon_menu i {
         color: #333;
         font-size: 14px;
         line-height: 38px;
@@ -9254,7 +9254,7 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
         right: 15px;
         top: 12px;
     }
-    body#bd .header-page .tz_icon_menu {
+    body#bd .header-page .icon_menu {
         left: auto;
         position: absolute;
         right: 65px;
