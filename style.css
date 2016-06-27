@@ -11056,3 +11056,7 @@ body#bd {
 #video-slider{
     margin-bottom: 60px;
 }
+
+.single_post .container{
+    text-align: center;
+}

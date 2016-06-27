@@ -19,28 +19,25 @@
                         if ( have_posts() ):
                             while( have_posts() ):
                                 the_post();
-                                $post_format = get_post_meta(get_the_ID(), THEME_PREFIX . '_portfolio_type', true);
-                                $video_bk    = get_post_meta( get_the_ID(), THEME_PREFIX . '_bk_video', true );
+                                $post_format = get_post_format();
                                 $slidershow  = get_post_meta( get_the_ID(), THEME_PREFIX . '_portfolio_slideshows', true );
                                 $img_detail  = get_post_meta( get_the_ID(), THEME_PREFIX . '_portfolio_image', true );
                                 switch( $post_format ):
-
                                     case'video':
                                         ?>
-                                            <div class="blog-video">
-                                                <div class="video">
-                                                    <button class="tzautoplay"><i class="fa fa-video-camera"></i></button>
-                                                    <button class="tzpause"><i class="fa fa-pause"></i></button>
-                                                    <?php if ( isset( $video_bk ) && !empty( $video_bk ) ) : ?>
-                                                        <div class="bg-video bg-video1" style="background: url(<?php echo esc_url($video_bk); ?>) no-repeat  center center / cover  transparent !important;"></div>
-                                                    <?php endif; ?>
-                                                    <video class="videoID">
-                                                        <source type="video/mp4" src="<?php echo esc_url(get_post_meta( get_the_ID(), THEME_PREFIX . '_portfolio_video_mp4', true )); ?>" />
-                                                        <source type="video/ogg" src="<?php echo esc_url(get_post_meta( get_the_ID(), THEME_PREFIX . '_portfolio_video_ogv', true )); ?>" />
-                                                        <source type="video/webm" src="<?php echo esc_url(get_post_meta( get_the_ID(), THEME_PREFIX . '_portfolio_video_webm', true )); ?>" />
-                                                    </video>
-                                                </div>
-                                            </div>
+                                        <div class="blog-video">
+                                            <?php $video_data = str_replace("</p>", "", str_replace("<p>", "", get_the_content()));
+                                            ?>
+                                            <object type="application/x-shockwave-flash"
+                                                    data="<?php echo $video_data; ?>" width="1000px" height="800px"
+                                                    id="youku-player">
+                                                <param name="allowFullScreen" value="true">
+                                                <param name="allowScriptAccess" value="always">
+                                                <param name="movie" value="<?php echo $video_data; ?>">
+                                                <param name="flashvars"
+                                                       value="imglogo=&amp;paid=0&amp;partnerId=youkuind_">
+                                            </object>
+                                        </div>
                                         <?php
                                         break;
                                     case'audio':
@@ -102,22 +99,23 @@
                                 endswitch;
                      ?>
 
-                    <h2 class="single-title"><?php the_title(); ?></h2>
-                    <span class="single-meta">
-                        <?php echo get_the_date() ; ?>
-                        <?php
-                            if ( !post_password_required() && ( comments_open() && get_comments_number() ) ):
-                                echo '/';
-                                comments_popup_link(__('Leave a comment', TEXT_DOMAIN),__('1 Comment', TEXT_DOMAIN),__('% comment(s)', TEXT_DOMAIN) );
-                            endif;
-                        ?>
-                        <span>
-                            /
-                            <?php the_category(',') ?>
-                        </span>
-                    </span>
+<!--                    <h2 class="single-title">--><?php //the_title(); ?><!--</h2>-->
+<!--                    <span class="single-meta">-->
+<!--                        --><?php //echo get_the_date() ; ?>
+<!--                        --><?php
+//                            if ( !post_password_required() && ( comments_open() && get_comments_number() ) ):
+//                                echo '/';
+//                                comments_popup_link(__('Leave a comment', TEXT_DOMAIN),__('1 Comment', TEXT_DOMAIN),__('% comment(s)', TEXT_DOMAIN) );
+//                            endif;
+//                        ?>
+<!--                        <span>-->
+<!--                            /-->
+<!--                            --><?php //the_category(',') ?>
+<!--                        </span>-->
+<!--                    </span>-->
                      <div class="single-content">
-                        <?php   the_content();
+                        <?php
+//                         the_content();
                                 wp_link_pages( array(
                                     'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', TEXT_DOMAIN ) . '</span>',
                                     'after'       => '</div>',
@@ -128,39 +126,6 @@
                                 ) );
                         ?>
                      </div>
-                    <div class="single-tags">
-                        <div class="meta-tags pull-left">
-                            <?php the_tags(); ?>
-                        </div>
-                        <div class="single-share pull-right">
-                            <span><?php echo _e('Share it:', TEXT_DOMAIN); ?></span>
-                            <!-- Facebook Button -->
-                            <a href="javascript: void(0)" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=<?php the_title(); ?>&amp;p[url]=<?php the_permalink() ; ?>','sharer','toolbar=0,status=0,width=580,height=325');" id="fb-share" class="tz_social"><i class="fa fa-facebook"></i></a>
-
-                            <!-- Twitter Button -->
-                            <a href="javascript: void(0)" onclick="window.open('http://twitter.com/share?text=<?php the_title(); ?>&amp;url=<?php the_permalink() ; ?>','sharer','toolbar=0,status=0,width=580,height=325');" class="tz_social" id="tw-share"><i class="fa fa-twitter"></i></a>
-
-                            <!-- Google +1 Button -->
-                            <a href="javascript: void(0)" onclick="window.open('https://plus.google.com/share?url=<?php the_permalink() ; ?>','sharer','toolbar=0,status=0,width=580,height=325');" class="tz_social" id="g-share"><i class="fa fa-google-plus"></i></a>
-
-                            <!-- Pinterest Button -->
-                            <a href="javascript: void(0)" onclick="window.open('http://pinterest.com/pin/create/button/?url=<?php the_permalink() ; ?>&amp;description=<?php the_title(); ?>','sharer','toolbar=0,status=0,width=580,height=325');" class="tz_social" id="p-share"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                    </div>
-                    <div class="single-author">
-                        <?php echo get_avatar( get_the_author_meta('ID'), 100 ); ?>
-                        <span class="author-ds">
-                            <a class="single-author-name" href="<?php echo esc_url(get_author_posts_url( get_the_author_meta('ID') )) ; ?>"><?php the_author() ?></a>
-                            <a class="single-author-url" href="<?php echo esc_url(get_the_author_meta('url')) ; ?>"><?php echo esc_html(get_the_author_meta('url')) ; ?></a>
-                        </span>
-                    </div>
-                    <div class="tzcomments-area">
-                        <?php if ( comments_open() ):
-                            comments_template( '', true );
-                              endif;
-                        ?>
-
-                    </div>
                      <?php
                             endwhile;
                         endif;
