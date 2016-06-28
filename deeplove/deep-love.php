@@ -1,21 +1,7 @@
 <?php
 function deeplove_render_homepage()
-{ ?>
-
-    <div id="homepage-slider" class="deeplove-slider">
-        <div
-            data-thumb="<?php echo esc_url(get_theme_mod('slide1_image', get_template_directory_uri() . '/images/slides/slider1.jpg')); ?>"
-            data-src="<?php echo esc_url(get_theme_mod('slide1_image', get_template_directory_uri() . '/images/slides/slider1.jpg')); ?>"></div>
-        <div
-            data-thumb="<?php echo esc_url(get_theme_mod('slide2_image', get_template_directory_uri() . '/images/slides/slider2.jpg')); ?>"
-            data-src="<?php echo esc_url(get_theme_mod('slide2_image', get_template_directory_uri() . '/images/slides/slider2.jpg')); ?>"></div>
-        <div
-            data-thumb="<?php echo esc_url(get_theme_mod('slide3_image', get_template_directory_uri() . '/images/slides/slider3.jpg')); ?>"
-            data-src="<?php echo esc_url(get_theme_mod('slide3_image', get_template_directory_uri() . '/images/slides/slider3.jpg')); ?>"></div>
-    </div>
-
-    <div class="clear"></div>
-
+{
+    get_template_part('template_inc/slides', 'home');?>
     <div id="office">
         <div class="container">
             <h4 class="title"><?php echo esc_attr_e(get_theme_mod('office_title', __('office introduction title', 'deeplove')));?></h4>

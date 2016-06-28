@@ -11042,7 +11042,8 @@ body#bd {
     text-align: center;
 }
 
-.dl-video:hover {
+.dl-video:hover ,
+.dl-demo:hover{
     filter: opacity(70%);
     -webkit-filter: opacity(70%);
     -moz-filter: opacity(70%);

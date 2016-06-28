@@ -14,3 +14,4 @@
         data-thumb="<?php echo esc_url(get_theme_mod('video_slide3_image', get_template_directory_uri() . '/images/slides/slider3.jpg')); ?>"
         data-src="<?php echo esc_url(get_theme_mod('video_slide3_image', get_template_directory_uri() . '/images/slides/slider3.jpg')); ?>"></div>
 </div>
+<div class="clear"></div>
