@@ -11060,3 +11060,13 @@ body#bd {
 .single_post .container{
     text-align: center;
 }
+
+.navigation{
+    margin: 42px 0 0;
+    font-size: 21px;
+    color:grey;
+}
+
+.navigation a{
+    color: #d65679;
+}
