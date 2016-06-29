@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Template VIDEOS
+ * Template Name: Template Videos
  * User: Yanmin
  */
 get_header();

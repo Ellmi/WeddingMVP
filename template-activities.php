@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Template Hotels
+ * Template Name: Template Activities
  * User: Yanmin
  */
 get_header();
