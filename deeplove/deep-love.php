@@ -114,7 +114,7 @@ function deeplove_render_homepage()
                         <h3><?php echo esc_attr_e(get_theme_mod('PostZone2_post3_title', __('PostZone2 post3 title', 'deeplove')));?></h3>
 
                         <div class="tzmeta">
-                            <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post3_date class="post3" ', __('PostZone2 post3 date', 'deeplove')));?></span>
+                            <span><?php echo esc_attr_e(get_theme_mod('PostZone2_post3_date', __('PostZone2 post3 date', 'deeplove')));?></span>
                         </div>
                     </div>
                 </div>

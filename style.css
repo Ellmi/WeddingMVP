@@ -6821,7 +6821,7 @@ blockquote:before {
     position: absolute;
     left: 0;
     top: 0;
-    background: #d65679;
+    background: rgba(214, 86, 121, 0.7);
     content: '';
     z-index: 1;
     transition: all 0.4s linear 0.1s;
@@ -10965,6 +10965,9 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
 #PostZone1 {
     background: #f6f6f6;
     padding: 85px 0 65px 0;
+}
+#PostZone1 a:hover {
+    text-decoration: none;
 }
 
 .cameraSlide {
