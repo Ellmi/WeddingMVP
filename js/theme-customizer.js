@@ -67,6 +67,12 @@
 		});
 	} );
 
+	api( 'PostZone2_post1_link', function( value ) {
+		value.bind( function( to ) {
+			$('#PostZone2 a.post1').attr('href', to); ;
+		} );
+	} );
+
 	api( 'PostZone2_post2_title', function( value ) {
 		value.bind( function( to ) {
 			$('#PostZone2 .post2 h3').text( to );
@@ -76,6 +82,12 @@
 	api( 'PostZone2_post2_date', function( value ) {
 		value.bind( function( to ) {
 			$('#PostZone2 .post2 .tzmeta span').text( to );
+		} );
+	} );
+
+	api( 'PostZone2_post2_link', function( value ) {
+		value.bind( function( to ) {
+			$('#PostZone2 a.post2').attr('href', to); ;
 		} );
 	} );
 
@@ -91,6 +103,12 @@
 		} );
 	} );
 
+	api( 'PostZone2_post3_link', function( value ) {
+		value.bind( function( to ) {
+			$('#PostZone2 a.post3').attr('href', to); ;
+		} );
+	} );
+
 	api( 'PostZone2_post4_title', function( value ) {
 		value.bind( function( to ) {
 			$('#PostZone2 .post4 h3').text( to );
@@ -100,6 +118,12 @@
 	api( 'PostZone2_post4_date', function( value ) {
 		value.bind( function( to ) {
 			$('#PostZone2 .post4 .tzmeta span').text( to );
+		} );
+	} );
+
+	api( 'PostZone2_post4_link', function( value ) {
+		value.bind( function( to ) {
+			$('#PostZone2 a.post4').attr('href', to); ;
 		} );
 	} );
 
@@ -115,6 +139,12 @@
 		} );
 	} );
 
+	api( 'PostZone2_post5_link', function( value ) {
+		value.bind( function( to ) {
+			$('#PostZone2 a.post5').attr('href', to); ;
+		} );
+	} );
+
 	api( 'PostZone2_post6_title', function( value ) {
 		value.bind( function( to ) {
 			$('#PostZone2 .post6 h3').text( to );
@@ -124,6 +154,12 @@
 	api( 'PostZone2_post6_date', function( value ) {
 		value.bind( function( to ) {
 			$('#PostZone2 .post6 .tzmeta span').text( to );
+		} );
+	} );
+
+	api( 'PostZone2_post6_link', function( value ) {
+		value.bind( function( to ) {
+			$('#PostZone2 a.post6').attr('href', to); ;
 		} );
 	} );
 
@@ -140,6 +176,12 @@
 		} );
 	} );
 
+	api( 'PostZone3_post1_link', function( value ) {
+		value.bind( function( to ) {
+			$('#PostZone3 .post1 a').attr('href', to); ;
+		} );
+	} );
+
 	api( 'PostZone3_post1_detail', function( value ) {
 		value.bind( function( to ) {
 			$('#PostZone3 .post1 p').text( to );
@@ -152,6 +194,13 @@
 		} );
 	} );
 
+	api( 'PostZone3_post2_link', function( value ) {
+		value.bind( function( to ) {
+			$('#PostZone3 .post2 a').attr('href', to); ;
+		} );
+	} );
+
+
 	api( 'PostZone3_post2_detail', function( value ) {
 		value.bind( function( to ) {
 			$('#PostZone3 .post2 p').text( to );
@@ -161,6 +210,12 @@
 	api( 'PostZone3_post3_title', function( value ) {
 		value.bind( function( to ) {
 			$('#PostZone3 .post3 h4').text( to );
+		} );
+	} );
+
+	api( 'PostZone3_post3_link', function( value ) {
+		value.bind( function( to ) {
+			$('#PostZone3 .post3 a').attr('href', to); ;
 		} );
 	} );
 
@@ -175,6 +230,13 @@
 			$('#PostZone3 .post4 h4').text( to );
 		} );
 	} );
+
+	api( 'PostZone3_post4_link', function( value ) {
+		value.bind( function( to ) {
+			$('#PostZone3 .post4 a').attr('href', to); ;
+		} );
+	} );
+
 
 	api( 'PostZone3_post4_detail', function( value ) {
 		value.bind( function( to ) {

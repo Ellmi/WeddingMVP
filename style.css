@@ -10966,7 +10966,9 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
     background: #f6f6f6;
     padding: 85px 0 65px 0;
 }
-#PostZone1 a:hover {
+#PostZone1 a:hover,
+#PostZone3 a:hover
+{
     text-decoration: none;
 }
 
