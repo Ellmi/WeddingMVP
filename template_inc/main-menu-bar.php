@@ -22,7 +22,7 @@
                                 <ul id="menu-primary" class="menu nav-collapse themeple_megemenu">
                                     <li id="menu-item-102"
                                         class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children">
-                                        <a href="wedding">婚礼策划</a>
+                                        <a href="#">婚礼策划</a>
 
                                         <ul class="sub-menu non_mega_menu">
                                             <li id="menu-item-103"
