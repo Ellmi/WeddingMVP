@@ -61,7 +61,8 @@ function tzeverline_register_front_end_scripts()
 
 
     wp_deregister_script('countdown');
-    wp_register_script('countdown', JS_PATH . 'countdown.js', false, false, $in_footer=true);
+    wp_register_script('countdown', THEME_PATH . '/js/countdown.js', false, false, $in_footer=true);
+    wp_enqueue_script('countdown');
 
     wp_deregister_script('jquery-isotope');
     wp_register_script('jquery-isotope', THEME_PATH . '/js/jquery.isotope.min.js', false, false, $in_footer=true);
