@@ -29,7 +29,7 @@
                                                 <a href="#">婚礼套餐</a>
                                             </li>
                                             <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                <a href="#">终端定制</a>
+                                                <a href="#">中端定制</a>
                                             </li>
                                             <li class="menu-item menu-item-type-post_type menu-item-object-page">
                                                 <a href="propose">求婚策划</a>
