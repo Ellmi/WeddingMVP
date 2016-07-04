@@ -12,7 +12,7 @@
                                 <i class="fa fa-bars"></i>
                             </button>
                             <h3 class="tzlogo pull-left">
-                                <a href="/" title="Deeplove">
+                                <a href="http://weddingmvp.cn" title="Deeplove">
                                     <img
                                         src="<?php echo esc_url(get_template_directory_uri() . '/images/logo.png'); ?> "
                                         alt="Deeplove">

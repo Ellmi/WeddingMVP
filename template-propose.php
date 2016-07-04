@@ -4,7 +4,7 @@
  * User: Yanmin
  */
 get_header();
-get_template_part('template_inc/main', 'menu-bar');
+get_template_part('template_inc/side', 'menu-bar');
 get_template_part('template_inc/slides', 'home'); ?>
 <div id="propose">
     <div class="tzcountdown2">
