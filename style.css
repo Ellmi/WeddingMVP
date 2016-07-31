@@ -10950,7 +10950,8 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
     text-align: center;
     letter-spacing: 3px;
 }
-
+.wedding_post .title:after,
+#PostZone3 .title:after,
 #office .title:after {
     width: 70px;
     height: 2px;
@@ -11042,9 +11043,12 @@ body#bd {
     width: 200px;
     overflow-wrap: break-word;
 }
-
+.wedding_post .title,
 #PostZone3 .title {
     text-align: center;
+    margin-top: 72px;
+    margin-bottom: 24px;
+    position: relative;
 }
 
 .dl-video:hover ,

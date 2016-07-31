@@ -984,6 +984,289 @@ function deeplove_customize_register( $wp_customize ) {
 		'description'           => __( 'Select the image file that you would like to use as the featured images', 'deeplove' ),
 	) ) );
 
+	//Wedding
+	$wp_customize->add_panel( 'wedding', array (
+		'title'                 => __( '婚礼策划', 'deeplove' ),
+		'description'           => __( 'Customize all the subpage under the weddign', 'deeplove' ),
+		'priority'              => 10
+	) );
+
+	// activity date
+	$wp_customize->add_section( 'activity_end_time', array (
+		'title'                 => __( '活动结束时间', 'deeplove' ),
+		'description'           => __( 'Use the settings below to upload your activity end time', 'deeplove' ),
+		'panel'                 => 'wedding',
+	) );
+
+	$wp_customize->add_setting( 'activity_end_time_setting', array (
+	    'default'               => "july 1 2017 23:23:23",
+        'transport' => 'postMessage'
+	) );
+
+	$wp_customize->add_control('activity_end_time_control', array (
+		'label' =>              __( 'end time', 'deeplove' ),
+        'type'                  => 'text',
+		'section'               => 'activity_end_time',
+		'settings'              => 'activity_end_time_setting',
+		'description'           => __( 'Select the time activity end', 'deeplove' ),
+	) );
+
+    //propose
+    $wp_customize->add_section( 'propose', array (
+        'title'                 => __( '求婚策划', 'deeplove' ),
+        'panel'                 => 'wedding',
+    ) );
+
+    $wp_customize->add_setting( 'propose_topic_picture_setting', array (
+        'default'               => get_template_directory_uri() . '/images/slides/slider3.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'propose_topic_picture_control', array (
+        'label' =>              __( '专题介绍——图片', 'deeplove' ),
+        'section'               => 'propose',
+        'mime_type'             => 'image',
+        'settings'              => 'propose_topic_picture_setting',
+    ) ) );
+
+    $wp_customize->add_setting( 'propose_topic_text_title_setting', array (
+        'default'               => 'OUR STORY',
+        'transport'             => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'propose_topic_text_title_control', array (
+        'label' =>              __( '专题介绍——文字标题', 'deeplove' ),
+        'type'                  => 'text',
+        'section'               => 'propose',
+        'settings'              => 'propose_topic_text_title_setting',
+    ) );
+
+    $wp_customize->add_setting( 'propose_topic_text_detail_setting', array (
+        'default'               => 'Thank you for choosing CosmoThemes and purchasing one of our Premium WordPress Themes your choice is greatly appreciated!',
+        'transport'             => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'propose_topic_text_detail_control', array (
+        'label' =>              __( '专题介绍——文字内容', 'deeplove' ),
+        'type'                  => 'textarea',
+        'section'               => 'propose',
+        'settings'              => 'propose_topic_text_detail_setting',
+    ) );
+
+
+    $wp_customize->add_setting( 'propose_process_setting', array (
+        'default'               => get_template_directory_uri() . '/images/slides/slider2.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'propose_process_control', array (
+        'label' =>              __( '流程介绍图', 'deeplove' ),
+        'section'               => 'propose',
+        'mime_type'             => 'image',
+        'settings'              => 'propose_process_setting',
+    ) ) );
+
+    $wp_customize->add_setting( 'propose_posts_title', array (
+        'default'               => __( '求婚案例', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'propose_posts_title', array (
+        'label' =>              __( '设置案例标题', 'deeplove' ),
+        'section'               => 'propose',
+        'settings'              => 'propose_posts_title',
+    ) );
+
+    $wp_customize->add_setting( 'propose_post1_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'propose_post1_image', array (
+        'label' =>              __( '文章1', 'deeplove' ),
+        'section'               => 'propose',
+        'mime_type'             => 'image',
+        'settings'              => 'propose_post1_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'propose_post1_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'propose_post1_link', array (
+        'label' =>              __( '设置链接-文章1', 'deeplove' ),
+        'section'               => 'propose',
+        'settings'              => 'propose_post1_link',
+    ) );
+
+    $wp_customize->add_setting( 'propose_post2_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'propose_post2_image', array (
+        'label' =>              __( '文章2', 'deeplove' ),
+        'section'               => 'propose',
+        'mime_type'             => 'image',
+        'settings'              => 'propose_post2_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'propose_post2_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'propose_post2_link', array (
+        'label' =>              __( '设置链接-文章2', 'deeplove' ),
+        'section'               => 'propose',
+        'settings'              => 'propose_post2_link',
+    ) );
+    $wp_customize->add_setting( 'propose_post3_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome3.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'propose_post3_image', array (
+        'label' =>              __( '文章3', 'deeplove' ),
+        'section'               => 'propose',
+        'mime_type'             => 'image',
+        'settings'              => 'propose_post3_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'propose_post3_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'propose_post3_link', array (
+        'label' =>              __( '设置链接-文章3', 'deeplove' ),
+        'section'               => 'propose',
+        'settings'              => 'propose_post3_link',
+    ) );
+
+    $wp_customize->add_setting( 'propose_post4_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'propose_post4_image', array (
+        'label' =>              __( '文章4', 'deeplove' ),
+        'section'               => 'propose',
+        'mime_type'             => 'image',
+        'settings'              => 'propose_post4_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'propose_post4_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'propose_post4_link', array (
+        'label' =>              __( '设置链接-文章4', 'deeplove' ),
+        'section'               => 'propose',
+        'settings'              => 'propose_post4_link',
+    ) );
+    $wp_customize->add_setting( 'propose_post5_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome1.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'propose_post5_image', array (
+        'label' =>              __( '文章5', 'deeplove' ),
+        'section'               => 'propose',
+        'mime_type'             => 'image',
+        'settings'              => 'propose_post5_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'propose_post5_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'propose_post5_link', array (
+        'label' =>              __( '设置链接-文章5', 'deeplove' ),
+        'section'               => 'propose',
+        'settings'              => 'propose_post5_link',
+    ) );
+    $wp_customize->add_setting( 'propose_post6_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome2.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'propose_post6_image', array (
+        'label' =>              __( '文章6', 'deeplove' ),
+        'section'               => 'propose',
+        'mime_type'             => 'image',
+        'settings'              => 'propose_post6_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'propose_post6_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'propose_post6_link', array (
+        'label' =>              __( '设置链接-文章6', 'deeplove' ),
+        'section'               => 'propose',
+        'settings'              => 'propose_post6_link',
+    ) );
+
+    $wp_customize->add_setting( 'propose_post7_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome3.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'propose_post7_image', array (
+        'label' =>              __( '文章7', 'deeplove' ),
+        'section'               => 'propose',
+        'mime_type'             => 'image',
+        'settings'              => 'propose_post7_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'propose_post7_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'propose_post7_link', array (
+        'label' =>              __( '设置链接-文章7', 'deeplove' ),
+        'section'               => 'propose',
+        'settings'              => 'propose_post7_link',
+    ) );
+
+    $wp_customize->add_setting( 'propose_post8_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'propose_post8_image', array (
+        'label' =>              __( '文章8', 'deeplove' ),
+        'section'               => 'propose',
+        'mime_type'             => 'image',
+        'settings'              => 'propose_post8_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'propose_post8_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'propose_post8_link', array (
+        'label' =>              __( '设置链接-文章8', 'deeplove' ),
+        'section'               => 'propose',
+        'settings'              => 'propose_post8_link',
+    ) );
 }
 add_action( 'customize_register', 'deeplove_customize_register' );
 /**

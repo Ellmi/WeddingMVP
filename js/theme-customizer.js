@@ -280,4 +280,85 @@
 			$('.dl-footer p.six').text( to );
 		} );
 	} );
+
+	//activity date
+	api('activity_end_time_setting', function (value) {
+		value.bind(function (to) {
+			$(".countdown").countdown({
+				date: to,
+				format: "on"
+			});
+		});
+	});
+	//propose
+	api( 'propose_topic_text_title_setting', function( value ) {
+		value.bind( function( to ) {
+			$('#propose .title_ourstory').text( to );
+		} );
+	} );
+
+	api( 'propose_topic_text_detail_setting', function( value ) {
+		value.bind( function( to ) {
+			$('#propose .ourstory_content').text( to );
+		} );
+	} );
+
+	//propose posts
+	api( 'propose_posts_title', function( value ) {
+		value.bind( function( to ) {
+			$('#propose .wedding_post .title').text( to );
+		} );
+	} );
+
+	api( 'propose_post1_link', function( value ) {
+		value.bind( function( to ) {
+			$('#propose .wedding_post .post1 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'propose_post2_link', function( value ) {
+		value.bind( function( to ) {
+			$('#propose .wedding_post .post2 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'propose_post3_link', function( value ) {
+		value.bind( function( to ) {
+			$('#propose .wedding_post .post3 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'propose_post4_link', function( value ) {
+		value.bind( function( to ) {
+			$('#propose .wedding_post .post4 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'propose_post5_link', function( value ) {
+		value.bind( function( to ) {
+			$('#propose .wedding_post .post5 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'propose_post6_link', function( value ) {
+		value.bind( function( to ) {
+			$('#propose .wedding_post .post6 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'propose_post7_link', function( value ) {
+		value.bind( function( to ) {
+			$('#propose .wedding_post .post7 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'propose_post8_link', function( value ) {
+		value.bind( function( to ) {
+			$('#propose .wedding_post .post8 a').attr('href', to); ;
+		} );
+	} );
+
+
+
+
 } )( jQuery );

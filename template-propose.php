@@ -42,42 +42,108 @@ get_template_part('template_inc/slides', 'home'); ?>
         </div>
     </div>
     <?php get_template_part('template_inc/post', 'zone1'); ?>
-    <div class="container">
+    <div class="container tzourstory2">
         <div class="row">
-            <h1 class="playlist_title">婚礼案例</h1>
-            <?php
-            $paged = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
-            $blog_args = array(
-                'post_type' => 'post',
-                'category_name' => 'demos',
-                'posts_per_page' => 6,
-                'paged' => $paged
-            );
-            query_posts($blog_args);
-            if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <div class="dl-demo wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-lg-6">
-                    <div class="vc_column-inner">
-                        <?php the_content();?>
+            <div class="col-md-7 rtl-right">
+                <img width="670" height="406" src="<?php echo esc_url(get_theme_mod('propose_topic_picture_setting', get_template_directory_uri() . '/images/portfolio6.jpg')); ?>" class="story_image pull-right">
+            </div>
+            <div class="col-md-5 rtl-left">
+                <h3 class="title_ourstory"><?php echo esc_attr_e(get_theme_mod('propose_topic_text_title_setting'));?></h3>
+                <div class="ourstory_content">
+                    <p><?php echo esc_attr_e(get_theme_mod('propose_topic_text_detail_setting'));?></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img width="100%" src="<?php echo esc_url(get_theme_mod('propose_process_setting', get_template_directory_uri() . '/images/slides/slider2.jpg')); ?>" alt="">
+    <div class="wedding_post">
+        <div class="container">
+            <h2 class="title"><?php echo esc_attr_e(get_theme_mod('propose_posts_title', __( '求婚案例', 'deeplove' ))); ?></h2>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="blog-item post1">
+                        <a href="<?php echo esc_attr_e(get_theme_mod('propose_post1_link', __('#', 'deeplove'))); ?>">
+                            <div class="blog-image">
+                                <img width="270" height="170"
+                                     src="<?php echo esc_url(get_theme_mod('propose_post1_image', get_template_directory_uri() . '/images/bloghome4.jpg')); ?> ">
+                            </div>
+                        </a>
                     </div>
                 </div>
-            <?php endwhile;
-            else :
-            endif;
-            wp_reset_postdata();?>
-        </div>
-        <div class="navigation">
-            <?php
-            global $wp_query;
-
-            $big = 999999999; // need an unlikely integer
-
-            echo paginate_links(array(
-                'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-                'format' => '?paged=%#%',
-                'current' => max(1, get_query_var('paged')),
-                'total' => $wp_query->max_num_pages
-            ));
-            ?>
+                <div class="col-md-3 col-sm-6">
+                    <div class="blog-item post2">
+                        <a href="<?php echo esc_attr_e(get_theme_mod('propose_post2_link', __('#', 'deeplove'))); ?>">
+                            <div class="blog-image">
+                                <img width="270" height="170"
+                                     src="<?php echo esc_url(get_theme_mod('propose_post2_image', get_template_directory_uri() . '/images/bloghome3.jpg')); ?>">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="blog-item post3">
+                        <a href="<?php echo esc_attr_e(get_theme_mod('propose_post3_link', __('#', 'deeplove'))); ?>">
+                            <div class="blog-image">
+                                <img width="270" height="170"
+                                     src="<?php echo esc_url(get_theme_mod('propose_post3_image', get_template_directory_uri() . '/images/bloghome2.jpg')); ?>">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="blog-item post4">
+                        <a href="<?php echo esc_attr_e(get_theme_mod('propose_post4_link', __('#', 'deeplove'))); ?>">
+                            <div class="blog-image">
+                                <img width="270" height="170"
+                                     src="<?php echo esc_url(get_theme_mod('propose_post4_image', get_template_directory_uri() . '/images/bloghome1.jpg')); ?>">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="blog-item post5">
+                        <a href="<?php echo esc_attr_e(get_theme_mod('propose_post5_link', __('#', 'deeplove'))); ?>">
+                            <div class="blog-image">
+                                <img width="270" height="170"
+                                     src="<?php echo esc_url(get_theme_mod('propose_post5_image', get_template_directory_uri() . '/images/bloghome4.jpg')); ?> ">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="blog-item post6">
+                        <a href="<?php echo esc_attr_e(get_theme_mod('propose_post6_link', __('#', 'deeplove'))); ?>">
+                            <div class="blog-image">
+                                <img width="270" height="170"
+                                     src="<?php echo esc_url(get_theme_mod('propose_post6_image', get_template_directory_uri() . '/images/bloghome3.jpg')); ?>">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="blog-item post7">
+                        <a href="<?php echo esc_attr_e(get_theme_mod('propose_post7_link', __('#', 'deeplove'))); ?>">
+                            <div class="blog-image">
+                                <img width="270" height="170"
+                                     src="<?php echo esc_url(get_theme_mod('propose_post7_image', get_template_directory_uri() . '/images/bloghome2.jpg')); ?>">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="blog-item post8">
+                        <a href="<?php echo esc_attr_e(get_theme_mod('propose_post8_link', __('#', 'deeplove'))); ?>">
+                            <div class="blog-image">
+                                <img width="270" height="170"
+                                     src="<?php echo esc_url(get_theme_mod('propose_post8_image', get_template_directory_uri() . '/images/bloghome1.jpg')); ?>">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -86,7 +152,7 @@ get_template_part('template_inc/slides', 'home'); ?>
 <script>
     jQuery(document).ready(function () {
         jQuery(".countdown").countdown({
-            date: "july 1 2017 23:23:23", // add the countdown's end date (i.e. 3 november 2012 12:00:00)
+            date: "<?php echo esc_attr_e(get_theme_mod('activity_end_time_setting')); ?>", // add the countdown's end date (i.e. 3 november 2012 12:00:00)
             format: "on" // on (03:07:52) | off (3:7:52) - two_digits set to ON maintains layout consistency
         });
     });

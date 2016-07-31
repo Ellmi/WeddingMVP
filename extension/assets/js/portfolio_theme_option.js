@@ -307,7 +307,7 @@ jQuery(document).ready(function(){
     });
 
 });
-
+var themeprefix = 'plazart';
 
 
 // Background Type Event
