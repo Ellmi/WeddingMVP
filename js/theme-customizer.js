@@ -358,6 +358,276 @@
 		} );
 	} );
 
+	//painting
+	api( 'painting_topic_text_title_setting', function( value ) {
+		value.bind( function( to ) {
+			$('#painting .title_ourstory').text( to );
+		} );
+	} );
+
+	api( 'painting_topic_text_detail_setting', function( value ) {
+		value.bind( function( to ) {
+			$('#painting .ourstory_content').text( to );
+		} );
+	} );
+
+//painting posts
+	api( 'painting_posts_title', function( value ) {
+		value.bind( function( to ) {
+			$('#painting .wedding_post .title').text( to );
+		} );
+	} );
+
+	api( 'painting_post1_link', function( value ) {
+		value.bind( function( to ) {
+			$('#painting .wedding_post .post1 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'painting_post2_link', function( value ) {
+		value.bind( function( to ) {
+			$('#painting .wedding_post .post2 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'painting_post3_link', function( value ) {
+		value.bind( function( to ) {
+			$('#painting .wedding_post .post3 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'painting_post4_link', function( value ) {
+		value.bind( function( to ) {
+			$('#painting .wedding_post .post4 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'painting_post5_link', function( value ) {
+		value.bind( function( to ) {
+			$('#painting .wedding_post .post5 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'painting_post6_link', function( value ) {
+		value.bind( function( to ) {
+			$('#painting .wedding_post .post6 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'painting_post7_link', function( value ) {
+		value.bind( function( to ) {
+			$('#painting .wedding_post .post7 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'painting_post8_link', function( value ) {
+		value.bind( function( to ) {
+			$('#painting .wedding_post .post8 a').attr('href', to); ;
+		} );
+	} );
+
+	//meeting
+	api( 'meeting_topic_text_title_setting', function( value ) {
+		value.bind( function( to ) {
+			$('#meeting .title_ourstory').text( to );
+		} );
+	} );
+
+	api( 'meeting_topic_text_detail_setting', function( value ) {
+		value.bind( function( to ) {
+			$('#meeting .ourstory_content').text( to );
+		} );
+	} );
+
+//meeting posts
+	api( 'meeting_posts_title', function( value ) {
+		value.bind( function( to ) {
+			$('#meeting .wedding_post .title').text( to );
+		} );
+	} );
+
+	api( 'meeting_post1_link', function( value ) {
+		value.bind( function( to ) {
+			$('#meeting .wedding_post .post1 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'meeting_post2_link', function( value ) {
+		value.bind( function( to ) {
+			$('#meeting .wedding_post .post2 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'meeting_post3_link', function( value ) {
+		value.bind( function( to ) {
+			$('#meeting .wedding_post .post3 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'meeting_post4_link', function( value ) {
+		value.bind( function( to ) {
+			$('#meeting .wedding_post .post4 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'meeting_post5_link', function( value ) {
+		value.bind( function( to ) {
+			$('#meeting .wedding_post .post5 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'meeting_post6_link', function( value ) {
+		value.bind( function( to ) {
+			$('#meeting .wedding_post .post6 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'meeting_post7_link', function( value ) {
+		value.bind( function( to ) {
+			$('#meeting .wedding_post .post7 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'meeting_post8_link', function( value ) {
+		value.bind( function( to ) {
+			$('#meeting .wedding_post .post8 a').attr('href', to); ;
+		} );
+	} );
+	//customize
+	api( 'customize_topic_text_title_setting', function( value ) {
+		value.bind( function( to ) {
+			$('#customize .title_ourstory').text( to );
+		} );
+	} );
+
+	api( 'customize_topic_text_detail_setting', function( value ) {
+		value.bind( function( to ) {
+			$('#customize .ourstory_content').text( to );
+		} );
+	} );
+
+//customize posts
+	api( 'customize_posts_title', function( value ) {
+		value.bind( function( to ) {
+			$('#customize .wedding_post .title').text( to );
+		} );
+	} );
+
+	api( 'customize_post1_link', function( value ) {
+		value.bind( function( to ) {
+			$('#customize .wedding_post .post1 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'customize_post2_link', function( value ) {
+		value.bind( function( to ) {
+			$('#customize .wedding_post .post2 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'customize_post3_link', function( value ) {
+		value.bind( function( to ) {
+			$('#customize .wedding_post .post3 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'customize_post4_link', function( value ) {
+		value.bind( function( to ) {
+			$('#customize .wedding_post .post4 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'customize_post5_link', function( value ) {
+		value.bind( function( to ) {
+			$('#customize .wedding_post .post5 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'customize_post6_link', function( value ) {
+		value.bind( function( to ) {
+			$('#customize .wedding_post .post6 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'customize_post7_link', function( value ) {
+		value.bind( function( to ) {
+			$('#customize .wedding_post .post7 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'customize_post8_link', function( value ) {
+		value.bind( function( to ) {
+			$('#customize .wedding_post .post8 a').attr('href', to); ;
+		} );
+	} );
+
+	//suits
+	api( 'suits_topic_text_title_setting', function( value ) {
+		value.bind( function( to ) {
+			$('#suits .title_ourstory').text( to );
+		} );
+	} );
+
+	api( 'suits_topic_text_detail_setting', function( value ) {
+		value.bind( function( to ) {
+			$('#suits .ourstory_content').text( to );
+		} );
+	} );
+
+//suits posts
+	api( 'suits_posts_title', function( value ) {
+		value.bind( function( to ) {
+			$('#suits .wedding_post .title').text( to );
+		} );
+	} );
+
+	api( 'suits_post1_link', function( value ) {
+		value.bind( function( to ) {
+			$('#suits .wedding_post .post1 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'suits_post2_link', function( value ) {
+		value.bind( function( to ) {
+			$('#suits .wedding_post .post2 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'suits_post3_link', function( value ) {
+		value.bind( function( to ) {
+			$('#suits .wedding_post .post3 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'suits_post4_link', function( value ) {
+		value.bind( function( to ) {
+			$('#suits .wedding_post .post4 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'suits_post5_link', function( value ) {
+		value.bind( function( to ) {
+			$('#suits .wedding_post .post5 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'suits_post6_link', function( value ) {
+		value.bind( function( to ) {
+			$('#suits .wedding_post .post6 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'suits_post7_link', function( value ) {
+		value.bind( function( to ) {
+			$('#suits .wedding_post .post7 a').attr('href', to); ;
+		} );
+	} );
+
+	api( 'suits_post8_link', function( value ) {
+		value.bind( function( to ) {
+			$('#suits .wedding_post .post8 a').attr('href', to); ;
+		} );
+	} );
 
 
 

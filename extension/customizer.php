@@ -1267,6 +1267,1036 @@ function deeplove_customize_register( $wp_customize ) {
         'section'               => 'propose',
         'settings'              => 'propose_post8_link',
     ) );
+
+    //suits
+    $wp_customize->add_section( 'suits', array (
+        'title'                 => __( '求婚策划', 'deeplove' ),
+        'panel'                 => 'wedding',
+    ) );
+
+    $wp_customize->add_setting( 'suits_topic_picture_setting', array (
+        'default'               => get_template_directory_uri() . '/images/slides/slider3.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'suits_topic_picture_control', array (
+        'label' =>              __( '专题介绍——图片', 'deeplove' ),
+        'section'               => 'suits',
+        'mime_type'             => 'image',
+        'settings'              => 'suits_topic_picture_setting',
+    ) ) );
+
+    $wp_customize->add_setting( 'suits_topic_text_title_setting', array (
+        'default'               => 'OUR STORY',
+        'transport'             => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'suits_topic_text_title_control', array (
+        'label' =>              __( '专题介绍——文字标题', 'deeplove' ),
+        'type'                  => 'text',
+        'section'               => 'suits',
+        'settings'              => 'suits_topic_text_title_setting',
+    ) );
+
+    $wp_customize->add_setting( 'suits_topic_text_detail_setting', array (
+        'default'               => 'Thank you for choosing CosmoThemes and purchasing one of our Premium WordPress Themes your choice is greatly appreciated!',
+        'transport'             => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'suits_topic_text_detail_control', array (
+        'label' =>              __( '专题介绍——文字内容', 'deeplove' ),
+        'type'                  => 'textarea',
+        'section'               => 'suits',
+        'settings'              => 'suits_topic_text_detail_setting',
+    ) );
+
+
+    $wp_customize->add_setting( 'suits_process_setting', array (
+        'default'               => get_template_directory_uri() . '/images/slides/slider2.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'suits_process_control', array (
+        'label' =>              __( '流程介绍图', 'deeplove' ),
+        'section'               => 'suits',
+        'mime_type'             => 'image',
+        'settings'              => 'suits_process_setting',
+    ) ) );
+
+    $wp_customize->add_setting( 'suits_posts_title', array (
+        'default'               => __( '求婚案例', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'suits_posts_title', array (
+        'label' =>              __( '设置案例标题', 'deeplove' ),
+        'section'               => 'suits',
+        'settings'              => 'suits_posts_title',
+    ) );
+
+    $wp_customize->add_setting( 'suits_post1_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'suits_post1_image', array (
+        'label' =>              __( '文章1', 'deeplove' ),
+        'section'               => 'suits',
+        'mime_type'             => 'image',
+        'settings'              => 'suits_post1_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'suits_post1_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'suits_post1_link', array (
+        'label' =>              __( '设置链接-文章1', 'deeplove' ),
+        'section'               => 'suits',
+        'settings'              => 'suits_post1_link',
+    ) );
+
+    $wp_customize->add_setting( 'suits_post2_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'suits_post2_image', array (
+        'label' =>              __( '文章2', 'deeplove' ),
+        'section'               => 'suits',
+        'mime_type'             => 'image',
+        'settings'              => 'suits_post2_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'suits_post2_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'suits_post2_link', array (
+        'label' =>              __( '设置链接-文章2', 'deeplove' ),
+        'section'               => 'suits',
+        'settings'              => 'suits_post2_link',
+    ) );
+    $wp_customize->add_setting( 'suits_post3_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome3.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'suits_post3_image', array (
+        'label' =>              __( '文章3', 'deeplove' ),
+        'section'               => 'suits',
+        'mime_type'             => 'image',
+        'settings'              => 'suits_post3_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'suits_post3_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'suits_post3_link', array (
+        'label' =>              __( '设置链接-文章3', 'deeplove' ),
+        'section'               => 'suits',
+        'settings'              => 'suits_post3_link',
+    ) );
+
+    $wp_customize->add_setting( 'suits_post4_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'suits_post4_image', array (
+        'label' =>              __( '文章4', 'deeplove' ),
+        'section'               => 'suits',
+        'mime_type'             => 'image',
+        'settings'              => 'suits_post4_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'suits_post4_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'suits_post4_link', array (
+        'label' =>              __( '设置链接-文章4', 'deeplove' ),
+        'section'               => 'suits',
+        'settings'              => 'suits_post4_link',
+    ) );
+    $wp_customize->add_setting( 'suits_post5_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome1.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'suits_post5_image', array (
+        'label' =>              __( '文章5', 'deeplove' ),
+        'section'               => 'suits',
+        'mime_type'             => 'image',
+        'settings'              => 'suits_post5_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'suits_post5_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'suits_post5_link', array (
+        'label' =>              __( '设置链接-文章5', 'deeplove' ),
+        'section'               => 'suits',
+        'settings'              => 'suits_post5_link',
+    ) );
+    $wp_customize->add_setting( 'suits_post6_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome2.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'suits_post6_image', array (
+        'label' =>              __( '文章6', 'deeplove' ),
+        'section'               => 'suits',
+        'mime_type'             => 'image',
+        'settings'              => 'suits_post6_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'suits_post6_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'suits_post6_link', array (
+        'label' =>              __( '设置链接-文章6', 'deeplove' ),
+        'section'               => 'suits',
+        'settings'              => 'suits_post6_link',
+    ) );
+
+    $wp_customize->add_setting( 'suits_post7_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome3.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'suits_post7_image', array (
+        'label' =>              __( '文章7', 'deeplove' ),
+        'section'               => 'suits',
+        'mime_type'             => 'image',
+        'settings'              => 'suits_post7_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'suits_post7_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'suits_post7_link', array (
+        'label' =>              __( '设置链接-文章7', 'deeplove' ),
+        'section'               => 'suits',
+        'settings'              => 'suits_post7_link',
+    ) );
+
+    $wp_customize->add_setting( 'suits_post8_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'suits_post8_image', array (
+        'label' =>              __( '文章8', 'deeplove' ),
+        'section'               => 'suits',
+        'mime_type'             => 'image',
+        'settings'              => 'suits_post8_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'suits_post8_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'suits_post8_link', array (
+        'label' =>              __( '设置链接-文章8', 'deeplove' ),
+        'section'               => 'suits',
+        'settings'              => 'suits_post8_link',
+    ) );
+
+    //meeting
+    $wp_customize->add_section( 'meeting', array (
+        'title'                 => __( '求婚策划', 'deeplove' ),
+        'panel'                 => 'wedding',
+    ) );
+
+    $wp_customize->add_setting( 'meeting_topic_picture_setting', array (
+        'default'               => get_template_directory_uri() . '/images/slides/slider3.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'meeting_topic_picture_control', array (
+        'label' =>              __( '专题介绍——图片', 'deeplove' ),
+        'section'               => 'meeting',
+        'mime_type'             => 'image',
+        'settings'              => 'meeting_topic_picture_setting',
+    ) ) );
+
+    $wp_customize->add_setting( 'meeting_topic_text_title_setting', array (
+        'default'               => 'OUR STORY',
+        'transport'             => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'meeting_topic_text_title_control', array (
+        'label' =>              __( '专题介绍——文字标题', 'deeplove' ),
+        'type'                  => 'text',
+        'section'               => 'meeting',
+        'settings'              => 'meeting_topic_text_title_setting',
+    ) );
+
+    $wp_customize->add_setting( 'meeting_topic_text_detail_setting', array (
+        'default'               => 'Thank you for choosing CosmoThemes and purchasing one of our Premium WordPress Themes your choice is greatly appreciated!',
+        'transport'             => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'meeting_topic_text_detail_control', array (
+        'label' =>              __( '专题介绍——文字内容', 'deeplove' ),
+        'type'                  => 'textarea',
+        'section'               => 'meeting',
+        'settings'              => 'meeting_topic_text_detail_setting',
+    ) );
+
+
+    $wp_customize->add_setting( 'meeting_process_setting', array (
+        'default'               => get_template_directory_uri() . '/images/slides/slider2.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'meeting_process_control', array (
+        'label' =>              __( '流程介绍图', 'deeplove' ),
+        'section'               => 'meeting',
+        'mime_type'             => 'image',
+        'settings'              => 'meeting_process_setting',
+    ) ) );
+
+    $wp_customize->add_setting( 'meeting_posts_title', array (
+        'default'               => __( '求婚案例', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'meeting_posts_title', array (
+        'label' =>              __( '设置案例标题', 'deeplove' ),
+        'section'               => 'meeting',
+        'settings'              => 'meeting_posts_title',
+    ) );
+
+    $wp_customize->add_setting( 'meeting_post1_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'meeting_post1_image', array (
+        'label' =>              __( '文章1', 'deeplove' ),
+        'section'               => 'meeting',
+        'mime_type'             => 'image',
+        'settings'              => 'meeting_post1_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'meeting_post1_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'meeting_post1_link', array (
+        'label' =>              __( '设置链接-文章1', 'deeplove' ),
+        'section'               => 'meeting',
+        'settings'              => 'meeting_post1_link',
+    ) );
+
+    $wp_customize->add_setting( 'meeting_post2_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'meeting_post2_image', array (
+        'label' =>              __( '文章2', 'deeplove' ),
+        'section'               => 'meeting',
+        'mime_type'             => 'image',
+        'settings'              => 'meeting_post2_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'meeting_post2_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'meeting_post2_link', array (
+        'label' =>              __( '设置链接-文章2', 'deeplove' ),
+        'section'               => 'meeting',
+        'settings'              => 'meeting_post2_link',
+    ) );
+    $wp_customize->add_setting( 'meeting_post3_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome3.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'meeting_post3_image', array (
+        'label' =>              __( '文章3', 'deeplove' ),
+        'section'               => 'meeting',
+        'mime_type'             => 'image',
+        'settings'              => 'meeting_post3_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'meeting_post3_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'meeting_post3_link', array (
+        'label' =>              __( '设置链接-文章3', 'deeplove' ),
+        'section'               => 'meeting',
+        'settings'              => 'meeting_post3_link',
+    ) );
+
+    $wp_customize->add_setting( 'meeting_post4_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'meeting_post4_image', array (
+        'label' =>              __( '文章4', 'deeplove' ),
+        'section'               => 'meeting',
+        'mime_type'             => 'image',
+        'settings'              => 'meeting_post4_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'meeting_post4_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'meeting_post4_link', array (
+        'label' =>              __( '设置链接-文章4', 'deeplove' ),
+        'section'               => 'meeting',
+        'settings'              => 'meeting_post4_link',
+    ) );
+    $wp_customize->add_setting( 'meeting_post5_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome1.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'meeting_post5_image', array (
+        'label' =>              __( '文章5', 'deeplove' ),
+        'section'               => 'meeting',
+        'mime_type'             => 'image',
+        'settings'              => 'meeting_post5_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'meeting_post5_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'meeting_post5_link', array (
+        'label' =>              __( '设置链接-文章5', 'deeplove' ),
+        'section'               => 'meeting',
+        'settings'              => 'meeting_post5_link',
+    ) );
+    $wp_customize->add_setting( 'meeting_post6_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome2.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'meeting_post6_image', array (
+        'label' =>              __( '文章6', 'deeplove' ),
+        'section'               => 'meeting',
+        'mime_type'             => 'image',
+        'settings'              => 'meeting_post6_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'meeting_post6_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'meeting_post6_link', array (
+        'label' =>              __( '设置链接-文章6', 'deeplove' ),
+        'section'               => 'meeting',
+        'settings'              => 'meeting_post6_link',
+    ) );
+
+    $wp_customize->add_setting( 'meeting_post7_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome3.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'meeting_post7_image', array (
+        'label' =>              __( '文章7', 'deeplove' ),
+        'section'               => 'meeting',
+        'mime_type'             => 'image',
+        'settings'              => 'meeting_post7_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'meeting_post7_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'meeting_post7_link', array (
+        'label' =>              __( '设置链接-文章7', 'deeplove' ),
+        'section'               => 'meeting',
+        'settings'              => 'meeting_post7_link',
+    ) );
+
+    $wp_customize->add_setting( 'meeting_post8_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'meeting_post8_image', array (
+        'label' =>              __( '文章8', 'deeplove' ),
+        'section'               => 'meeting',
+        'mime_type'             => 'image',
+        'settings'              => 'meeting_post8_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'meeting_post8_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'meeting_post8_link', array (
+        'label' =>              __( '设置链接-文章8', 'deeplove' ),
+        'section'               => 'meeting',
+        'settings'              => 'meeting_post8_link',
+    ) );
+
+    //customize
+    $wp_customize->add_section( 'customize', array (
+        'title'                 => __( '求婚策划', 'deeplove' ),
+        'panel'                 => 'wedding',
+    ) );
+
+    $wp_customize->add_setting( 'customize_topic_picture_setting', array (
+        'default'               => get_template_directory_uri() . '/images/slides/slider3.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_topic_picture_control', array (
+        'label' =>              __( '专题介绍——图片', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_topic_picture_setting',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_topic_text_title_setting', array (
+        'default'               => 'OUR STORY',
+        'transport'             => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_topic_text_title_control', array (
+        'label' =>              __( '专题介绍——文字标题', 'deeplove' ),
+        'type'                  => 'text',
+        'section'               => 'customize',
+        'settings'              => 'customize_topic_text_title_setting',
+    ) );
+
+    $wp_customize->add_setting( 'customize_topic_text_detail_setting', array (
+        'default'               => 'Thank you for choosing CosmoThemes and purchasing one of our Premium WordPress Themes your choice is greatly appreciated!',
+        'transport'             => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_topic_text_detail_control', array (
+        'label' =>              __( '专题介绍——文字内容', 'deeplove' ),
+        'type'                  => 'textarea',
+        'section'               => 'customize',
+        'settings'              => 'customize_topic_text_detail_setting',
+    ) );
+
+
+    $wp_customize->add_setting( 'customize_process_setting', array (
+        'default'               => get_template_directory_uri() . '/images/slides/slider2.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_process_control', array (
+        'label' =>              __( '流程介绍图', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_process_setting',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_posts_title', array (
+        'default'               => __( '求婚案例', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_posts_title', array (
+        'label' =>              __( '设置案例标题', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_posts_title',
+    ) );
+
+    $wp_customize->add_setting( 'customize_post1_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post1_image', array (
+        'label' =>              __( '文章1', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post1_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post1_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post1_link', array (
+        'label' =>              __( '设置链接-文章1', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post1_link',
+    ) );
+
+    $wp_customize->add_setting( 'customize_post2_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post2_image', array (
+        'label' =>              __( '文章2', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post2_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post2_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post2_link', array (
+        'label' =>              __( '设置链接-文章2', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post2_link',
+    ) );
+    $wp_customize->add_setting( 'customize_post3_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome3.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post3_image', array (
+        'label' =>              __( '文章3', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post3_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post3_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post3_link', array (
+        'label' =>              __( '设置链接-文章3', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post3_link',
+    ) );
+
+    $wp_customize->add_setting( 'customize_post4_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post4_image', array (
+        'label' =>              __( '文章4', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post4_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post4_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post4_link', array (
+        'label' =>              __( '设置链接-文章4', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post4_link',
+    ) );
+    $wp_customize->add_setting( 'customize_post5_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome1.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post5_image', array (
+        'label' =>              __( '文章5', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post5_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post5_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post5_link', array (
+        'label' =>              __( '设置链接-文章5', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post5_link',
+    ) );
+    $wp_customize->add_setting( 'customize_post6_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome2.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post6_image', array (
+        'label' =>              __( '文章6', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post6_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post6_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post6_link', array (
+        'label' =>              __( '设置链接-文章6', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post6_link',
+    ) );
+
+    $wp_customize->add_setting( 'customize_post7_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome3.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post7_image', array (
+        'label' =>              __( '文章7', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post7_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post7_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post7_link', array (
+        'label' =>              __( '设置链接-文章7', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post7_link',
+    ) );
+
+    $wp_customize->add_setting( 'customize_post8_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post8_image', array (
+        'label' =>              __( '文章8', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post8_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post8_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post8_link', array (
+        'label' =>              __( '设置链接-文章8', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post8_link',
+    ) );
+
+    //customize
+    $wp_customize->add_section( 'customize', array (
+        'title'                 => __( '求婚策划', 'deeplove' ),
+        'panel'                 => 'wedding',
+    ) );
+
+    $wp_customize->add_setting( 'customize_topic_picture_setting', array (
+        'default'               => get_template_directory_uri() . '/images/slides/slider3.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_topic_picture_control', array (
+        'label' =>              __( '专题介绍——图片', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_topic_picture_setting',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_topic_text_title_setting', array (
+        'default'               => 'OUR STORY',
+        'transport'             => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_topic_text_title_control', array (
+        'label' =>              __( '专题介绍——文字标题', 'deeplove' ),
+        'type'                  => 'text',
+        'section'               => 'customize',
+        'settings'              => 'customize_topic_text_title_setting',
+    ) );
+
+    $wp_customize->add_setting( 'customize_topic_text_detail_setting', array (
+        'default'               => 'Thank you for choosing CosmoThemes and purchasing one of our Premium WordPress Themes your choice is greatly appreciated!',
+        'transport'             => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_topic_text_detail_control', array (
+        'label' =>              __( '专题介绍——文字内容', 'deeplove' ),
+        'type'                  => 'textarea',
+        'section'               => 'customize',
+        'settings'              => 'customize_topic_text_detail_setting',
+    ) );
+
+
+    $wp_customize->add_setting( 'customize_process_setting', array (
+        'default'               => get_template_directory_uri() . '/images/slides/slider2.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_process_control', array (
+        'label' =>              __( '流程介绍图', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_process_setting',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_posts_title', array (
+        'default'               => __( '求婚案例', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_posts_title', array (
+        'label' =>              __( '设置案例标题', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_posts_title',
+    ) );
+
+    $wp_customize->add_setting( 'customize_post1_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post1_image', array (
+        'label' =>              __( '文章1', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post1_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post1_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post1_link', array (
+        'label' =>              __( '设置链接-文章1', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post1_link',
+    ) );
+
+    $wp_customize->add_setting( 'customize_post2_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post2_image', array (
+        'label' =>              __( '文章2', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post2_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post2_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post2_link', array (
+        'label' =>              __( '设置链接-文章2', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post2_link',
+    ) );
+    $wp_customize->add_setting( 'customize_post3_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome3.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post3_image', array (
+        'label' =>              __( '文章3', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post3_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post3_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post3_link', array (
+        'label' =>              __( '设置链接-文章3', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post3_link',
+    ) );
+
+    $wp_customize->add_setting( 'customize_post4_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post4_image', array (
+        'label' =>              __( '文章4', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post4_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post4_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post4_link', array (
+        'label' =>              __( '设置链接-文章4', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post4_link',
+    ) );
+    $wp_customize->add_setting( 'customize_post5_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome1.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post5_image', array (
+        'label' =>              __( '文章5', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post5_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post5_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post5_link', array (
+        'label' =>              __( '设置链接-文章5', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post5_link',
+    ) );
+    $wp_customize->add_setting( 'customize_post6_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome2.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post6_image', array (
+        'label' =>              __( '文章6', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post6_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post6_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post6_link', array (
+        'label' =>              __( '设置链接-文章6', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post6_link',
+    ) );
+
+    $wp_customize->add_setting( 'customize_post7_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome3.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post7_image', array (
+        'label' =>              __( '文章7', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post7_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post7_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post7_link', array (
+        'label' =>              __( '设置链接-文章7', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post7_link',
+    ) );
+
+    $wp_customize->add_setting( 'customize_post8_image', array (
+        'default'               => get_template_directory_uri() . '/images/bloghome4.jpg',
+        'transport'             => 'postMessage',
+        'sanitize_callback'     => 'esc_url_raw'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'customize_post8_image', array (
+        'label' =>              __( '文章8', 'deeplove' ),
+        'section'               => 'customize',
+        'mime_type'             => 'image',
+        'settings'              => 'customize_post8_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'customize_post8_link', array (
+        'default'               => __( '#', 'deeplove' ),
+        'transport' => 'postMessage'
+    ) );
+
+    $wp_customize->add_control( 'customize_post8_link', array (
+        'label' =>              __( '设置链接-文章8', 'deeplove' ),
+        'section'               => 'customize',
+        'settings'              => 'customize_post8_link',
+    ) );
+
+
 }
 add_action( 'customize_register', 'deeplove_customize_register' );
 /**
