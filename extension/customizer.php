@@ -1794,7 +1794,7 @@ function deeplove_customize_register( $wp_customize ) {
         'sanitize_callback'     => 'esc_url_raw'
     ) );
 
-    $wp_customize->add_control( new WP_painting_Image_Control( $wp_customize, 'painting_topic_picture_control', array (
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'painting_topic_picture_control', array (
         'label' =>              __( '专题介绍——图片', 'deeplove' ),
         'section'               => 'painting',
         'mime_type'             => 'image',
@@ -1832,7 +1832,7 @@ function deeplove_customize_register( $wp_customize ) {
         'sanitize_callback'     => 'esc_url_raw'
     ) );
 
-    $wp_customize->add_control( new WP_painting_Image_Control( $wp_customize, 'painting_process_control', array (
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'painting_process_control', array (
         'label' =>              __( '流程介绍图', 'deeplove' ),
         'section'               => 'painting',
         'mime_type'             => 'image',
@@ -1856,7 +1856,7 @@ function deeplove_customize_register( $wp_customize ) {
         'sanitize_callback'     => 'esc_url_raw'
     ) );
 
-    $wp_customize->add_control( new WP_painting_Image_Control( $wp_customize, 'painting_post1_image', array (
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'painting_post1_image', array (
         'label' =>              __( '文章1', 'deeplove' ),
         'section'               => 'painting',
         'mime_type'             => 'image',
@@ -1880,7 +1880,7 @@ function deeplove_customize_register( $wp_customize ) {
         'sanitize_callback'     => 'esc_url_raw'
     ) );
 
-    $wp_customize->add_control( new WP_painting_Image_Control( $wp_customize, 'painting_post2_image', array (
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'painting_post2_image', array (
         'label' =>              __( '文章2', 'deeplove' ),
         'section'               => 'painting',
         'mime_type'             => 'image',
@@ -1903,7 +1903,7 @@ function deeplove_customize_register( $wp_customize ) {
         'sanitize_callback'     => 'esc_url_raw'
     ) );
 
-    $wp_customize->add_control( new WP_painting_Image_Control( $wp_customize, 'painting_post3_image', array (
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'painting_post3_image', array (
         'label' =>              __( '文章3', 'deeplove' ),
         'section'               => 'painting',
         'mime_type'             => 'image',
@@ -1927,7 +1927,7 @@ function deeplove_customize_register( $wp_customize ) {
         'sanitize_callback'     => 'esc_url_raw'
     ) );
 
-    $wp_customize->add_control( new WP_painting_Image_Control( $wp_customize, 'painting_post4_image', array (
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'painting_post4_image', array (
         'label' =>              __( '文章4', 'deeplove' ),
         'section'               => 'painting',
         'mime_type'             => 'image',
@@ -1950,7 +1950,7 @@ function deeplove_customize_register( $wp_customize ) {
         'sanitize_callback'     => 'esc_url_raw'
     ) );
 
-    $wp_customize->add_control( new WP_painting_Image_Control( $wp_customize, 'painting_post5_image', array (
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'painting_post5_image', array (
         'label' =>              __( '文章5', 'deeplove' ),
         'section'               => 'painting',
         'mime_type'             => 'image',
@@ -1973,7 +1973,7 @@ function deeplove_customize_register( $wp_customize ) {
         'sanitize_callback'     => 'esc_url_raw'
     ) );
 
-    $wp_customize->add_control( new WP_painting_Image_Control( $wp_customize, 'painting_post6_image', array (
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'painting_post6_image', array (
         'label' =>              __( '文章6', 'deeplove' ),
         'section'               => 'painting',
         'mime_type'             => 'image',
@@ -1997,7 +1997,7 @@ function deeplove_customize_register( $wp_customize ) {
         'sanitize_callback'     => 'esc_url_raw'
     ) );
 
-    $wp_customize->add_control( new WP_painting_Image_Control( $wp_customize, 'painting_post7_image', array (
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'painting_post7_image', array (
         'label' =>              __( '文章7', 'deeplove' ),
         'section'               => 'painting',
         'mime_type'             => 'image',
@@ -2021,7 +2021,7 @@ function deeplove_customize_register( $wp_customize ) {
         'sanitize_callback'     => 'esc_url_raw'
     ) );
 
-    $wp_customize->add_control( new WP_painting_Image_Control( $wp_customize, 'painting_post8_image', array (
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'painting_post8_image', array (
         'label' =>              __( '文章8', 'deeplove' ),
         'section'               => 'painting',
         'mime_type'             => 'image',
