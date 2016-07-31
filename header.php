@@ -31,5 +31,6 @@
     <div id="tzloadding">
        <img class="loadding_img" src="<?php echo IMG_PATH .'loadding.GIF' ?>">
     </div>
+    <?php get_template_part('template_inc/social', 'qq'); ?>
     <div class="deeplove_boxed">
         </div>

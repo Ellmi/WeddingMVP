@@ -11079,3 +11079,31 @@ body#bd {
 .navigation a{
     color: #d65679;
 }
+
+#qq_service {
+    position: fixed;
+    right: 0;
+    top: 200px;
+    font-size: 11px;
+    border-bottom-left-radius: 3px;
+    background: rgba(214, 86, 121, 0.9);
+    border-top-left-radius: 3px;
+}
+
+#qq_service .fa:before {
+    display: block;
+    font-size: 31px;
+}
+
+#qq_service a {
+    display: block;
+    color: white;
+    padding: 8px 2px;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+#qq_service a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}

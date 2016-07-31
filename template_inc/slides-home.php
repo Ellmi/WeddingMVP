@@ -4,7 +4,7 @@
  */
 ?>
 
-<div id="homepage-slider" class="deeplove-slider">
+<div id="homepage-slider" style="z-index: 2" class="deeplove-slider">
     <div
         data-thumb="<?php echo esc_url(get_theme_mod('slide1_image', get_template_directory_uri() . '/images/slides/slider1.jpg')); ?>"
         data-src="<?php echo esc_url(get_theme_mod('slide1_image', get_template_directory_uri() . '/images/slides/slider1.jpg')); ?>"></div>

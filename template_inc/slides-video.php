@@ -3,7 +3,7 @@
  * User: Yanmin
  */
 ?>
-<div id="video-slider" class="deeplove-slider">
+<div id="video-slider" class="deeplove-slider" style="z-index: 2">
     <div
         data-thumb="<?php echo esc_url(get_theme_mod('video_slide1_image', get_template_directory_uri() . '/images/slides/slider1.jpg')); ?>"
         data-src="<?php echo esc_url(get_theme_mod('video_slide1_image', get_template_directory_uri() . '/images/slides/slider1.jpg')); ?>"></div>
