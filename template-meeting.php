@@ -58,7 +58,7 @@ get_template_part('template_inc/slides', 'home'); ?>
     <img width="100%" src="<?php echo esc_url(get_theme_mod('meeting_process_setting', get_template_directory_uri() . '/images/slides/slider2.jpg')); ?>" alt="">
     <div class="wedding_post">
         <div class="container">
-            <h2 class="title"><?php echo esc_attr_e(get_theme_mod('meeting_posts_title', __( '求婚案例', 'deeplove' ))); ?></h2>
+            <h2 class="title"><?php echo esc_attr_e(get_theme_mod('meeting_posts_title', __( '会议案例', 'deeplove' ))); ?></h2>
 
             <div class="row">
                 <div class="col-md-3 col-sm-6">
