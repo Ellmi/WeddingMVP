@@ -87,6 +87,17 @@ jQuery(window).load(function(){
     jQuery('#tzloadding').remove();
 });
 
+jQuery(document).ready(function() {
+
+    "use strict";
+
+    /* Method for Header */
+    var $check_admin = jQuery('#wpadminbar');
+    if ($check_admin.length > 0) {
+        jQuery('.header').addClass('tzadminbar');
+    }
+});
+
 jQuery(window).scroll(function(){
 
     // method header
