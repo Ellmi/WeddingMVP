@@ -1,7 +1,6 @@
 
 
 var $heightWindow  = jQuery(window).height();
-var $height_header = jQuery('.header').height();
 var $height_header3 = jQuery('.header3-fix').height();
 var $nav3_height     = jQuery('.tznav-3').height();
 
@@ -87,126 +86,6 @@ jQuery(window).load(function(){
     }
     jQuery('#tzloadding').remove();
 });
-jQuery(document).ready(function(){
-
-    "use strict";
-
-    /* Method for Header */
-    var $check_admin =  jQuery('#wpadminbar');
-    if ( $check_admin.length > 0 ){
-        jQuery('.header').addClass('tzadminbar');
-    }
-
-
-    // method search
-
-    jQuery('#searchform').css({
-        top: ( ($heightWindow / 2 )- 30 ) + 'px'
-    });
-    jQuery('.search').click(function(){
-        jQuery('.tzform-search').fadeIn(1);
-        jQuery('#searchform').addClass('searchform_aff');
-    });
-
-    jQuery('.tzcontro_search').click(function(){
-        jQuery('.tzform-search').fadeOut();
-        jQuery('#searchform').removeClass('searchform_aff');
-    });
-
-    /* Method for video */
-    jQuery('.tzautoplay').click(function(){
-        var $_this = jQuery(this);
-        var myVideo = $_this.parents('.video').find('.videoID')[0];
-        jQuery(this).hide();
-        $_this.parents('.video').find('.video-content h3').css('opacity',0);
-        $_this.parents('.video').find('.video-content p').css('opacity',0);
-        $_this.parents('.video').find('.bg-video').hide();
-        $_this.parents('.video').find('.tzpause').show().css('opacity',0);
-        if (myVideo.paused)
-            myVideo.play();
-
-    }) ;
-    jQuery('.tzpause').click(function(){
-        jQuery(this).hide();
-        var $_this = jQuery(this);
-        var myVideo = $_this.parents('.video').find('.videoID')[0];
-        $_this.parents('.video').find('.video-content h3').css('opacity',1);
-        $_this.parents('.video').find('.video-content p').css('opacity',1);
-        $_this.parents('.video').find('.bg-video').show();
-        $_this.parents('.video').find('.tzautoplay').show();
-        if (myVideo.play)
-            myVideo.pause();
-
-    });
-
-    /* Method for Quote */
-    jQuery(".quote").owlCarousel({
-        items : 1,
-        itemsDesktop : [1199,1],
-        itemsDesktopSmall : [979,1],
-        itemsTablet: [768, 1],
-        itemsMobile: [479, 1],
-        slideSpeed:500,
-        paginationSpeed:800,
-        rewindSpeed:1000,
-        autoPlay:false,
-        stopOnHover: false,
-        singleItem:false,
-        rewindNav:false,
-        pagination:false,
-        paginationNumbers:false,
-        itemsScaleUp:false
-    });
-
-
-    /* Accordion Toggle Items */
-    jQuery('.tzaccordion-content:first').show();
-
-    jQuery('.tzaccordion_header').click(function() {
-        var $_this = jQuery(this).attr('data-option-id');
-        jQuery('.tzaccordion-content').slideUp('normal');
-        if(jQuery($_this).is(':hidden') == true) {
-            jQuery($_this).slideDown('normal');
-        }
-    });
-
-
-
-    /**
-     *  Method For Slider Blog
-     * -----------------------------------------------------------------------------
-     */
-    jQuery('.tzblog-slider-content').each(function(){
-        jQuery(this).owlCarousel({
-            items : 1,
-            itemsDesktop : [1199,1],
-            itemsDesktopSmall : [979,1],
-            itemsTablet: [768, 1],
-            itemsMobile: [479, 1],
-            slideSpeed:500,
-            paginationSpeed:800,
-            rewindSpeed:1000,
-            autoPlay:false,
-            stopOnHover: false,
-            singleItem:false,
-            rewindNav:false,
-            pagination:false,
-            autoHeight: true,
-            paginationNumbers:false,
-            itemsScaleUp:false
-        });
-        var $_parent = jQuery(this);
-        $_parent.parent().find('.tz_slider_prev').click(function(){
-            $_parent.trigger('owl.prev');
-        }) ;
-        $_parent.parent().find('.tz_slider_next').click(function(){
-            $_parent.trigger('owl.next');
-        }) ;
-    }) ;
-
-
-
-});
 
 jQuery(window).scroll(function(){
 
@@ -238,10 +117,6 @@ jQuery(window).scroll(function(){
         jQuery('.header3-fix').removeClass('headerAnimate3');
 
     }
-
-
-
-
 
 });
 // method header

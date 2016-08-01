@@ -1,13 +1,9 @@
 <?php get_header(); ?>
 <?php
 
-$title      = ot_get_option(THEME_PREFIX . '_404_title');
-$content    = ot_get_option(THEME_PREFIX . '_404_content');
-$url        = IMG_PATH .'404.jpg';
-$background = ot_get_option(THEME_PREFIX . '_404_bk');
-if ( $background == '' ){
-    $background = $url;
-}
+$title      = "";
+$content    = "";
+$background = IMG_PATH .'404.jpg';
 ?>
 <section class="content-404" style="background-image: url('<?php echo esc_url($background); ?>')">
     <div class="content-404-style container">
