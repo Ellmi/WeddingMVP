@@ -18,49 +18,37 @@
                                         alt="Deeplove">
                                 </a>
                             </h3>
-                            <nav class="pull-right tznav-menu">
+                            <nav class="pull-right">
                                 <ul id="menu-primary" class="menu nav-collapse themeple_megemenu">
-                                    <li id="menu-item-102"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children">
-                                        <a href="">婚礼策划</a>
-
+                                    <li class="menu-item">
+                                        <a href="javascript:void(0)">婚礼策划</a>
                                         <ul class="sub-menu non_mega_menu">
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                <a href="/婚礼套餐">婚礼套餐</a>
-                                            </li>
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                <a href="/中端定制">中端定制</a>
-                                            </li>
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                <a href="/求婚策划">求婚策划</a>
-                                            </li>
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                <a href="/会议策划">会议策划</a>
-                                            </li>
-                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                <a href="/高端手绘设计">高端手绘设计</a></li>
+                                            <li class="menu-item"><a href="/婚礼套餐">婚礼套餐</a></li>
+                                            <li class="menu-item"><a href="/求婚策划">求婚策划</a></li>
+                                            <li class="menu-item"><a href="/会议策划">会议策划</a></li>
+                                            <li class="menu-item"><a href="/高端手绘设计">高端手绘设计</a></li>
                                         </ul>
                                     </li>
-                                    <li id="menu-item-397"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                                        <a href="demo">婚礼案例</a>
+                                    <li class="menu-item"><a href="/婚礼案例">婚礼案例</a></li>
+                                    <li class="menu-item">
+                                        <a href="javascript:void(0)">视频设计</a>
+
+                                        <ul class="sub-menu non_mega_menu">
+                                            <li class="menu-item"><a href="/视频套餐">视频套餐</a></li>
+                                            <li class="menu-item"><a href="/视频设计">视频设计</a></li>
+                                        </ul>
                                     </li>
-                                    <li id="menu-item-183"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children">
-                                        <a href="video">视频案例</a>
                                     </li>
-                                    <li id="menu-item-279"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                                        <a href="hotel">酒店</a>
+                                    <li class="menu-item">
+                                        <a href="javascript:void(0)">摄影摄像</a>
+
+                                        <ul class="sub-menu non_mega_menu">
+                                            <li class="menu-item"><a href="/摄影">摄影</a></li>
+                                            <li class="menu-item"><a href="/摄像">摄像</a></li>
+                                        </ul>
                                     </li>
-                                    <li id="menu-item-373"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-tribe_events_cat menu-item-has-children">
-                                        <a href="activity">活动</a>
-                                    </li>
-                                    <li id="menu-item-20"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                                        <a href="taobao">淘宝</a>
-                                    </li>
+                                    <li class="menu-item"><a href="/活动">活动</a></li>
+                                    <li class="menu-item"><a href="/淘宝">淘宝</a></li>
                                 </ul>
                             </nav>
                         </div>
