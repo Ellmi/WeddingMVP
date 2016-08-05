@@ -2321,6 +2321,8 @@ nav .themeple_custom_menu_mega_menu.themeple_mega5 ul li ul li {
 .tzcountdown2 {
     padding: 32px 0 82px;
     background: #d65679;
+    z-index: 2;
+    position: relative;
 }
 
 .tzcountdown2 .countdown {

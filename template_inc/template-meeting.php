@@ -7,41 +7,8 @@ get_header();
 get_template_part('template_inc/side', 'menu-bar');
 get_template_part('template_inc/slides', 'home'); ?>
 <div id="meeting">
-    <div class="tzcountdown2">
-        <div class="container">
-            <h3 class="tzcount_title">优惠活动 &amp; 结束倒计时</h3>
-
-            <div class="countdown">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="tzcountdownitem">
-                            <span class="days">363</span>
-                        </div>
-                        <p class="timeRefDays tzcount-ds">days</p>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="tzcountdownitem">
-                            <span class="hours">14</span>
-                        </div>
-                        <p class="timeRefHours tzcount-ds">hours</p>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="tzcountdownitem">
-                            <span class="minutes tzcount-ds">29</span>
-                        </div>
-                        <p class="timeRefMinutes tzcount-ds">minutes</p>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="tzcountdownitem">
-                            <span class="seconds">20</span>
-                        </div>
-                        <p class="timeRefSeconds tzcount-ds">seconds</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php get_template_part('template_inc/post', 'zone1'); ?>
+    <?php get_template_part('template_inc/count', 'down');
+    get_template_part('template_inc/post', 'zone1'); ?>
     <div class="container tzourstory2">
         <div class="row">
             <div class="col-md-7 rtl-right">
@@ -148,12 +115,5 @@ get_template_part('template_inc/slides', 'home'); ?>
     </div>
 </div>
 <br><br><br><br>
-<?php get_footer(); ?>
-<script>
-    jQuery(document).ready(function () {
-        jQuery(".countdown").countdown({
-            date: "<?php echo esc_attr_e(get_theme_mod('activity_end_time_setting')); ?>", // add the countdown's end date (i.e. 3 november 2012 12:00:00)
-            format: "on" // on (03:07:52) | off (3:7:52) - two_digits set to ON maintains layout consistency
-        });
-    });
-</script>
+<?php get_footer();
+get_template_part('template_inc/count', 'down-js');?>

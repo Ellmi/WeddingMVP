@@ -1,7 +1,8 @@
 <?php
 function deeplove_render_homepage()
 {
-    get_template_part('template_inc/slides', 'home'); ?>
+    get_template_part('template_inc/slides', 'home');
+    get_template_part('template_inc/count', 'down'); ?>
     <div id="office">
         <div class="container">
             <h4 class="title"><?php echo esc_attr_e(get_theme_mod('office_title', __('office introduction title', 'deeplove')));?></h4>

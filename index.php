@@ -2,4 +2,4 @@
 get_template_part('template_inc/main', 'menu-bar');
 do_action('deeplove_homepage');
 get_footer();
-
+get_template_part('template_inc/count', 'down-js');
