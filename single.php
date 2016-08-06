@@ -5,8 +5,7 @@
 ?>
 <?php get_header(); ?>
 <?php
-    get_template_part('template_inc/side', 'menu-bar');
-    get_template_part('template_inc/slides', 'home'); ?>
+    get_template_part('template_inc/single', 'menu-bar'); ?>
     <div class="tzdefault_title">
         <div class="container">
             <h1><?php the_title(); ?></h1>

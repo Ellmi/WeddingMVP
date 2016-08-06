@@ -35,7 +35,7 @@
                     </nav>
                 </div>
                 <div class="col-md-2-custom">
-                    <h3 class="tzlogo">
+                    <h3 class="dllogo">
                         <a href="http://weddingmvp.cn" title="Deeplove">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/images/logo.png'); ?> "
                                  alt="Deeplove">

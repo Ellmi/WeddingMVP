@@ -1349,7 +1349,7 @@ header.tzadminbar {
 
 /*--------header 1----------*/
 
-.header1 .tzlogo {
+.header1 .dllogo {
     padding: 0;
 }
 
@@ -1386,13 +1386,13 @@ header.tzadminbar {
     font-size: 13px;
     line-height: 38.4px;
     color: #ffffff;
-    padding: 23px 35px 24px;
     margin: 0;
+    padding: 0;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3px;
-
+    position: relative;
 }
 
 .search {
@@ -1437,8 +1437,8 @@ body header.header2 {
     font-size: 13px;
     line-height: 38.4px;
     color: #212121;
-    padding: 30px 35px;
     margin: 0;
+    padding: 0;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -1456,7 +1456,7 @@ body header.header2 {
     min-height: 10px;
 }
 
-.header2 .tzlogo {
+.header2 .dllogo {
     position: absolute;
     top: 0;
     left: 50%;
@@ -1464,7 +1464,7 @@ body header.header2 {
     padding: 0;
 }
 
-.header2 .tzlogo a {
+.header2 .dllogo a {
     vertical-align: middle;
     display: table-cell;
     width: 200px;
@@ -1512,13 +1512,13 @@ body header.header3 {
     text-align: center;
 }
 
-.header3 .tzlogo {
+.header3 .dllogo {
     text-align: center;
     position: relative;
     padding: 61px 0;
 }
 
-.header3 .tzlogo a {
+.header3 .dllogo a {
     background: none repeat scroll 0 0 #fff;
     display: inline-block;
     padding: 0 60px;
@@ -1526,7 +1526,7 @@ body header.header3 {
     z-index: 2;
 }
 
-.header3 .tzlogo:before {
+.header3 .dllogo:before {
     width: 50%;
     left: 0;
     top: 50%;
@@ -1537,7 +1537,7 @@ body header.header3 {
     margin-top: 5px;
 }
 
-.header3 .tzlogo:after {
+.header3 .dllogo:after {
     width: 50%;
     right: 0;
     top: 50%;
@@ -1615,11 +1615,11 @@ body header.header4 {
 
 }
 
-.header4 .tzlogo {
+.header4 .dllogo {
     padding: 35px 0;
 }
 
-.header4 .tzlogo a {
+.header4 .dllogo a {
     display: block;
 }
 
@@ -1682,7 +1682,7 @@ body header.header4 {
     color: #222222;
 }
 
-.header5 .tzlogo {
+.header5 .dllogo {
     padding: 16px 0;
 }
 
@@ -1697,13 +1697,13 @@ header.headerAnimate2 .container {
 }
 
 /*-----------Header eff---------*/
-.header1 .tzlogo {
+.header1 .dllogo {
     display: block;
     text-align: center;
     width: 200px;
 }
 
-.header1 .tzlogo a {
+.header1 .dllogo a {
     transition: all 0.5s linear 0s;
     -moz-transition: all 0.5s linear 0s;
     -webkit-transition: all 0.5s linear 0s;
@@ -1729,7 +1729,7 @@ header.headerAnimate {
     top: 0;
 }
 
-.header1.headerAnimate .tzlogo a {
+.header1.headerAnimate .dllogo a {
     height: 85px;
     background: transparent !important;
     width: 96px;
@@ -1737,7 +1737,7 @@ header.headerAnimate {
 
 }
 
-.header1 .tzlogo a img {
+.header1 .dllogo a img {
     transition: all 0.5s linear 0s;
     -moz-transition: all 0.5s linear 0s;
     -webkit-transition: all 0.5s linear 0s;
@@ -1746,7 +1746,7 @@ header.headerAnimate {
     height: 64px;
 }
 
-.header1.headerAnimate .tzlogo a img {
+.header1.headerAnimate .dllogo a img {
     height: 45px;
 }
 
@@ -1765,14 +1765,13 @@ header.headerAnimate {
 
 .header-page .menu li a {
     color: #fff;
-    padding: 54px 35px 50px;
 }
 
-.header-page .tzlogo {
+.header-page .dllogo {
     padding: 42px 0 35px;
 }
 
-.tzlogo a {
+.dllogo a {
     font-size: 40px;
 }
 
@@ -8420,8 +8419,8 @@ div.wpcf7-response-output {
 .themecolor1 .tzemail i,
 .themecolor1 .wpcf7-submit,
 .themecolor1 .dl-footer,
-.themecolor1 .header1 .tzlogo a,
-.themecolor1 .header2 .tzlogo a,
+.themecolor1 .header1 .dllogo a,
+.themecolor1 .header2 .dllogo a,
 .themecolor1 .blog-post.sticky .everline_sticky,
 .themecolor1 .live_title,
 .themecolor1 .live-content ul.livebox li:hover,
@@ -8566,8 +8565,8 @@ body.themecolor1.theme-box .deeplove_boxed header.headerAnimate .wrapbox {
 .themecolor2 .tzemail i,
 .themecolor2 .wpcf7-submit,
 .themecolor2 .dl-footer,
-.themecolor2 .header1 .tzlogo a,
-.themecolor2 .header2 .tzlogo a,
+.themecolor2 .header1 .dllogo a,
+.themecolor2 .header2 .dllogo a,
 .themecolor2 .blog-post.sticky .everline_sticky,
 .themecolor2 .live_title,
 .themecolor2 .live-content ul.livebox li:hover,
@@ -8712,8 +8711,8 @@ body.themecolor2.theme-box .deeplove_boxed header.headerAnimate .wrapbox {
 .themecolor3 .tzemail i,
 .themecolor3 .wpcf7-submit,
 .themecolor3 .dl-footer,
-.themecolor3 .header1 .tzlogo a,
-.themecolor3 .header2 .tzlogo a,
+.themecolor3 .header1 .dllogo a,
+.themecolor3 .header2 .dllogo a,
 .themecolor3 .blog-post.sticky .everline_sticky,
 .themecolor3 .live_title,
 .themecolor3 .live-content ul.livebox li:hover,
@@ -8858,8 +8857,8 @@ body.themecolor3.theme-box .deeplove_boxed header.headerAnimate .wrapbox {
 .themecolor4 .tzemail i,
 .themecolor4 .wpcf7-submit,
 .themecolor4 .dl-footer,
-.themecolor4 .header1 .tzlogo a,
-.themecolor4 .header2 .tzlogo a,
+.themecolor4 .header1 .dllogo a,
+.themecolor4 .header2 .dllogo a,
 .themecolor4 .blog-post.sticky .everline_sticky,
 .themecolor4 .live_title,
 .themecolor4 .live-content ul.livebox li:hover,
@@ -9000,8 +8999,8 @@ body.themecolor4.theme-box .deeplove_boxed header.headerAnimate .wrapbox {
 .themecolor5 .tzemail i,
 .themecolor5 .wpcf7-submit,
 .themecolor5 .dl-footer,
-.themecolor5 .header1 .tzlogo a,
-.themecolor5 .header2 .tzlogo a,
+.themecolor5 .header1 .dllogo a,
+.themecolor5 .header2 .dllogo a,
 .themecolor5 .blog-post.sticky .everline_sticky,
 .themecolor5 .live_title,
 .themecolor5 .live-content ul.livebox li:hover,
@@ -9145,8 +9144,8 @@ body.themecolor5.theme-box .deeplove_boxed header.headerAnimate .wrapbox {
 .themecolor6 .tzemail i,
 .themecolor6 .wpcf7-submit,
 .themecolor6 .dl-footer,
-.themecolor6 .header1 .tzlogo a,
-.themecolor6 .header2 .tzlogo a,
+.themecolor6 .header1 .dllogo a,
+.themecolor6 .header2 .dllogo a,
 .themecolor6 .blog-post.sticky .everline_sticky,
 .themecolor6 .live_title,
 .themecolor6 .live-content ul.livebox li:hover,
@@ -9288,8 +9287,8 @@ body.themecolor6.theme-box .deeplove_boxed header.headerAnimate .wrapbox {
 .themecolor7 .tzemail i,
 .themecolor7 .wpcf7-submit,
 .themecolor7 .dl-footer,
-.themecolor7 .header1 .tzlogo a,
-.themecolor7 .header2 .tzlogo a,
+.themecolor7 .header1 .dllogo a,
+.themecolor7 .header2 .dllogo a,
 .themecolor7 .blog-post.sticky .everline_sticky,
 .themecolor7 .live_title,
 .themecolor7 .live-content ul.livebox li:hover,
@@ -9429,8 +9428,8 @@ body.themecolor7.theme-box .deeplove_boxed header.headerAnimate .wrapbox {
 .themecolor8 .tzemail i,
 .themecolor8 .wpcf7-submit,
 .themecolor8 .dl-footer,
-.themecolor8 .header1 .tzlogo a,
-.themecolor8 .header2 .tzlogo a,
+.themecolor8 .header1 .dllogo a,
+.themecolor8 .header2 .dllogo a,
 .themecolor8 .blog-post.sticky .everline_sticky,
 .themecolor8 .live_title,
 .themecolor8 .live-content ul.livebox li:hover,
@@ -9514,7 +9513,7 @@ body.themecolor8.theme-box .deeplove_boxed header.headerAnimate .wrapbox {
  * 6.2 - Theme rtl
  * -----------------------------------------------------------------------------
  */
-.theme-rtl .header1 .tzlogo,
+.theme-rtl .header1 .dllogo,
 .theme-rtl .rtl-right,
 .theme-rtl .tzcountdown-icon,
 .theme-rtl .controls-progress .jp-controls,
@@ -9869,10 +9868,6 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
 */
 
 @media (min-width: 992px) and (max-width: 1250px) {
-    .menu li a {
-        padding: 23px 18px 24px;
-    }
-
     .form7-style2 label {
         width: 25%;
         font-size: 10px;
@@ -9891,10 +9886,6 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
         left: 0;
     }
 
-    .header2 .menu li a {
-        padding: 30px 18px;
-    }
-
     .header4 .menu li a {
         color: #333333;
         padding: 54px 18px 50px;
@@ -9907,7 +9898,6 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
 
     .header-page .menu li a {
         color: #fff;
-        padding: 54px 18px 50px;
     }
 
     .tzcomingsoon {
@@ -9963,7 +9953,7 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
         width: 100%;
     }
 
-    body#bd .header1 .tzlogo {
+    body#bd .header1 .dllogo {
         display: block;
         text-align: center;
         width: 100px;
@@ -9971,7 +9961,7 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
         float: none !important;
     }
 
-    body#bd .header1 .tzlogo a {
+    body#bd .header1 .dllogo a {
         height: auto;
         padding-top: 0;
         width: auto;
@@ -9979,7 +9969,7 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
 
     }
 
-    body#bd .header1 .tzlogo a img {
+    body#bd .header1 .dllogo a img {
         height: 50px;
     }
 
@@ -10083,11 +10073,11 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
         position: relative;
     }
 
-    .header2 .tzlogo a img {
+    .header2 .dllogo a img {
         width: 100px;
     }
 
-    .header2 .tzlogo a {
+    .header2 .dllogo a {
         height: 90px;
         width: 150px;
     }
@@ -10144,7 +10134,7 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
         margin-top: 25px;
     }
 
-    .header3 .tzlogo {
+    .header3 .dllogo {
         padding: 33px 0;
     }
 
@@ -10252,7 +10242,7 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
         display: none;
     }
 
-    .header4 .tzlogo {
+    .header4 .dllogo {
         display: block;
         float: none !important;
         margin: auto;
@@ -10357,7 +10347,7 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
         display: none;
     }
 
-    .header-page .tzlogo {
+    .header-page .dllogo {
         padding: 15px 0;
     }
 
@@ -10372,7 +10362,7 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
         left: auto;
         position: absolute;
         right: 65px;
-        top: 2px;
+        top: 27px;
     }
 
     .tzshop_title h1 {
@@ -10862,12 +10852,12 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
         padding-top: 10px;
     }
 
-    .header2 .tzlogo a {
+    .header2 .dllogo a {
         height: 90px;
         width: 120px;
     }
 
-    .header2 .tzlogo {
+    .header2 .dllogo {
         margin: 0 0 0 -60px;
     }
 
@@ -10887,11 +10877,11 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
         width: auto;
     }
 
-    .header5 .tzlogo a img {
+    .header5 .dllogo a img {
         width: 120px;
     }
 
-    .header-page .tzlogo img {
+    .header-page .dllogo img {
         width: 100px;
     }
 
@@ -11109,4 +11099,58 @@ body#bd {
 #qq_service a:hover {
     font-weight: bold;
     text-decoration: none;
+}
+
+.header ul.nav-collapse li a::after,
+.header2 ul.nav-collapse li a::after,
+.header-page ul.nav-collapse li a::after{
+    bottom: 0px;
+    content: "";
+    height: 2px;
+    left: 0px;
+    position: absolute;
+    transform: scale(0);
+    width: 100%;
+    background: none 0px 0px repeat scroll rgb(214, 86, 121);
+    transition: transform 0.3s linear 0s;
+}
+
+.header ul.nav-collapse > li:hover > a:after,
+.header ul.nav-collapse li.current_page_item a:after,
+.header ul.nav-collapse li.current-menu-item a:after,
+.header ul.nav-collapse li.current-menu-parent a:after,
+.header ul.nav-collapse li.current-menu-ancestor a:after{
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.header.header2 ul.nav-collapse > li {
+    padding: 30px 35px;
+}
+
+.header ul.nav-collapse > li {
+    padding: 23px 35px 24px;
+}
+.header.header-page ul.nav-collapse > li {
+    padding: 54px 35px 50px;
+}
+
+.header.header1 ul.nav-collapse li a:after,
+.header.header-page ul.nav-collapse li a:after {
+    background: #fff !important;
+}
+@media (max-width: 1250px) and (min-width: 992px){
+    .header.header2 ul.nav-collapse > li {
+        padding: 30px 18px;
+    }
+
+    .header ul.nav-collapse > li {
+        padding: 23px 18px 24px;
+    }
+    .header.header-page ul.nav-collapse > li {
+        padding: 54px 28px 50px;
+    }
 }

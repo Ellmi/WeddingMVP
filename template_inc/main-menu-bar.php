@@ -11,7 +11,7 @@
                     <button data-target=".nav-collapse" class="btn-navbar icon_menu" type="button">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <h3 class="tzlogo pull-left">
+                    <h3 class="dllogo pull-left">
                         <a href="http://weddingmvp.cn" title="Deeplove">
                             <img
                                 src="<?php echo esc_url(get_template_directory_uri() . '/images/logo.png'); ?> "
