@@ -9927,6 +9927,10 @@ body.theme-rtl header ul.nav-collapse .themeple_custom_menu_mega_menu ul li ul l
 }
 
 @media (max-width: 991px) {
+    #qq_service {
+        display: none;
+    }
+
     .livedemo {
         display: none !important;
     }
