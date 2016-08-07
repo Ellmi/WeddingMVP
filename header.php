@@ -24,22 +24,6 @@
     <script src="<?php echo esc_url(JS_PATH); ?>html5shiv.js"></script>
     <script src="<?php echo esc_url(JS_PATH); ?>respond.min.js"></script>
     <![endif]-->
-    <div class="hidden">
-        <script type="text/javascript">
-            var images = new Array()
-            function preload() {
-                for (i = 0; i < preload.arguments.length; i++) {
-                    images[i] = new Image()
-                    images[i].src = preload.arguments[i]
-                }
-            }
-            preload(
-                "<?php echo esc_url(get_theme_mod('slide1_image', get_template_directory_uri() . '/images/slides/slider1.jpg')); ?>",
-                "<?php echo esc_url(get_theme_mod('slide1_image', get_template_directory_uri() . '/images/slides/slider2.jpg')); ?>",
-                "<?php echo esc_url(get_theme_mod('slide1_image', get_template_directory_uri() . '/images/slides/slider3.jpg')); ?>"
-            )
-        </script>
-    </div>
 
     <?php wp_head(); ?>
 </head>
