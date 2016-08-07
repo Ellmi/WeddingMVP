@@ -18,7 +18,6 @@ function deeplove_register_front_end_styles()
         wp_enqueue_style('bootstrap-css', CSS_PATH . 'bootstrap.min.css', false );
         wp_enqueue_style('awesome', THEME_PATH . '/fonts/css/font-awesome.min.css', false );
         wp_enqueue_style('animate', THEME_PATH . '/css/animate.css', false );
-        wp_enqueue_style('camera', THEME_PATH . '/css/camera.css', false );
         wp_enqueue_style('style', THEME_PATH . '/style.css', false );
         wp_enqueue_style('flexslider', THEME_PATH . '/css/flexslider.css', false );
         wp_enqueue_style('js_composer', CSS_PATH . '/js_composer.min.css', false );
