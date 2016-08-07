@@ -1272,11 +1272,11 @@ p {
     color: #777777;
     display: block;
     font-family: 'Varela', sans-serif;
-    font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
     margin: 0;
     padding: 12px 0;
+    font-size: 1.5rem;
+    line-height: 3rem;
 }
 
 .parallax {
@@ -1383,7 +1383,7 @@ header.tzadminbar {
 }
 
 .menu li a {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 38.4px;
     color: #ffffff;
     margin: 0;
@@ -1720,7 +1720,7 @@ header.headerAnimate2 .container {
     background: #d65679;
     vertical-align: middle;
     text-align: center;
-    padding-top: 45px;
+    padding-top: 32px;
 }
 
 header.headerAnimate {
@@ -1743,7 +1743,7 @@ header.headerAnimate {
     -webkit-transition: all 0.5s linear 0s;
     -ms-transition: all 0.5s linear 0s;
     -o-transition: all 0.5s linear 0s;
-    height: 64px;
+    height: 100px;
 }
 
 .header1.headerAnimate .dllogo a img {
@@ -1948,7 +1948,7 @@ header.headerAnimate {
 .header ul li .non_mega_menu li a {
     color: #333333;
     display: block;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 42.9px;
     margin: 0;
@@ -2330,7 +2330,7 @@ nav .themeple_custom_menu_mega_menu.themeple_mega5 ul li ul li {
 
 .tzcount_title {
     display: block;
-    font-size: 17px;
+    font-size: 19px;
     line-height: 54.4px;
     margin: 0 0 20px;
     padding: 5px 0 10px;
@@ -2685,7 +2685,7 @@ nav .themeple_custom_menu_mega_menu.themeple_mega5 ul li ul li {
 
 .dlintroduct h3 {
     display: block;
-    font-size: 17px;
+    font-size: 18px;
     letter-spacing: 3px;
     line-height: 54.4px;
     margin: 0 0 28px;
@@ -2708,7 +2708,7 @@ nav .themeple_custom_menu_mega_menu.themeple_mega5 ul li ul li {
 
 .dlintroduct p {
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.4px;
     line-height: 24px;
     margin: 0;
@@ -3379,7 +3379,7 @@ div.wpcf7-validation-errors {
 }
 
 .blog-item p {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 24px;
     margin: 0;
     padding: 10px 0 0;
@@ -4393,7 +4393,7 @@ body .tzsidebar-blog {
 
 .tzdefault_title h1 {
     color: #1f1f1f;
-    font-size: 17px;
+    font-size: 19px;
     line-height: 54.4px;
     letter-spacing: 4px;
     padding: 31px 0 34px 90px;
@@ -6252,11 +6252,11 @@ h2.tribe-events-page-title:after {
 
 .single-content p {
     color: #777777;
-    font-size: 12px;
+    font-size: 1.5rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 3rem;
     margin: 0;
-    padding: 12px 0;
+    padding: 3px 0;
     letter-spacing: 0.4px;
 }
 
@@ -11082,7 +11082,7 @@ body#bd {
     position: fixed;
     z-index: 1;
     right: 0;
-    top: 200px;
+    top: 211px;
     font-size: 11px;
     border-bottom-left-radius: 3px;
     background: rgba(214, 86, 121, 0.9);
