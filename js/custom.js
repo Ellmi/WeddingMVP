@@ -1,6 +1,3 @@
-
-
-var $heightWindow  = jQuery(window).height();
 var $height_header3 = jQuery('.header3-fix').height();
 var $nav3_height     = jQuery('.tznav-3').height();
 
@@ -15,55 +12,14 @@ jQuery(window).load(function(){
         });
     }
 
-    function get_height() {
-
-        if (jQuery(window).width() < 601) {
-
-            return jQuery(window).height();
-        } else {
-            return jQuery(window).height();
-        }
-    }
-
-    var height = get_height();
-
-    jQuery('.deeplove-slider').camera({
-        height: height + 'px',
-        loader: 'bar',
-        overlay: false,
-        fx: 'simpleFade',
-        pagination: false,
-        thumbnails: false,
-        transPeriod: 0,
-        overlayer: false,
-        playPause: false,
-        hover: false
-    });
-
-    // jQuery for flexslider------------------
-    // The slider being synced must be initialized first
-    jQuery('#carousel').flexslider({
-        animation: "slide",
+    jQuery('.deeplove-slider').flexslider({
+        animation: "fade",
         controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        directionNav: true,
-        itemWidth: 80,
-        itemMargin: 5,
-        asNavFor: '#slider'
-    });
-
-    jQuery('#slider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
+        animationLoop: true,
+        slideshow: true,
         smoothHeight: true,
-        sync: "#carousel"
+        pauseOnAction: false
     });
-
-    jQuery('div.slotholder').prepend('<div class="bk-responsive-slide"></div>');
-
 
     var $widthW= jQuery(window).width();
     // height for woo

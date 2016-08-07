@@ -5,7 +5,7 @@
  */
 get_header();
 get_template_part('template_inc/side', 'menu-bar');
-get_template_part('template_inc/slides', 'home'); ?>
+get_template_part('template_inc/slides', 'video'); ?>
 <div id="video_set">
     <?php get_template_part('template_inc/count', 'down');
     get_template_part('template_inc/post', 'zone1'); ?>

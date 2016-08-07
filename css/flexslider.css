@@ -9,6 +9,16 @@
  * Contributing author: Tyler Smith (@mbmufffin)
  */
 
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url('../fonts/webfonts/flexslider-icon.eot');
+  src: url('../fonts/webfonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/webfonts/flexslider-icon.woff') format('woff'),
+       url('../fonts/webfonts/flexslider-icon.ttf') format('truetype'),
+       url('../fonts/webfonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Browser Resets
 *********************************/
@@ -80,7 +90,14 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 
-@media screen and (max-width: 860px) {
-  .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
-  .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
+.deeplove-slider:hover .flex-direction-nav .flex-prev {
+  color: rgba(255,255,255,0.4);
+  opacity: 1;
+  left: 30px;
+}
+
+.deeplove-slider:hover .flex-direction-nav .flex-next {
+  color: rgba(255,255,255,0.4);
+  opacity: 1;
+  right: 30px;
 }

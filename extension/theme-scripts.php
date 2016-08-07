@@ -56,14 +56,6 @@ function deeplove_register_front_end_scripts()
     wp_register_script('off-canvas', THEME_PATH . '/js/off-canvas.js', false,false, $in_footer=true);
     wp_enqueue_script('off-canvas');
 
-    wp_deregister_script('easing');
-    wp_register_script('easing', THEME_PATH . '/js/easing.js', false, false, $in_footer=true);
-    wp_enqueue_script('easing');
-
-    wp_deregister_script('camera');
-    wp_register_script('camera', THEME_PATH . '/js/camera.js', false, false, $in_footer=true);
-    wp_enqueue_script('camera');
-
     wp_deregister_script('custom');
     wp_register_script('custom', THEME_PATH . '/js/custom.js', false, false, $in_footer=true);
     wp_enqueue_script('custom');
