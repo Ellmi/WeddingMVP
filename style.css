@@ -11169,7 +11169,7 @@ body#bd {
     font-size: 2.1rem;
 }
 .deeplove-slider{
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .deeplove-slider ul li img{
     height: 844px;
