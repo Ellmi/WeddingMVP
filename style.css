@@ -11168,3 +11168,28 @@ body#bd {
 .fa.fa-location-arrow{
     font-size: 2.1rem;
 }
+.deeplove-slider{
+    overflow-x: hidden;
+}
+.deeplove-slider ul li img{
+    height: 844px;
+    width: 100%;
+}
+
+@media (max-width: 992px){
+    .deeplove-slider ul li img{
+        height: 670px;
+        width: 200%;
+        margin-right: -50%;
+        margin-left: -50%;
+    }
+    .tzcountdown2{
+        display: none;
+    }
+}
+
+@media (max-width: 510px){
+    .deeplove-slider ul li img{
+        height: 500px;
+    }
+}
