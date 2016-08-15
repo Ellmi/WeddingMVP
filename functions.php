@@ -30,6 +30,8 @@ function deeplove_setup()
     add_theme_support('post-formats', array(
         'image', 'video',
     ));
+
+    add_theme_support( 'title-tag' );
 }
 
 add_action('after_setup_theme', 'deeplove_setup');
@@ -82,7 +84,6 @@ function deeplove_add_google_analytics_code() {
     echo '_google_analytics  code';
     echo '</script>';
 }
-
 /*method activie plugin*/
 require_once dirname( __FILE__ ) . '/plugins/class-tgm-plugin-activation.php';
 add_action( 'tgmpa_register', 'deeplove_register_required_plugins' );
