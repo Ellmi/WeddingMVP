@@ -23,6 +23,7 @@
     <!--[if lt IE 9]>
     <script src="<?php echo esc_url(JS_PATH); ?>html5shiv.js"></script>
     <script src="<?php echo esc_url(JS_PATH); ?>respond.min.js"></script>
+    <meta name="keywords" content="包头婚庆，包头婚礼，塔米婚庆，塔米婚礼，包头塔米婚礼策划，包头婚礼策划，婚礼策划，包头高端婚礼策划，私人定制婚礼，包头婚礼策划工作室，包头婚庆礼仪，包头最好的婚庆公司，包头婚纱摄影，包头求婚策划，包头婚宴酒店，包头酒店，香格里拉，婚宴酒店，跟妆，包头婚庆，包头婚庆，包头婚庆" />
     <![endif]-->
 
     <?php wp_head(); ?>
